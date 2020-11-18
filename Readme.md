@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Зоя Ачкасова](https://up.htmlacademy.ru/adaptive/21/user/1660491).
-* Наставник: `Неизвестно`.
+* Наставник: Герман Карев.
 
 ---
 
