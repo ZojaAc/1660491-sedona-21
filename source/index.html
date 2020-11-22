@@ -13,17 +13,17 @@
         <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="nav__wrapper">
           <ul class="nav__list">
-            <li class="list">
-              <a href="#">Главная</a>
+            <li class="nav__item">
+              <a claass="nav__link" href="#">Главная</a>
             </li>
-            <li class="list">
-              <a href="#">Фото и видео</a>
+            <li class="nav__item">
+              <a claass="nav__link" href="#">Фото и видео</a>
             </li>
-            <li class="list">
-              <a href="#">Форма отзыва</a>
+            <li class="nav__item">
+              <a claass="nav__link" href="#">Форма отзыва</a>
             </li>
-            <li class="list">
-              <a href="#">HTML Academy</a>
+            <li class="nav__item">
+              <a claass="nav__link" href="#">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -35,20 +35,24 @@
         <div class="intro__wrapper">
           <h2 class="visually-hidden">Скрытый заголовок вводного раздела</h2>
           <svg class="intro__tagline" width="282" height="214"></svg>
+          <svg class="intro__triangle-vector"></svg>
           <p class="intro__slogan">СЕДОНА - небольшой городок в Аризоне, заслуживающий большего!</p>
           <p class="intro__text">Расмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <svg class="intro__white-vector"></svg>
         </div>
       </section>
       <section class="feature">
         <div class="feature__wrapper">
-          <h2 class="visually-hidden">Скрытый заголовок раздела преимуществ</h2>
-          <dl class="feature__list">
-            <div class="feature__items">
-              <dt class="feature__point">Настоящий городок</dt>
-              <dd class="feature__description">-№1-<br>Седона не атракцион для туристов, там течет своя жизнь</dd>
-              <img class="feature__image" src="img/photo-city.svg" alt="city view">
-            </div>
-          </dl>
+          <div class="feature__wrapper-priority">
+            <h2 class="visually-hidden">Скрытый заголовок раздела преимуществ</h2>
+            <dl class="feature__list">
+              <div class="feature__items">
+                <dt class="feature__point">Настоящий городок</dt>
+                <dd class="feature__description">-№1-<br>Седона не атракцион для туристов, там течет своя жизнь</dd>
+                <img class="feature__image" src="img/photo-city.svg" alt="city view">
+              </div>
+            </dl>
+          </div>
         </div>
       </section>
       <section class="advices">
@@ -56,30 +60,32 @@
           <h2 class="visually-hidden">Скрытый заголовок раздела советов</h2>
           <ul class="advices__list">
             <li class="advices__item advices__item--apartment">
-              <h3 class="advices__title">Жилье</h3>
-              <p class="advices__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <h3 class="advices__title title-text-style">Жилье</h3>
+              <p class="advices__description description-text-style">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
             <li class="advices__item advices__item--gifts">
-              <h3 class="advices__title">Сувениры</h3>
-              <p class="advices__description">Не только китайского, но и местного производства!</p>
+              <h3 class="advices__title title-text-style">Сувениры</h3>
+              <p class="advices__description description-text-style">Не только китайского, но и местного производства!</p>
             </li>
             <li class="advices__item advices__item--meal">
-              <h3 class="advices__title">Еда</h3>
-              <p class="advices__description">Всегда заказывайте местный бургер, вы не разочаруетесь!</p>
+              <h3 class="advices__title title-text-style">Еда</h3>
+              <p class="advices__description description-text-style">Всегда заказывайте местный бургер, вы не разочаруетесь!</p>
             </li>
           </ul>
         </div>
       </section>
       <section class="feature">
         <div class="feature__wrapper">
-          <h2 class="visually-hidden">Скрытый заголовок раздела преимуществ</h2>
-          <dl class="feature__list">
-            <div class="feature__items">
-              <dt class="feature__point">Там есть мост дьявола</dt>
-              <dd class="feature__description">-№2-<br>Да, по нему можно пройти! Если вы осмелитесь, конечно</dd>
-              <img class="feature__image" src="img/photo-bridge.svg" alt="bridge">
-            </div>
-          </dl>
+          <div class="feature__wrapper-priority">
+            <h2 class="visually-hidden">Скрытый заголовок раздела преимуществ</h2>
+            <dl class="feature__list">
+              <div class="feature__items">
+                <dt class="feature__point">Там есть мост дьявола</dt>
+                <dd class="feature__description">-№2-<br>Да, по нему можно пройти! Если вы осмелитесь, конечно</dd>
+                <img class="feature__image" src="img/photo-bridge.svg" alt="bridge">
+              </div>
+            </dl>
+          </div>
         </div>
       </section>
       <section class="feture-lasts">
@@ -87,12 +93,12 @@
           <h2 class="visually-hidden">Скрытый заголовок раздела преимуществ</h2>
           <dl class="feature-lasts__list">
             <div class="feature-lasts__items">
-              <dt class="feature-lasts__point">Небольшая площадь</dt>
-              <dd class="feature__description">-№3-<br>Все интересные места находятся очень близко</dd>
-              <dt class="feature-lasts__point">Красивая дорога</dt>
-              <dd class="feature__description">-№4-<br>Ехать в Седону из Лас-Вегаса совсем не скучно!</dd>
-              <dt class="feature-lasts__point">Мало туристов</dt>
-              <dd class="feature__description">-№5-<br>Большинство едет в Гранд Каньон и толпится там</dd>
+              <dt class="feature-lasts__point title-text-style">Небольшая площадь</dt>
+              <dd class="feature__description description-text-style">-№3-<br>Все интересные места находятся очень близко</dd>
+              <dt class="feature-lasts__point title-text-style">Красивая дорога</dt>
+              <dd class="feature__description description-text-style">-№4-<br>Ехать в Седону из Лас-Вегаса совсем не скучно!</dd>
+              <dt class="feature-lasts__point title-text-style">Мало туристов</dt>
+              <dd class="feature__description description-text-style">-№5-<br>Большинство едет в Гранд Каньон и толпится там</dd>
           </dl>
         </div>
       </section>
@@ -102,9 +108,7 @@
           <div class="hotels__click">
             <h3 class="hotels__title">Заинтересовались?</h3>
             <p class="hotels__action">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <button class="hotels__choice" type="button">
-              <a href="#">Найти гостиницу</a>
-            </button>
+            <a href="#">Найти гостиницу</a>
           </div>
         </div>
       </section>
@@ -113,7 +117,6 @@
           <h2 class="visually-hidden">Скрытый заголовок раздела карта</h2>
           <div class="map__view">
             <img class="map__picture" src="img/map-mobil.jpg" alt="map-section">
-            <svg class="map__cursor" width="27" height="27"></svg>
           </div>
         </div>
       </section>
