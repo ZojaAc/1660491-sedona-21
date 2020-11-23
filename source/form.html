@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/logotype-mobile.svg" width="101.7" height="84" alt="Sedona">
+      </a>
+      <nav class="nav">
+        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="nav__wrapper">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Фото и видео</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Форма отзыва</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually hidden">Скрытый заголовок основного блока</h1>
+      <section class="intro">
+        <div class="intro__wrapper">
+          <h2 class="visually-hidden">Скрытый заголовок вводного раздела</h2>
+          <svg class="intro__tagline" width="229" height="39"></svg>
+            <svg class="intro__triangle-vector"></svg>
+            <p class="intro__offer">Оставьте свой отзыв</p>
+            <p class="intro__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+      </section>
+      <section class="review">
+        <div class="review__wrapper">
+          <h2 class="visually-hidden">Зарегистрируйтесь и оставьте отзыв</h2>
+          <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="review__personal check-in">
+              <p class="check-in__title">Представьтесь:</p>
+              <label>
+                <span class="check-in__target">Имя<sup>*</sup>:</span>
+                <input class="check-in__cell" type="text" name="name" value="Петр">
+              </label>
+              <label>
+                <span class="check-in__target">Фамилия<sup>*</sup>:</span>
+                <input class="check-in__cell" type="text" name="surname" value="Иванов">
+              </label>
+              <label>
+                <span class="check-in__target">Отчество:</span>
+                <input class="check-in__cell" type="text" name="patronymic" value="Александрович">
+              </label>
+            </div>
+            <div class="review__contacts check-in">
+              <p class="check-in__title">Контактная информация:</p>
+              <label>
+                <span class="check-in__target">Контактный телефон<sup>*</sup>:</span>
+                <input class="check-in__cell" type="text" name="phonenumber" value="Введите телефон">
+              </label>
+              <div class="check-in__picture-phone"></div>
+              <label>
+                <span class="check-in__target">Электронная почта<sup>*</sup>:</span>
+                <input class="check-in__cell" type="text" name="email" value="Введите e-mail">
+              </label>
+              <div class="check-in__picture-post"></div>
+            </div>
+            <div class="review__comments check-in comment">
+              <p class="check-in__title">Ваше общее впечатление:</p>
+              <label>
+                <input class="comment__choice" type="radio" checked name="question" value="">
+                <span class="comment__answer">Скорее положительное</span>
+              </label>
+              <label>
+                <input class="comment__choice" type="radio" name="question" value="">
+                <span class="comment__answer">Скорее отрицательное</span>
+              </label>
+              <label>
+                <input class="comment__choice" type="radio" name="question" value="">
+                <span class="comment__answer">Затрудняюсь ответить</span>
+              </label>
+              <input type="submit" value="отправить отзыв">
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="result">
+        <div class="result__not">
+          <h2 class="visually-hidden">Неудачная регистрация</h2>
+          <p class="result__title">Что-то пошло не так!</p>
+          <p class="result__answer">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <a class="result__new-step" href="#">ОК</a>
+        </div>
+        <div class="result__yes">
+          <h2 class="visually-hidden">Отзыв принят</h2>
+          <p class="result__title">Ваш отзыв отправлен!</p>
+          <p class="result__answer">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
+          <a class="result__new-step" href="#">Закрыть окно</a>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts">
+          <a class="page-footer__link" href="#">VisitSedona</a>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-list__twitter social-list__twitter--twitter" href="#"></a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__facebook social-list__facebook--facebook" href="#"></a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__youtube social-list__youtube--youtube" href="#"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright">
+          <a class="copyright__link" href="#">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
