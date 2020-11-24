@@ -46,27 +46,27 @@
           <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
             <div class="review__personal">
               <p class="review__title">Представьтесь:</p>
-              <label>
+              <label class="review__label-name">
                 <span class="review__target">Имя<sup>*</sup>:</span>
                 <input class="review__cell" type="text" name="name" required autofocus placeholder="Петр">
               </label>
-              <label>
+              <label class="review__label-surname">
                 <span class="review__target">Фамилия<sup>*</sup>:</span>
                 <input class="review__cell" type="text" name="surname" required placeholder="Иванов">
               </label>
-              <label>
+              <label class="review__label-patronymic">
                 <span class="review__target">Отчество:</span>
                 <input class="review__cell" type="text" name="patronymic" placeholder="Александрович">
               </label>
             </div>
             <div class="review__contact">
               <p class="review__title">Контактная информация:</p>
-              <label>
+              <label class="review__label-phone">
                 <span class="review__target">Контактный телефон<sup>*</sup>:</span>
                 <input class="review__cell" type="tel" name="phonenumber" placeholder="Введите телефон" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
               </label>
               <div class="review__picture-phone"></div>
-              <label>
+              <label class="review__label-email">
                 <span class="review__target">Электронная почта<sup>*</sup>:</span>
                 <input class="review__cell" type="email" name="email" placeholder="Введите e-mail" required>
               </label>
@@ -74,34 +74,34 @@
             </div>
             <div class="review__comment">
               <p class="review__title comment">Ваше общее впечатление:</p>
-              <label>
+              <label class="review__label-comment">
                 <input class="comment__choice" type="radio" checked name="question1" value="">
                 <span class="comment__answer">Скорее положительное</span>
               </label>
-              <label>
+              <label class="review__label-comment">
                 <input class="comment__choice" type="radio" name="question2" value="">
                 <span class="comment__answer">Скорее отрицательное</span>
               </label>
-              <label>
+              <label class="review__label-comment">
                 <input class="comment__choice" type="radio" name="question3" value="">
                 <span class="comment__answer">Затрудняюсь ответить</span>
               </label>
             </div>
             <div class="review__sights">
               <p class="review__title sights">Посещенные достопримечательности:</p>
-              <label>
+              <label class="review__label-sights">
                 <input class="sights__choice" type="radio" checked name="question4" value="">
                 <span class="sights__answer">Мост дьявола</span>
               </label>
-              <label>
+              <label class="review__label-sights">
                 <input class="sights__choice" type="radio" checked name="question5" value="">
                 <span class="sights__answer">Гора-колокол</span>
               </label>
-              <label>
+              <label class="review__label-sights">
                 <input class="sights__choice" type="radio" checked name="question6" value="">
                 <span class="sights__answer">Слайд-парк</span>
               </label>
-              <label>
+              <label class="review__label-sights">
                 <input class="sights__choice" type="radio" name="question7" value="">
                 <span class="sights__answer">Красные скалы</span>
               </label>
