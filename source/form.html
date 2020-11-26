@@ -6,8 +6,8 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logotype-mobile.svg" width="101.7" height="84" alt="Sedona">
+      <a class="page-header__logo logo">
+        <img class="logo__img" src="img/logotype-mobile.svg" width="101.7" height="84" alt="Sedona">
       </a>
       <nav class="nav">
         <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -30,7 +30,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visually hidden">Скрытый заголовок основного блока</h1>
+      <h1 class="visually-hidden">Скрытый заголовок основного блока</h1>
       <section class="intro">
         <div class="intro__wrapper">
           <h2 class="visually-hidden">Скрытый заголовок вводного раздела</h2>
@@ -74,15 +74,15 @@
             </div>
             <div class="review__comment">
               <p class="review__title comment">Ваше общее впечатление:</p>
-              <label class="review__label-comment">
+              <label class="review__label-comment comment">
                 <input class="comment__choice" type="radio" checked name="question1" value="">
                 <span class="comment__answer">Скорее положительное</span>
               </label>
-              <label class="review__label-comment">
+              <label class="review__label-comment comment">
                 <input class="comment__choice" type="radio" name="question2" value="">
                 <span class="comment__answer">Скорее отрицательное</span>
               </label>
-              <label class="review__label-comment">
+              <label class="review__label-comment comment">
                 <input class="comment__choice" type="radio" name="question3" value="">
                 <span class="comment__answer">Затрудняюсь ответить</span>
               </label>
@@ -111,12 +111,12 @@
               <textarea class="review__text" name="comment" rows="5" cols="25" placeholder="Опишите подробно все свои восторги"></textarea>
               <input class="review__send" type="submit" value="отправить отзыв">
             </div>
-            <div class="result__not--display">
+            <div class="result__not result__not--display">
               <p class="result__title">Что-то пошло не так!</p>
               <p class="result__answer">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
               <a class="result__new-step" href="#">ОК</a>
             </div>
-            <div class="result__yes--display">
+            <div class="result__yes result__yes--display">
               <h2 class="visually-hidden">Отзыв принят</h2>
               <p class="result__title">Ваш отзыв отправлен!</p>
               <p class="result__answer">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
@@ -144,8 +144,8 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright">
-          <a class="copyright__link" href="#">HTML Academy</a>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
         </div>
       </div>
     </footer>
