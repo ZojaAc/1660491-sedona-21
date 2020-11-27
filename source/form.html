@@ -6,31 +6,31 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logotype-mobile.svg" width="101.7" height="84" alt="Sedona">
+      <a class="page-header__logo logo">
+        <img class="logo__img" src="img/logotype-mobile.svg" width="101.7" height="84" alt="Sedona">
       </a>
       <nav class="nav">
         <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="nav__wrapper">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#">Главная</a>
+              <a class="nav__link" href="index.html">Главная</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Фото и видео</a>
+              <a class="nav__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">Форма отзыва</a>
+              <a class="nav__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">HTML Academy</a>
+              <a class="nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visually hidden">Скрытый заголовок основного блока</h1>
+      <h1 class="visually-hidden">Скрытый заголовок основного блока</h1>
       <section class="intro">
         <div class="intro__wrapper">
           <h2 class="visually-hidden">Скрытый заголовок вводного раздела</h2>
@@ -46,27 +46,27 @@
           <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
             <div class="review__personal">
               <p class="review__title">Представьтесь:</p>
-              <label>
+              <label class="review__label-name">
                 <span class="review__target">Имя<sup>*</sup>:</span>
                 <input class="review__cell" type="text" name="name" required autofocus placeholder="Петр">
               </label>
-              <label>
+              <label class="review__label-surname">
                 <span class="review__target">Фамилия<sup>*</sup>:</span>
                 <input class="review__cell" type="text" name="surname" required placeholder="Иванов">
               </label>
-              <label>
+              <label class="review__label-patronymic">
                 <span class="review__target">Отчество:</span>
                 <input class="review__cell" type="text" name="patronymic" placeholder="Александрович">
               </label>
             </div>
             <div class="review__contact">
               <p class="review__title">Контактная информация:</p>
-              <label>
+              <label class="review__label-phone">
                 <span class="review__target">Контактный телефон<sup>*</sup>:</span>
                 <input class="review__cell" type="tel" name="phonenumber" placeholder="Введите телефон" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
               </label>
               <div class="review__picture-phone"></div>
-              <label>
+              <label class="review__label-email">
                 <span class="review__target">Электронная почта<sup>*</sup>:</span>
                 <input class="review__cell" type="email" name="email" placeholder="Введите e-mail" required>
               </label>
@@ -74,34 +74,34 @@
             </div>
             <div class="review__comment">
               <p class="review__title comment">Ваше общее впечатление:</p>
-              <label>
+              <label class="review__label-comment comment">
                 <input class="comment__choice" type="radio" checked name="question1" value="">
                 <span class="comment__answer">Скорее положительное</span>
               </label>
-              <label>
+              <label class="review__label-comment comment">
                 <input class="comment__choice" type="radio" name="question2" value="">
                 <span class="comment__answer">Скорее отрицательное</span>
               </label>
-              <label>
+              <label class="review__label-comment comment">
                 <input class="comment__choice" type="radio" name="question3" value="">
                 <span class="comment__answer">Затрудняюсь ответить</span>
               </label>
             </div>
             <div class="review__sights">
               <p class="review__title sights">Посещенные достопримечательности:</p>
-              <label>
+              <label class="review__label-sights">
                 <input class="sights__choice" type="radio" checked name="question4" value="">
                 <span class="sights__answer">Мост дьявола</span>
               </label>
-              <label>
+              <label class="review__label-sights">
                 <input class="sights__choice" type="radio" checked name="question5" value="">
                 <span class="sights__answer">Гора-колокол</span>
               </label>
-              <label>
+              <label class="review__label-sights">
                 <input class="sights__choice" type="radio" checked name="question6" value="">
                 <span class="sights__answer">Слайд-парк</span>
               </label>
-              <label>
+              <label class="review__label-sights">
                 <input class="sights__choice" type="radio" name="question7" value="">
                 <span class="sights__answer">Красные скалы</span>
               </label>
@@ -111,12 +111,12 @@
               <textarea class="review__text" name="comment" rows="5" cols="25" placeholder="Опишите подробно все свои восторги"></textarea>
               <input class="review__send" type="submit" value="отправить отзыв">
             </div>
-            <div class="result__not--display">
+            <div class="result__not result__not--display">
               <p class="result__title">Что-то пошло не так!</p>
               <p class="result__answer">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
               <a class="result__new-step" href="#">ОК</a>
             </div>
-            <div class="result__yes--display">
+            <div class="result__yes result__yes--display">
               <h2 class="visually-hidden">Отзыв принят</h2>
               <p class="result__title">Ваш отзыв отправлен!</p>
               <p class="result__answer">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
@@ -144,8 +144,8 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright">
-          <a class="copyright__link" href="#">HTML Academy</a>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
         </div>
       </div>
     </footer>
