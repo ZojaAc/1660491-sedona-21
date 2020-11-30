@@ -1,0 +1,23 @@
+.advices {
+  .advices__list {
+    background-color: #ffffff;
+  }
+}
+
+.advices__title,
+.title-text-style {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+}
+
+.advices__description,
+.description-text-style {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 21px;
+  color: #333333;
+}

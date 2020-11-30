@@ -1,0 +1,29 @@
+$base-block-color: (#81b3d2);
+
+.feature {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.feature__list {
+  .feature__items {
+    background-color: $base-color;
+  }
+}
+
+.feature__point,
+.feature__description {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.feature__point {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.feature__description {
+  font-size: 14px;
+  line-height: 21px;
+}

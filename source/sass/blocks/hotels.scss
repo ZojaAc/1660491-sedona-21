@@ -1,0 +1,31 @@
+$base-block-color: (#81b3d2);
+
+.hotels,
+.hotels__click {
+  background-color: #ffffff;
+}
+
+.hotels__title,
+.hotels__btn {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 26px;
+}
+
+.hotels__title {
+  color: #000000;
+}
+
+.hotels__action {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.hotels__btn {
+  color: #ffffff;
+  background-color: $base-color;
+}
