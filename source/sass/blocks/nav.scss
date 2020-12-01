@@ -1,14 +1,12 @@
 $base-block-color: (#81b3d2);
 
-.nav__item {
-  background-color: $base-color;
-}
+.nav {
+  background-color: $base-block-color;
 
-.nav__link {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 40px;
-  color: #ffffff;
-  text-transform: uppercase;
+  &__link {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
 }

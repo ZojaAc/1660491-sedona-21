@@ -4,19 +4,17 @@
   $text-transform: $text-transform
 ) {
   font-size: $font-size;
-  line-height: $line-height;
+  line-height: 26px;
   text-transform: uppercase;
 }
 
-.intro {
-  &__slogan {
+.page-footer {
+  &__linkVS {
+    @include main-text(21px);
     font-weight: bold;
-
-    @include main-text(18px, 26px);
   }
 
-  &__text {
-    @include main-text(14px, 26px);
-    color: #333333;
+  &__linkHTML {
+    @include main-text(14px);
   }
 }

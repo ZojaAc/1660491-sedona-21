@@ -1,5 +1,3 @@
-$base-block-color: (#81b3d2);
-
 @mixin main-text-a(
   $font-size: $font-size,
   $line-height: $line-height,
@@ -12,20 +10,15 @@ $base-block-color: (#81b3d2);
   font-weight: bold;
 }
 
-.hotels {
-  &__title,
-  &__btn {
-    @include main-text-a(21px, 26px);
+.feature-lasts {
+  background-color: #eeeeee;
+
+  &__point {
+    @include main-text-a(18px, 26px);
   }
 
-  &__action {
+  &__description {
+    @include main-text-a(14px, 21px);
     color: #333333;
-    font-size: 14px;
-    line-height: 24px;
-  }
-
-  &__btn {
-    color: #ffffff;
-    background-color: $base-block-color;
   }
 }

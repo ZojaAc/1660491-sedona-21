@@ -1,29 +1,32 @@
 $base-block-color: (#81b3d2);
 
+@mixin main-text(
+  $font-size: $font-size,
+  $line-height: $line-height,
+  $text-transform: $text-transform
+) {
+  font-size: $font-size;
+  line-height: $line-height;
+  text-transform: uppercase;
+}
+
 .feature {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.feature__list {
-  .feature__items {
-    background-color: $base-color;
+  &__items {
+    background-color: $base-block-color;
   }
-}
 
-.feature__point,
-.feature__description {
-  font-family: "PT Sans", "Arial", sans-serif;
-  color: #ffffff;
-}
+  &__point,
+  &__description {
+    color: #ffffff;
+  }
 
-.feature__point {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 26px;
-}
+  &__point {
+    font-weight: bold;
 
-.feature__description {
-  font-size: 14px;
-  line-height: 21px;
+    @include main-text(18px, 26px);
+  }
+
+  &__description {
+    @include main-text(14px, 21px);
+  }
 }

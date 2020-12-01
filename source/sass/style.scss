@@ -1,4 +1,1 @@
-body {
-  background: rgb(255, 255, 255);
-  font-family: "PT Sans", "Arial", sans-serif;
-}
+@import "./blocks/page.scss", "./blocks/nav.scss", "./blocks/intro.scss", "./blocks/feature.scss", "./blocks/advices.scss", "./blocks/feature-lasts.scss", "./blocks/hotels.scss", "./blocks/page-footer.scss", "./blocks/social-list.scss";
