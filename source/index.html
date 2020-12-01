@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -45,13 +46,13 @@
         <div class="feature__wrapper">
           <div class="feature__wrapper-priority">
             <h2 class="visually-hidden">Скрытый заголовок раздела преимуществ</h2>
-            <dl class="feature__list">
+            <div class="feature__list">
               <div class="feature__items">
-                <dt class="feature__point">Настоящий городок</dt>
-                <dd class="feature__description">-№1-<br>Седона не атракцион для туристов, там течет своя жизнь</dd>
+                <div class="feature__point">Настоящий городок</div>
+                <div class="feature__description">-№1-<br>Седона не аттракцион для туристов, там течет своя жизнь</div>
                 <img class="feature__image" src="img/photo-city.svg" alt="city view">
               </div>
-            </dl>
+            </div>
           </div>
         </div>
       </section>
@@ -60,14 +61,17 @@
           <h2 class="visually-hidden">Скрытый заголовок раздела советов</h2>
           <ul class="advices__list">
             <li class="advices__item advices__item--apartment">
+              <img class="advices__img" src="icon-house.svg" alt="house">
               <h3 class="advices__title title-text-style">Жилье</h3>
               <p class="advices__description description-text-style">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
             <li class="advices__item advices__item--gifts">
+              <img class="advices__img" src="icon.gift.svg" alt="gift">
               <h3 class="advices__title title-text-style">Сувениры</h3>
               <p class="advices__description description-text-style">Не только китайского, но и местного производства!</p>
             </li>
             <li class="advices__item advices__item--meal">
+              <img class="advices__img" src="icon.burger.svg" alt="burger">
               <h3 class="advices__title title-text-style">Еда</h3>
               <p class="advices__description description-text-style">Всегда заказывайте местный бургер, вы не разочаруетесь!</p>
             </li>
@@ -78,28 +82,28 @@
         <div class="feature__wrapper">
           <div class="feature__wrapper-priority">
             <h2 class="visually-hidden">Скрытый заголовок раздела преимуществ</h2>
-            <dl class="feature__list">
+            <div class="feature__list">
               <div class="feature__items">
-                <dt class="feature__point">Там есть мост дьявола</dt>
-                <dd class="feature__description">-№2-<br>Да, по нему можно пройти! Если вы осмелитесь, конечно</dd>
+                <div class="feature__point">Там есть мост дьявола</div>
+                <div class="feature__description">-№2-<br>Да, по нему можно пройти! Если вы осмелитесь, конечно</div>
                 <img class="feature__image" src="img/photo-bridge.svg" alt="bridge">
               </div>
-            </dl>
+            </div>
           </div>
         </div>
       </section>
-      <section class="feture-lasts">
+      <section class="feature-lasts">
         <div class="feature-lasts__wrapper">
           <h2 class="visually-hidden">Скрытый заголовок раздела преимуществ</h2>
-          <dl class="feature-lasts__list">
+          <div class="feature-lasts__list">
             <div class="feature-lasts__items">
-              <dt class="feature-lasts__point title-text-style">Небольшая площадь</dt>
-              <dd class="feature-lasts__description description-text-style">-№3-<br>Все интересные места находятся очень близко</dd>
-              <dt class="feature-lasts__point title-text-style">Красивая дорога</dt>
-              <dd class="feature-lasts__description description-text-style">-№4-<br>Ехать в Седону из Лас-Вегаса совсем не скучно!</dd>
-              <dt class="feature-lasts__point title-text-style">Мало туристов</dt>
-              <dd class="feature-lasts__description description-text-style">-№5-<br>Большинство едет в Гранд Каньон и толпится там</dd>
-          </dl>
+              <div class="feature-lasts__point title-text-style">Небольшая площадь</div>
+              <div class="feature-lasts__description description-text-style">-№3-<br>Все интересные места находятся очень близко</div>
+              <div class="feature-lasts__point title-text-style">Красивая дорога</div>
+              <div class="feature-lasts__description description-text-style">-№4-<br>Ехать в Седону из Лас-Вегаса совсем не скучно!</div>
+              <div class="feature-lasts__point title-text-style">Мало туристов</div>
+              <div class="feature-lasts__description description-text-style">-№5-<br>Большинство едет в Гранд Каньон и толпится там</div>
+          </div>
         </div>
       </section>
       <section class="hotels">
@@ -108,7 +112,7 @@
           <div class="hotels__click">
             <h3 class="hotels__title">Заинтересовались?</h3>
             <p class="hotels__action">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <a href="#">Найти гостиницу</a>
+            <a class="hotels__btn" href="#">Найти гостиницу</a>
           </div>
         </div>
       </section>
@@ -124,10 +128,10 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__contacts">
-          <a class="page-footer__link" href="#">VisitSedona</a>
+          <a class="page-footer__linkVS" href="#">VisitSedona</a>
         </div>
-        <div class="page-footer__social social">
-          <ul class="social-list">
+        <div class="page-footer__social social-list">
+          <ul class="social-list__block">
             <li class="social-list__item">
               <a class="social-list__twitter social-list__twitter--twitter" href="#"></a>
             </li>
@@ -140,7 +144,7 @@
           </ul>
         </div>
         <div class="page-footer__copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          <a class="page-footer__linkHTML" href="https://htmlacademy.ru/">Разработано</a>
         </div>
       </div>
     </footer>

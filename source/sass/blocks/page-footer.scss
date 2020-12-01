@@ -1,0 +1,13 @@
+.page-footer {
+  &__linkVS {
+    @include main-text(21px, 26px, bold);
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  &__linkHTML {
+    @include main-text(14px, 26px, normal);
+    text-transform: uppercase;
+    color: #000000;
+  }
+}

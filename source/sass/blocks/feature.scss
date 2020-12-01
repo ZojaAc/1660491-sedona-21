@@ -1,0 +1,21 @@
+.feature {
+  &__items {
+    background-color: $base-block-color;
+  }
+
+  &__point,
+  &__description {
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  &__point {
+    text-transform: uppercase;
+
+    @include main-text(18px, 26px, bold);
+  }
+
+  &__description {
+    @include main-text(14px, 21px, normal);
+  }
+}

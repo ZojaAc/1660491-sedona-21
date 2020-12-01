@@ -1,0 +1,14 @@
+.feature-lasts {
+  background-color: #eeeeee;
+
+  &__point {
+    @include main-text(18px, 26px, bold);
+    text-transform: uppercase;
+  }
+
+  &__description {
+    @include main-text(14px, 21px, bold);
+    color: #333333;
+    text-transform: uppercase;
+  }
+}
