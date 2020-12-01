@@ -1,1 +1,12 @@
-@import "./blocks/page.scss", "./blocks/nav.scss", "./blocks/intro.scss", "./blocks/feature.scss", "./blocks/advices.scss", "./blocks/feature-lasts.scss", "./blocks/hotels.scss", "./blocks/page-footer.scss", "./blocks/social-list.scss";
+@import "./variables.scss";
+@import "./global.scss";
+@import "./mixins.scss";
+@import "./blocks/page.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/feature.scss";
+@import "./blocks/advices.scss";
+@import "./blocks/feature-lasts.scss";
+@import "./blocks/hotels.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/social-list.scss"

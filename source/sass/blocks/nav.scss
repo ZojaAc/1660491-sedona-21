@@ -1,12 +1,10 @@
-$base-block-color: (#81b3d2);
-
 .nav {
   background-color: $base-block-color;
 
   &__link {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 40px;
+    @include main-text(18px, 40px, bold);
+
     text-transform: uppercase;
+    color: #ffffff;
   }
 }

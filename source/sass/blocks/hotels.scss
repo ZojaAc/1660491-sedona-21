@@ -1,27 +1,14 @@
-$base-block-color: (#81b3d2);
-
-@mixin main-text-a(
-  $font-size: $font-size,
-  $line-height: $line-height,
-  $text-transform: $text-transform,
-  $font-weight: $font-weight
-) {
-  font-size: $font-size;
-  line-height: $line-height;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
 .hotels {
   &__title,
   &__btn {
-    @include main-text-a(21px, 26px);
+    @include main-text(21px, 26px, bold);
+    text-transform: uppercase;
   }
 
   &__action {
+    @include main-text(14px, 24px, normal);
     color: #333333;
-    font-size: 14px;
-    line-height: 24px;
+    text-transform: uppercase;
   }
 
   &__btn {

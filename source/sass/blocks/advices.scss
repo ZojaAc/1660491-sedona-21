@@ -1,22 +1,12 @@
-@mixin main-text-a(
-  $font-size: $font-size,
-  $line-height: $line-height,
-  $text-transform: $text-transform,
-  $font-weight: $font-weight
-) {
-  font-size: $font-size;
-  line-height: $line-height;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
 .advices {
   &__title {
-    @include main-text-a(18px, 26px);
+    @include main-text(18px, 26px, bold);
+    text-transform: uppercase;
   }
 
   &__description {
-    @include main-text-a(14px, 21px);
+    @include main-text(14px, 21px, bold);
     color: #333333;
+    text-transform: uppercase;
   }
 }

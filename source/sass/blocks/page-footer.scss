@@ -1,20 +1,13 @@
-@mixin main-text(
-  $font-size: $font-size,
-  $line-height: $line-height,
-  $text-transform: $text-transform
-) {
-  font-size: $font-size;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
 .page-footer {
   &__linkVS {
-    @include main-text(21px);
-    font-weight: bold;
+    @include main-text(21px, 26px, bold);
+    text-transform: uppercase;
+    color: #000000;
   }
 
   &__linkHTML {
-    @include main-text(14px);
+    @include main-text(14px, 26px, normal);
+    text-transform: uppercase;
+    color: #000000;
   }
 }

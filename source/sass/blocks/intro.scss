@@ -1,22 +1,12 @@
-@mixin main-text(
-  $font-size: $font-size,
-  $line-height: $line-height,
-  $text-transform: $text-transform
-) {
-  font-size: $font-size;
-  line-height: $line-height;
-  text-transform: uppercase;
-}
-
 .intro {
   &__slogan {
-    font-weight: bold;
-
-    @include main-text(18px, 26px);
+    @include main-text(18px, 26px, bold);
+    text-transform: uppercase;
   }
 
   &__text {
-    @include main-text(14px, 26px);
+    @include main-text(14px, 26px, normal);
     color: #333333;
+    text-transform: uppercase;
   }
 }
