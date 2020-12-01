@@ -1,0 +1,18 @@
+.result {
+  &__title,
+  &__new-step {
+    @include main-text(18px, 26px, bold);
+    text-transform: uppercase;
+  }
+
+  &__answer {
+    @include main-text(14px, 24px, normal);
+    color: #333333;
+    text-transform: uppercase;
+  }
+
+  &__new-step {
+    color: #ffffff;
+    background-color: $base-block-color;
+  }
+}

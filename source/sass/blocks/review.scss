@@ -1,0 +1,31 @@
+.review {
+  &__title {
+    @include main-text(18px, 26px, bold);
+    text-transform: uppercase;
+  }
+
+  &__target {
+    @include main-text(14px, 26px, normal);
+    color: #333333;
+    text-transform: uppercase;
+  }
+
+  &__cell,
+  &__text {
+    background-color: $form-color;
+
+    @include main-text(18px, 26px, bold);
+  }
+
+  &__picture-phone,
+  &__picture-post {
+    background-color: #e6e6e6;
+  }
+
+  &__send {
+    @include main-text(21px, 26px, bold);
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: $base-block-color;
+  }
+}
