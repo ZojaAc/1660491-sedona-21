@@ -1,0 +1,15 @@
+.catalog {
+  &__n-title {
+    @include main-text(14px, 24px, bold);
+    text-transform: uppercase;
+  }
+
+  &__n-autor {
+    @include main-text(14px, 24px, normal);
+    color: #333333;
+  }
+
+  &__l-amount {
+    @include main-text(14px, 24px, bold);
+  }
+}

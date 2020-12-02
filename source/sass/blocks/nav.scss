@@ -1,10 +1,26 @@
 .nav {
-  background-color: $base-block-color;
-
   &__link {
     @include main-text(18px, 40px, bold);
 
     text-transform: uppercase;
     color: #ffffff;
+    background-color: $base-block-color;
+  }
+
+  &__link:link {
+    @include link($a-link);
+  }
+
+  &__link:visited {
+    @include link($a-visited);
+  }
+
+  &__link:hover {
+    @include link($a-hover);
+  }
+
+  &__link:active {
+    @include link($a-active);
+    opacity: 0.3;
   }
 }

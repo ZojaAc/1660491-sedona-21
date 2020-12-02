@@ -1,0 +1,15 @@
+.catalog-v {
+  &__title {
+    @include main-text(18px, 26px, bold);
+    text-transform: uppercase;
+  }
+
+  &__description {
+    @include main-text(14px, 24px, normal);
+    color: #333333;
+  }
+
+  &__footer {
+    background-color: #f2f2f2;
+  }
+}

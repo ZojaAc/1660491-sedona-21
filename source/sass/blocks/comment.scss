@@ -3,7 +3,21 @@
     @include main-text(18px, 26px, bold);
   }
 
-  &__choice {
+  &__choice,
+  &__c-choice {
     background-color: $form-color;
+    border: 5px solid $form-color;
+  }
+
+  &__choice:hover,
+  &__c-choice:hover {
+    background-color: $form-hover;
+    border: 5px solid $form-hover;
+  }
+
+  &__choice:active,
+  &__c-choice:active {
+    background-color: $form-down;
+    border: 5px solid $form-down;
   }
 }
