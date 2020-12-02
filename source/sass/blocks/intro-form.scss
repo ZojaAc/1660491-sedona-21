@@ -1,0 +1,12 @@
+.intro-form {
+  &__offer {
+    @include main-text(18px, 26px, bold);
+    text-transform: uppercase;
+  }
+
+  &__text {
+    @include main-text(14px, 24px, normal);
+    text-transform: uppercase;
+    color: #333333;
+  }
+}

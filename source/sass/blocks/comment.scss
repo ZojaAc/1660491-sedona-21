@@ -1,0 +1,9 @@
+.comment {
+  &__answer {
+    @include main-text(18px, 26px, bold);
+  }
+
+  &__choice {
+    background-color: $form-color;
+  }
+}
