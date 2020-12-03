@@ -13,6 +13,7 @@
   &__cell,
   &__text {
     background-color: $form-color;
+    border: none;
 
     @include main-text(18px, 26px, bold);
   }
@@ -27,5 +28,16 @@
     color: #ffffff;
     text-transform: uppercase;
     background-color: $base-block-color;
+  }
+
+  &__cell:hover,
+  &__text:hover {
+    background-color: $form-hover;
+  }
+
+  &__cell:focus,
+  &__text:focus {
+    background-color: #ffffff;
+    border: 4px solid #e5e5e5;
   }
 }

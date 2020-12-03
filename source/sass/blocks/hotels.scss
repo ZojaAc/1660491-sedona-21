@@ -15,4 +15,21 @@
     color: #ffffff;
     background-color: $base-block-color;
   }
+
+  &__btn:link {
+    @include link($a-link);
+  }
+
+  &__btn:visited {
+    @include link($a-visited);
+  }
+
+  &__btn:hover {
+    @include link($a-hover);
+  }
+
+  &__btn:active {
+    @include link($a-active);
+    opacity: 0.3;
+  }
 }

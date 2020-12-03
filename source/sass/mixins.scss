@@ -7,3 +7,24 @@
   line-height: $line-height;
   font-weight: $font-weight;
 }
+
+@mixin link(
+  $a-link: $a-link,
+  $a-visited: $a-visited,
+  $a-hover: $a-hover,
+  $a-active: $a-active
+) {
+  color: $a-link;
+
+  &:visited {
+    color: $a-visited;
+  }
+
+  &:hover {
+    color: $a-hover;
+  }
+
+  &:active {
+    color: $a-active;
+  }
+}
