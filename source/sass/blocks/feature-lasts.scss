@@ -12,6 +12,7 @@
     color: #333333;
     text-transform: uppercase;
   }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -20,7 +21,7 @@
   }
 }
 
-@media(min-width: $tablet) {
+@media (min-width: $tablet) {
   .feature-lasts {
     min-height: 256px;
   }

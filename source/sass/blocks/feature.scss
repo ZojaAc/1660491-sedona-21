@@ -20,6 +20,7 @@
   &__description {
     @include main-text(14px, 21px, normal);
   }
+
   &__wrapper,
   &__wrapper-priority {
     display: flex;
@@ -29,11 +30,11 @@
   }
 }
 
-@media(min-width: $tablet) {
+@media (min-width: $tablet) {
   .feature {
     min-height: 256px;
-
   }
+
   .feature__wrapper-priority {
     display: grid;
     grid-template-columns: 1fr 2fr;

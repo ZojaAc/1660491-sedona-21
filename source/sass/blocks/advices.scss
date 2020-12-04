@@ -11,6 +11,7 @@
     color: #333333;
     text-transform: uppercase;
   }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -19,10 +20,11 @@
   }
 }
 
-@media(min-width: $tablet) {
+@media (min-width: $tablet) {
   .advices {
     min-height: 275px;
   }
+
   .advices__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

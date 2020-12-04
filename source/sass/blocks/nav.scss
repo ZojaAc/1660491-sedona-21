@@ -27,11 +27,13 @@
     @include link($a-active);
     opacity: 0.3;
   }
+
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
   }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -40,7 +42,7 @@
   }
 }
 
-@media(min-width: $tablet) {
+@media (min-width: $tablet) {
   .nav {
     min-height: 56px;
   }
@@ -51,22 +53,25 @@
     max-width: 768px;
     margin: 0 auto;
   }
+
   .nav__item {
     min-width: 153px;
     min-height: 56px;
   }
+
   .nav__toggle {
     display: none;
   }
 }
 
-@media(min-width: $desktop) {
+@media (min-width: $desktop) {
   .nav__wrapper {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
   }
+
   .nav__item {
     min-width: 239px;
     min-height: 56px;

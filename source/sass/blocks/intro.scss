@@ -13,47 +13,54 @@
     text-transform: uppercase;
     margin: auto;
   }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
     min-width: 90%;
     margin: 0 auto;
   }
+
   &__triangle-vector {
     height: 57px;
   }
+
   &__white-vector {
     height: 37px;
   }
 }
 
-@media(min-width: $tablet) {
+@media (min-width: $tablet) {
   .intro {
     min-height: 738px;
   }
+
   .intro__wrapper {
     display: flex;
     justify-content: space-between;
     max-width: 768px;
     margin: 0 auto;
   }
+
   .intro__tagline {
     max-width: 461px;
     max-height: 349.97px;
     margin: auto;
   }
+
   .intro__white-vector {
     display: none;
   }
 }
 
-@media(min-width: $desktop) {
+@media (min-width: $desktop) {
   .intro__wrapper {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
   }
+
   .intro__tagline {
     max-width: 459.5px;
     max-height: 349.97px;
