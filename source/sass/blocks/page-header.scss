@@ -8,7 +8,11 @@
 }
 
 @media (min-width: $desktop) {
+  .page-header {
+    max-height: 56px;
+  }
+
   .page-header__logo {
-    min-height: 96.43px;
+    max-height: 96.43px;
   }
 }

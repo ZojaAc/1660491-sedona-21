@@ -25,6 +25,6 @@
 
 @media (min-width: $desktop) {
   .page-footer {
-    height: 120px;
+    max-height: 120px;
   }
 }

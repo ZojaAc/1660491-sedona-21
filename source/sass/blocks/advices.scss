@@ -22,7 +22,12 @@
 
 @media (min-width: $tablet) {
   .advices {
-    min-height: 275px;
+    max-height: 275px;
+  }
+
+  .advices__list {
+    display: flex;
+    flex-direction: row;
   }
 
   .advices__wrapper {

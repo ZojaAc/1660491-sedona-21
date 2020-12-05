@@ -32,7 +32,12 @@
 
 @media (min-width: $tablet) {
   .feature {
-    min-height: 256px;
+    max-height: 256px;
+  }
+
+  .feature__items {
+    display: flex;
+    flex-direction: row;
   }
 
   .feature__wrapper-priority {

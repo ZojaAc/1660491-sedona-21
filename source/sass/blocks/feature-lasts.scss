@@ -23,7 +23,12 @@
 
 @media (min-width: $tablet) {
   .feature-lasts {
-    min-height: 256px;
+    max-height: 256px;
+  }
+
+  .feature-lasts__items {
+    display: flex;
+    flex-direction: row;
   }
 
   .feature-lasts__wrapper {

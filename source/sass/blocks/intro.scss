@@ -32,11 +32,12 @@
 
 @media (min-width: $tablet) {
   .intro {
-    min-height: 738px;
+    max-height: 738px;
   }
 
   .intro__wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     max-width: 768px;
     margin: 0 auto;
