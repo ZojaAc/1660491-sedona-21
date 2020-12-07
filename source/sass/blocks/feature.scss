@@ -1,4 +1,6 @@
 .feature {
+  height: 451px;
+
   &__items {
     background-color: $base-block-color;
   }
@@ -17,5 +19,31 @@
 
   &__description {
     @include main-text(14px, 21px, normal);
+  }
+
+  &__wrapper,
+  &__wrapper-priority {
+    display: flex;
+    justify-content: space-between;
+    min-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet) {
+  .feature {
+    max-height: 256px;
+  }
+
+  .feature__items {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .feature__wrapper-priority {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 768px;
+    margin: auto;
   }
 }

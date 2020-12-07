@@ -1,12 +1,69 @@
 .intro {
+  height: 631px;
+
   &__slogan {
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
+    margin: auto;
   }
 
   &__text {
     @include main-text(14px, 26px, normal);
     color: #333333;
     text-transform: uppercase;
+    margin: auto;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-width: 90%;
+    margin: 0 auto;
+  }
+
+  &__triangle-vector {
+    height: 57px;
+  }
+
+  &__white-vector {
+    height: 37px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .intro {
+    max-height: 738px;
+  }
+
+  .intro__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .intro__tagline {
+    max-width: 461px;
+    max-height: 349.97px;
+    margin: auto;
+  }
+
+  .intro__white-vector {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .intro__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .intro__tagline {
+    max-width: 459.5px;
+    max-height: 349.97px;
   }
 }

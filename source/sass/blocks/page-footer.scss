@@ -1,4 +1,8 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
+  height: 233px;
+
   &__link-sedona {
     @include main-text(21px, 26px, bold);
     text-transform: uppercase;
@@ -9,5 +13,19 @@
     @include main-text(14px, 26px, normal);
     text-transform: uppercase;
     color: #000000;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-footer {
+    max-height: 120px;
+    max-width: $desktop;
   }
 }

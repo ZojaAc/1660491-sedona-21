@@ -1,4 +1,6 @@
 .hotels {
+  height: 250px;
+
   &__title,
   &__btn {
     @include main-text(21px, 26px, bold);
@@ -31,5 +33,18 @@
   &__btn:active {
     @include link($a-active);
     opacity: 0.3;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .hotels {
+    max-height: 350px;
   }
 }

@@ -1,9 +1,13 @@
 .nav {
+  background-color: $base-block-color;
+  height: 223px;
+
   &__link {
     @include main-text(18px, 40px, bold);
 
     text-transform: uppercase;
     color: #ffffff;
+    text-decoration: none;
     background-color: $base-block-color;
   }
 
@@ -22,5 +26,54 @@
   &__link:active {
     @include link($a-active);
     opacity: 0.3;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet) {
+  .nav {
+    min-height: 56px;
+  }
+
+  .nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .nav__item {
+    min-width: 153px;
+    min-height: 56px;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .nav__item {
+    min-width: 239px;
+    min-height: 56px;
   }
 }

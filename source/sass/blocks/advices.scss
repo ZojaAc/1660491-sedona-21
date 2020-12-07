@@ -1,4 +1,6 @@
 .advices {
+  height: 400px;
+
   &__title {
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
@@ -8,5 +10,30 @@
     @include main-text(14px, 21px, bold);
     color: #333333;
     text-transform: uppercase;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet) {
+  .advices {
+    max-height: 275px;
+  }
+
+  .advices__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .advices__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 768px;
+    margin: auto;
   }
 }
