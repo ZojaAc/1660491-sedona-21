@@ -1,6 +1,5 @@
 .feature-lasts {
   background-color: #eeeeee;
-  height: 503px;
 
   &__point {
     @include main-text(18px, 26px, bold);
@@ -22,10 +21,6 @@
 }
 
 @media (min-width: $tablet) {
-  .feature-lasts {
-    max-height: 256px;
-  }
-
   .feature-lasts__items {
     display: flex;
     flex-direction: row;

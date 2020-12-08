@@ -1,6 +1,4 @@
 .feature {
-  height: 451px;
-
   &__items {
     background-color: $base-block-color;
   }
@@ -31,10 +29,6 @@
 }
 
 @media (min-width: $tablet) {
-  .feature {
-    max-height: 256px;
-  }
-
   .feature__items {
     display: flex;
     flex-direction: row;

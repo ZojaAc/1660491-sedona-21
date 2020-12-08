@@ -3,17 +3,13 @@
   flex-direction: column;
 
   &__logo {
-    min-height: 84px;
+    height: 84px;
   }
 }
 
 @media (min-width: $desktop) {
-  .page-header {
-    max-height: 56px;
-    max-width: $desktop;
-  }
-
   .page-header__logo {
-    max-height: 96.43px;
+    width: 186.6px;
+    height: 96.43px;
   }
 }

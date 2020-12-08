@@ -33,12 +33,12 @@
     <main class="page-main">
       <h1 class="visually-hidden">Скрытый заголовок основного блока</h1>
       <section class="intro-form">
-        <div class="intro__wrapper">
+        <div class="intro-form__wrapper">
           <h2 class="visually-hidden">Скрытый заголовок вводного раздела</h2>
           <svg class="intro-form__tagline" width="229" height="39"></svg>
-            <svg class="intro-form__triangle-vector"></svg>
-            <p class="intro-form__offer">Оставьте свой отзыв</p>
-            <p class="intro-form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <svg class="intro-form__triangle-vector"></svg>
+          <p class="intro-form__offer">Оставьте свой отзыв</p>
+          <p class="intro-form__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
       </section>
       <section class="review">
@@ -73,7 +73,7 @@
               </label>
               <div class="review__picture-post"></div>
             </div>
-            <div class="review__comment">
+            <div class="review__comment-all">
               <p class="review__title comment">Ваше общее впечатление:</p>
               <label class="comment__question">
                 <input class="comment__choice" type="radio" checked name="question1" value="">
@@ -88,7 +88,7 @@
                 <span class="comment__answer">Затрудняюсь ответить</span>
               </label>
             </div>
-            <div class="review__comment">
+            <div class="review__comment-sights">
               <p class="review__title comment">Посещенные достопримечательности:</p>
               <label class="comment__question">
                 <input class="comment__c-choice" type="checkbox" checked name="question4" value="">
@@ -111,6 +111,7 @@
               <p class="review__title text">Опишите свои эмоции:</p>
               <textarea class="review__text" name="comment" rows="5" cols="25" placeholder="Опишите подробно все свои восторги"></textarea>
               <input class="review__send" type="submit" value="отправить отзыв">
+              <p class="review__notice">* - Обязательные поля</p>
             </div>
             <div class="result__not result__not--display">
               <p class="result__title">Что-то пошло не так!</p>

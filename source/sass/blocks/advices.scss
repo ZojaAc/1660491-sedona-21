@@ -21,10 +21,6 @@
 }
 
 @media (min-width: $tablet) {
-  .advices {
-    max-height: 275px;
-  }
-
   .advices__list {
     display: flex;
     flex-direction: row;

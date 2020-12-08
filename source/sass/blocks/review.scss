@@ -4,7 +4,8 @@
     text-transform: uppercase;
   }
 
-  &__target {
+  &__target,
+  &__notice {
     @include main-text(14px, 26px, normal);
     color: #333333;
     text-transform: uppercase;
@@ -39,5 +40,62 @@
   &__text:focus {
     background-color: #ffffff;
     border: 4px solid #e5e5e5;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__notice {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet) {
+  .review__notice {
+    display: block;
+  }
+
+  .review__form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .review__personal,
+  .review__comment-all {
+    width: 50%;
+  }
+
+  .review__contact,
+  .review__comment-sights,
+  .review__emotion {
+    width: 100%;
+  }
+
+  .review__comment-all {
+    order: 1;
+  }
+
+  .review__personal {
+    order: 2;
+  }
+
+  .review__contact {
+    order: 3;
+  }
+
+  .review__comment-sights {
+    order: 4;
+  }
+
+  .review__emotion {
+    order: 5;
+  }
+
+  .result__not,
+  .result__yes {
+    order: 10;
   }
 }

@@ -1,7 +1,4 @@
 .nav {
-  background-color: $base-block-color;
-  height: 223px;
-
   &__link {
     @include main-text(18px, 40px, bold);
 
@@ -9,22 +6,11 @@
     color: #ffffff;
     text-decoration: none;
     background-color: $base-block-color;
-  }
 
-  &__link:link {
-    @include link($a-link);
-  }
-
-  &__link:visited {
-    @include link($a-visited);
-  }
-
-  &__link:hover {
-    @include link($a-hover);
+    @include link;
   }
 
   &__link:active {
-    @include link($a-active);
     opacity: 0.3;
   }
 
@@ -43,20 +29,12 @@
 }
 
 @media (min-width: $tablet) {
-  .nav {
-    min-height: 56px;
-  }
-
   .nav__wrapper {
-    display: flex;
-    justify-content: space-between;
-    max-width: 768px;
-    margin: 0 auto;
+    max-width: $tablet;
   }
 
   .nav__item {
     min-width: 153px;
-    min-height: 56px;
   }
 
   .nav__toggle {
@@ -66,14 +44,10 @@
 
 @media (min-width: $desktop) {
   .nav__wrapper {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: $desktop;
   }
 
   .nav__item {
     min-width: 239px;
-    min-height: 56px;
   }
 }

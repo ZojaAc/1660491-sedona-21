@@ -1,6 +1,4 @@
 .hotels {
-  height: 250px;
-
   &__title,
   &__btn {
     @include main-text(21px, 26px, bold);
@@ -16,35 +14,15 @@
   &__btn {
     color: #ffffff;
     background-color: $base-block-color;
-  }
 
-  &__btn:link {
-    @include link($a-link);
-  }
-
-  &__btn:visited {
-    @include link($a-visited);
-  }
-
-  &__btn:hover {
-    @include link($a-hover);
+    @include link;
   }
 
   &__btn:active {
-    @include link($a-active);
     opacity: 0.3;
   }
 
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    min-width: 90%;
     margin: 0 auto;
-  }
-}
-
-@media (min-width: $desktop) {
-  .hotels {
-    max-height: 350px;
   }
 }
