@@ -14,17 +14,53 @@
   $a-hover: $a-hover,
   $a-active: $a-active
 ) {
-  color: $a-link;
+  &:link {
+    background-color: $a-link;
+    color: #ffffff;
+  }
 
   &:visited {
-    color: $a-visited;
+    background-color: $a-link;
+    color: #ffffff;
   }
 
   &:hover {
-    color: $a-hover;
+    background-color: $a-hover;
+    color: #ffffff;
   }
 
   &:active {
-    color: $a-active;
+    background-color: $a-active;
+    color: #ffffff;
+    opacity: 0.3;
+  }
+}
+
+
+@mixin link-full(
+  $a-link: $a-link,
+  $a-visited: $a-visited,
+  $a-hover: $a-hover,
+  $a-active: $a-active
+) {
+  &:link {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  &:visited {
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  &:hover {
+    color: #81b3d2;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: #000000;
+    opacity: 0.3;
+    background-color: #ffffff;
   }
 }

@@ -4,18 +4,29 @@
   &__point {
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
+    text-align: center;
   }
 
   &__description {
     @include main-text(14px, 21px, bold);
     color: #333333;
     text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__block1 {
+    padding: 26px;
+  }
+
+  &__block2 {
+    padding: 41px;
+  }
+
+  &__block3 {
+    padding: 24px 22px;
   }
 
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    min-width: 90%;
     margin: 0 auto;
   }
 }
@@ -26,10 +37,36 @@
     flex-direction: row;
   }
 
+  .feature-lasts__block1 {
+    padding: 42px 34px 63px 33px;
+  }
+
+  .feature-lasts__block2 {
+    padding: 42px 48px 41px 46px;
+  }
+
+  .feature-lasts__block3 {
+    padding: 42px 40px 42px 41px;
+  }
+
   .feature-lasts__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 768px;
+    grid-template-columns: 1fr;
     margin: auto;
+  }
+}
+
+
+@media (min-width: $tablet) {
+  .feature-lasts__block1 {
+    padding: 43px 43px 62px 42px;
+  }
+
+  .feature-lasts__block2 {
+    padding: 42px 54px 62px 54px;
+  }
+
+  .feature-lasts__block3 {
+    padding: 43px 55px 62px 55px;
   }
 }

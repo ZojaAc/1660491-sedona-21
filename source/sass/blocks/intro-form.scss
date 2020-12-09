@@ -3,6 +3,7 @@
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
     margin: 0 auto;
+    text-align: center;
   }
 
   &__text {
@@ -10,9 +11,11 @@
     text-transform: uppercase;
     color: #333333;
     margin: 0 auto;
+    text-align: center;
   }
 
   &__wrapper {
     margin: 0 auto;
+    padding-bottom: 60px;
   }
 }

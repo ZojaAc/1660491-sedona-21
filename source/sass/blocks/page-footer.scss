@@ -1,12 +1,9 @@
 .page-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
   &__link-sedona {
     @include main-text(21px, 26px, bold);
     text-transform: uppercase;
     color: #000000;
+    text-decoration: none;
   }
 
   &__link-html {
@@ -16,9 +13,13 @@
   }
 
   &__wrapper {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet) {
+  .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    min-width: 90%;
-    margin: 0 auto;
   }
 }

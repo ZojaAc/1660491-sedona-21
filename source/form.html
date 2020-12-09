@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -47,27 +48,27 @@
           <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
             <div class="review__personal">
               <p class="review__title">Представьтесь:</p>
-              <label class="review__label-name">
+              <label class="review__label">
                 <span class="review__target">Имя<sup>*</sup>:</span>
                 <input class="review__cell" type="text" name="name" required autofocus placeholder="Петр">
-              </label>
-              <label class="review__label-surname">
+              </label><br>
+              <label class="review__label">
                 <span class="review__target">Фамилия<sup>*</sup>:</span>
                 <input class="review__cell" type="text" name="surname" required placeholder="Иванов">
-              </label>
-              <label class="review__label-patronymic">
+              </label><br>
+              <label class="review__label">
                 <span class="review__target">Отчество:</span>
                 <input class="review__cell" type="text" name="patronymic" placeholder="Александрович">
               </label>
             </div>
             <div class="review__contact">
               <p class="review__title">Контактная информация:</p>
-              <label class="review__label-phone">
+              <label class="review__label">
                 <span class="review__target">Контактный телефон<sup>*</sup>:</span>
                 <input class="review__cell" type="tel" name="phonenumber" placeholder="Введите телефон" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
               </label>
-              <div class="review__picture-phone"></div>
-              <label class="review__label-email">
+              <div class="review__picture-phone"></div><br>
+              <label class="review__label">
                 <span class="review__target">Электронная почта<sup>*</sup>:</span>
                 <input class="review__cell" type="email" name="email" placeholder="Введите e-mail" required>
               </label>
@@ -75,43 +76,47 @@
             </div>
             <div class="review__comment-all">
               <p class="review__title comment">Ваше общее впечатление:</p>
-              <label class="comment__question">
+              <label class="comment__question1">
                 <input class="comment__choice" type="radio" checked name="question1" value="">
                 <span class="comment__answer">Скорее положительное</span>
-              </label>
-              <label class="comment__question">
+              </label><br>
+              <label class="comment__question1">
                 <input class="comment__choice" type="radio" name="question2" value="">
                 <span class="comment__answer">Скорее отрицательное</span>
-              </label>
-              <label class="comment__question">
+              </label><br>
+              <label class="comment__question1">
                 <input class="comment__choice" type="radio" name="question3" value="">
                 <span class="comment__answer">Затрудняюсь ответить</span>
               </label>
             </div>
             <div class="review__comment-sights">
-              <p class="review__title comment">Посещенные достопримечательности:</p>
-              <label class="comment__question">
-                <input class="comment__c-choice" type="checkbox" checked name="question4" value="">
-                <span class="comment__answer">Мост дьявола</span>
-              </label>
-              <label class="comment__question">
-                <input class="comment__c-choice" type="checkbox" checked name="question5" value="">
-                <span class="comment__answer">Гора-колокол</span>
-              </label>
-              <label class="comment__question">
-                <input class="comment__c-choice" type="checkbox" checked name="question6" value="">
-                <span class="comment__answer">Слайд-парк</span>
-              </label>
-              <label class="comment__question">
-                <input class="comment__c-choice" type="checkbox" name="question7" value="">
-                <span class="comment__answer">Красные скалы</span>
-              </label>
+              <p class="review__title comment">Посещенные<br>достопримечательности:</p>
+              <div class="comment__block">
+                <label class="comment__question2">
+                  <input class="comment__c-choice" type="checkbox" checked name="question4" value="">
+                  <span class="comment__answer">Мост дьявола</span>
+                </label><br>
+                <label class="comment__question2">
+                  <input class="comment__c-choice" type="checkbox" checked name="question5" value="">
+                  <span class="comment__answer">Гора-колокол</span>
+                </label><br>
+                <label class="comment__question2">
+                  <input class="comment__c-choice" type="checkbox" checked name="question6" value="">
+                  <span class="comment__answer">Слайд-парк</span>
+                </label><br>
+                <label class="comment__question2">
+                  <input class="comment__c-choice" type="checkbox" name="question7" value="">
+                  <span class="comment__answer">Красные скалы</span>
+                </label>
+              </div>
             </div>
             <div class="review__emotion">
               <p class="review__title text">Опишите свои эмоции:</p>
-              <textarea class="review__text" name="comment" rows="5" cols="25" placeholder="Опишите подробно все свои восторги"></textarea>
-              <input class="review__send" type="submit" value="отправить отзыв">
-              <p class="review__notice">* - Обязательные поля</p>
+              <textarea class="review__text" name="comment" rows="5" cols="25" placeholder="Опишите подробно все свои восторги"></textarea><br>
+              <div class="review__end">
+                <input class="review__send" type="submit" value="отправить отзыв">
+                <p class="review__notice">* - Обязательные поля</p>
+              </div>
             </div>
             <div class="result__not result__not--display">
               <p class="result__title">Что-то пошло не так!</p>

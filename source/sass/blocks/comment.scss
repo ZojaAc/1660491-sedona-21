@@ -21,3 +21,24 @@
     border: 5px solid $form-down;
   }
 }
+
+@media (min-width: $tablet) {
+  .comment__block {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+
+  .comment__question2 {
+    width: 200px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .comment__block {
+    flex-wrap: nowrap;
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+}

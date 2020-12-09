@@ -1,18 +1,27 @@
 .result {
+  margin: 0 auto;
+
   &__title,
   &__new-step {
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
+    text-align: center;
   }
 
   &__answer {
     @include main-text(14px, 24px, normal);
     color: #333333;
     text-transform: uppercase;
+    text-align: center;
   }
 
   &__new-step {
     color: #ffffff;
     background-color: $base-block-color;
+    display: block;
+    border: none;
+    text-decoration: none;
+    padding-top: 18px;
+    padding-bottom: 14px;
   }
 }
