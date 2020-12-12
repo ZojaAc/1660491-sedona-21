@@ -1,5 +1,15 @@
 .social-list {
   &__item {
     background-color: $base-block-color;
+    display: block;
+    width: 46px;
+    height: 48px;
+    list-style: none;
+    margin-right: 6px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: center;
   }
 }

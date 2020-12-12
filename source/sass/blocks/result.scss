@@ -2,7 +2,8 @@
   margin: 0 auto;
 
   &__title,
-  &__new-step {
+  &__new-step-yes,
+  &__new-step-not {
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
     text-align: center;
@@ -15,7 +16,8 @@
     text-align: center;
   }
 
-  &__new-step {
+  &__new-step-yes,
+  &__new-step-not {
     color: #ffffff;
     background-color: $base-block-color;
     display: block;
@@ -23,5 +25,21 @@
     text-decoration: none;
     padding-top: 18px;
     padding-bottom: 14px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .result__title {
+    @include main-text(30px, 26px, bold);
+  }
+
+  .result__new-step-yes {
+    width: 458px;
+    height: 58px;
+  }
+
+  .result__new-step-not {
+    width: 272px;
+    height: 58px;
   }
 }

@@ -2,11 +2,38 @@
   &__title {
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
+    text-align: center;
   }
 
   &__description {
     @include main-text(14px, 24px, normal);
     text-transform: uppercase;
     color: #333333;
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 9px;
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet) {
+  .intro-c__description {
+    padding-left: 155px;
+    padding-right: 155px;
+    margin-bottom: 59px;
+  }
+
+  .intro-c__title {
+    @include main-text(30px, 26px, bold);
+  }
+}
+
+@media (min-width: $desktop) {
+  .intro-c__description {
+    padding-left: 360px;
+    padding-right: 360px;
   }
 }

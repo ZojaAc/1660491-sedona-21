@@ -2,18 +2,18 @@
   &__title {
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
-    text-align: center;
   }
 
   &__description {
     @include main-text(14px, 21px, bold);
     color: #333333;
     text-transform: uppercase;
-    text-align: center;
   }
 
   &__wrapper {
     margin: 0 auto;
+    padding-left: 18px;
+    padding-right: 11px;
   }
 }
 
@@ -27,5 +27,16 @@
     display: grid;
     grid-template-columns: 1fr;
     margin: auto;
+    padding-left: 36px;
+    padding-right: 31px;
+  }
+
+  .advices__title {
+    @include main-text(21px, 26px, bold);
+    text-align: center;
+  }
+
+  .advices__description {
+    text-align: center;
   }
 }

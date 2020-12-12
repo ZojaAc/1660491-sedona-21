@@ -3,6 +3,8 @@
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
     text-align: center;
+    padding-left: 17px;
+    padding-right: 18px;
   }
 
   &__text {
@@ -10,6 +12,8 @@
     color: #333333;
     text-transform: uppercase;
     text-align: center;
+    padding-left: 17px;
+    padding-right: 18px;
   }
 
   &__triangle-vector {
@@ -28,5 +32,28 @@
 @media (min-width: $tablet) {
   .intro__white-vector {
     display: none;
+  }
+
+  .intro__slogan {
+    @include main-text(21px, 26px, bold);
+    padding-left: 124px;
+    padding-right: 124px;
+  }
+
+  .intro__text {
+    padding-left: 124px;
+    padding-right: 124px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .intro__slogan {
+    padding-left: 358px;
+    padding-right: 358px;
+  }
+
+  .intro__text {
+    padding-left: 358px;
+    padding-right: 358px;
   }
 }
