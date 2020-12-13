@@ -2,9 +2,11 @@
   &__title {
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
+    text-align: center;
   }
 
-  &__target {
+  &__target,
+  &__notice {
     @include main-text(14px, 26px, normal);
     color: #333333;
     text-transform: uppercase;
@@ -14,11 +16,26 @@
   &__text {
     background-color: $form-color;
     border: none;
+    color: #000000;
+    padding-left: 22px;
 
     @include main-text(18px, 26px, bold);
   }
 
-  &__picture-phone,
+  &__cell::-webkit-input-placeholder {
+    color: #000000;
+    opacity: 1;
+  }
+
+  &__text::-webkit-input-placeholder {
+    color: #000000;
+    opacity: 1;
+  }
+
+  &__picture-phone {
+    background-color: #e6e6e6;
+  }
+
   &__picture-post {
     background-color: #e6e6e6;
   }
@@ -28,16 +45,162 @@
     color: #ffffff;
     text-transform: uppercase;
     background-color: $base-block-color;
+    border: none;
+    display: block;
+    width: 100%;
+    padding-top: 18.5px;
+    padding-bottom: 13.5px;
   }
 
   &__cell:hover,
   &__text:hover {
     background-color: $form-hover;
+    color: #000000;
   }
 
   &__cell:focus,
   &__text:focus {
     background-color: #ffffff;
     border: 4px solid #e5e5e5;
+    color: #000000;
+  }
+
+  &__notice {
+    display: none;
+  }
+
+  &__picture-phone,
+  &__picture-post {
+    display: block;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+  }
+
+  &__img-block {
+    display: flex;
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    padding: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__block1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__cell {
+    height: 58px;
+    flex-grow: 1;
+  }
+
+  &__text {
+    margin-bottom: 51px;
+    padding: 13px 23px 29px 21px;
+    width: 100%;
+  }
+
+  &__target {
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .review__notice {
+    display: block;
+  }
+
+  .review__wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .review__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .review__title {
+    @include main-text(21px, 26px, bold);
+  }
+
+  .review__text {
+    margin-bottom: 58px;
+    padding: 18px 21px 24px 21px;
+  }
+
+  .review__personal,
+  .review__comment-all {
+    width: 50%;
+  }
+
+  .review__contact,
+  .review__comment-sights,
+  .review__emotion {
+    width: 100%;
+  }
+
+  .review__end {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .review__send {
+    width: 324px;
+  }
+
+  .review__comment-all {
+    order: 1;
+  }
+
+  .review__personal {
+    order: 2;
+  }
+
+  .review__contact {
+    order: 3;
+  }
+
+  .review__comment-sights {
+    order: 4;
+  }
+
+  .review__emotion {
+    order: 5;
+  }
+
+  .result__not,
+  .result__yes {
+    order: 10;
+  }
+}
+
+@media (min-width: $desktop) {
+  .review__send {
+    width: 480px;
+  }
+
+  .review__wrapper {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .review__contact-block {
+    display: flex;
+  }
+
+  .review__block2 {
+    display: flex;
+    align-items: center;
+  }
+
+  .review__picture-phone {
+    margin-right: 79px;
   }
 }

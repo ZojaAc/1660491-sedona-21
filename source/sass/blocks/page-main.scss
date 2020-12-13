@@ -2,9 +2,3 @@
   display: flex;
   flex-direction: column;
 }
-
-@media (min-width: $desktop) {
-  .page-main {
-    max-width: $desktop;
-  }
-}

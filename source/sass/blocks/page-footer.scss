@@ -1,31 +1,37 @@
 .page-footer {
-  display: flex;
-  flex-direction: column;
-  height: 233px;
-
   &__link-sedona {
     @include main-text(21px, 26px, bold);
     text-transform: uppercase;
     color: #000000;
+    text-decoration: none;
   }
 
   &__link-html {
     @include main-text(14px, 26px, normal);
     text-transform: uppercase;
     color: #000000;
+    text-decoration: none;
   }
 
   &__wrapper {
+    margin: 0 auto;
+    padding: 28.5px 85px 22.9px 84px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
-    min-width: 90%;
-    margin: 0 auto;
+    align-items: center;
+    padding-left: 45px;
+    padding-right: 60px;
   }
 }
 
 @media (min-width: $desktop) {
-  .page-footer {
-    max-height: 120px;
-    max-width: $desktop;
+  .page-footer__wrapper {
+    padding-left: 104px;
+    padding-right: 120px;
   }
 }

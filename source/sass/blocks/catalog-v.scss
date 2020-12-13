@@ -2,14 +2,54 @@
   &__title {
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
+    text-align: center;
   }
 
   &__description {
     @include main-text(14px, 24px, normal);
     color: #333333;
+    text-align: center;
+    padding-left: 28px;
+    padding-right: 28px;
   }
 
   &__footer {
     background-color: #f2f2f2;
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $tablet) {
+  .catalog-v__title {
+    @include main-text(30px, 26px, bold);
+  }
+
+  .catalog-v__description {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .catalog-v__wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog-v__title {
+    margin-top: 63px;
+  }
+
+  .catalog-v__wrapper {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .catalog-v__description {
+    padding-left: 177px;
+    padding-right: 177px;
   }
 }

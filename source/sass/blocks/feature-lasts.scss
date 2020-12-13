@@ -1,40 +1,45 @@
 .feature-lasts {
   background-color: #eeeeee;
-  height: 503px;
 
   &__point {
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
+    text-align: center;
   }
 
   &__description {
     @include main-text(14px, 21px, bold);
     color: #333333;
     text-transform: uppercase;
+    text-align: center;
   }
 
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    min-width: 90%;
     margin: 0 auto;
+    padding: 26px 22px 24px 22px;
   }
 }
 
 @media (min-width: $tablet) {
-  .feature-lasts {
-    max-height: 256px;
-  }
-
   .feature-lasts__items {
     display: flex;
     flex-direction: row;
   }
 
+  .feature-lasts__point {
+    @include main-text(21px, 26px, bold);
+  }
+
   .feature-lasts__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 768px;
+    grid-template-columns: 1fr;
     margin: auto;
+    padding: 42px 33px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .feature-lasts__wrapper {
+    padding: 42px 42px 62px 42px;
   }
 }

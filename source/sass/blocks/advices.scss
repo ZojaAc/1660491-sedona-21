@@ -1,6 +1,4 @@
 .advices {
-  height: 400px;
-
   &__title {
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
@@ -13,18 +11,13 @@
   }
 
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    min-width: 90%;
     margin: 0 auto;
+    padding-left: 18px;
+    padding-right: 11px;
   }
 }
 
 @media (min-width: $tablet) {
-  .advices {
-    max-height: 275px;
-  }
-
   .advices__list {
     display: flex;
     flex-direction: row;
@@ -32,8 +25,18 @@
 
   .advices__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 768px;
+    grid-template-columns: 1fr;
     margin: auto;
+    padding-left: 36px;
+    padding-right: 31px;
+  }
+
+  .advices__title {
+    @include main-text(21px, 26px, bold);
+    text-align: center;
+  }
+
+  .advices__description {
+    text-align: center;
   }
 }

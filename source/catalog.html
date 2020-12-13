@@ -4,14 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo logo">
-        <img class="logo__img" src="img/logotype-mobile.svg" width="101.7" height="84" alt="Sedona">
-      </a>
       <nav class="nav">
-        <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="nav__wrapper">
           <ul class="nav__list">
             <li class="nav__item">
@@ -29,6 +26,10 @@
           </ul>
         </div>
       </nav>
+      <a class="page-header__logo logo">
+        <img class="logo__img" src="img/logotype-mobile.svg" width="101.7" height="84" alt="Sedona">
+      </a>
+      <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Скрытый заголовок основного блока</h1>
@@ -43,63 +44,65 @@
       </section>
       <section class="catalog">
         <div class="catalog__wrapper">
-          <div class="catalog__item catalog__item--view">
-            <div class="catalog__photo img">
-              <img class="img__photo1" src="img/photo1.jpg" alt="photo1" width="280" height="280">
-            </div>
-            <div class="catalog__footer">
-              <div class="catalog__notes">
-                <div class="catalog__n-title">Неродные просторы</div>
-                <div class="catalog__n-autor">Автор фото: Борис</div>
+          <div class="catalog__m-block">
+            <div class="catalog__item catalog__item--view">
+              <div class="catalog__photo img">
+                <img class="img__photo1" src="img/photo1.jpg" alt="photo1" width="280" height="280">
               </div>
-              <div class="catalog__likes">
-                <div class="catalog__l-img"></div>
-                <div class="catalog__l-amount">1350</div>
-              </div>
-            </div>
-          </div>
-          <div class="catalog__item">
-            <div class="catalog__photo img">
-              <img class="img__photo2" src="img/photo2.jpg" alt="photo2" width="280" height="280">
-            </div>
-            <div class="catalog__footer">
-              <div class="catalog__notes">
-                <div class="catalog__n-title">Местная растительность</div>
-                <div class="catalog__n-autor">Автор фото: Сергей</div>
-              </div>
-              <div class="catalog__likes">
-                <div class="catalog__l-img"></div>
-                <div class="catalog__l-amount">143</div>
+              <div class="catalog__footer">
+                <div class="catalog__notes">
+                  <div class="catalog__n-title">Неродные просторы</div>
+                  <div class="catalog__n-autor">Автор фото: Борис</div>
+                </div>
+                <div class="catalog__likes">
+                  <div class="catalog__l-img"></div>
+                  <div class="catalog__l-amount">1350</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="catalog__item">
-            <div class="catalog__photo img">
-              <img class="img__photo3" src="img/photo3.jpg" alt="photo3" width="280" height="280">
-            </div>
-            <div class="catalog__footer">
-              <div class="catalog__notes">
-                <div class="catalog__n-title">Дорога на север</div>
-                <div class="catalog__n-autor">Автор фото: Петр</div>
+            <div class="catalog__item">
+              <div class="catalog__photo img">
+                <img class="img__photo2" src="img/photo2.jpg" alt="photo2" width="280" height="280">
               </div>
-              <div class="catalog__footer-bottom likes">
-                <div class="catalog__l-img"></div>
-                <div class="catalog__l-amount">96</div>
+              <div class="catalog__footer">
+                <div class="catalog__notes">
+                  <div class="catalog__n-title">Местная растительность</div>
+                  <div class="catalog__n-autor">Автор фото: Сергей</div>
+                </div>
+                <div class="catalog__likes">
+                  <div class="catalog__l-img"></div>
+                  <div class="catalog__l-amount">143</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="catalog__item">
-            <div class="catalog__photo img">
-              <img class="img__photo4" src="img/photo4.jpg" alt="photo4" width="280" height="280">
-            </div>
-            <div class="catalog__footer">
-              <div class="catalog__notes">
-                <div class="catalog__n-title">Мост дьявола</div>
-                <div class="catalog__n-autor">Автор фото: Антон</div>
+            <div class="catalog__item">
+              <div class="catalog__photo img">
+                <img class="img__photo3" src="img/photo3.jpg" alt="photo3" width="280" height="280">
               </div>
-              <div class="catalog__footer-bottom likes">
-                <div class="catalog__l-img"></div>
-                <div class="catalog__l-amount">254</div>
+              <div class="catalog__footer">
+                <div class="catalog__notes">
+                  <div class="catalog__n-title">Дорога на север</div>
+                  <div class="catalog__n-autor">Автор фото: Петр</div>
+                </div>
+                <div class="catalog__likes">
+                  <div class="catalog__l-img"></div>
+                  <div class="catalog__l-amount">96</div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__item">
+              <div class="catalog__photo img">
+                <img class="img__photo4" src="img/photo4.jpg" alt="photo4" width="280" height="280">
+              </div>
+              <div class="catalog__footer">
+                <div class="catalog__notes">
+                  <div class="catalog__n-title">Мост дьявола</div>
+                  <div class="catalog__n-autor">Автор фото: Антон</div>
+                </div>
+                <div class="catalog__likes">
+                  <div class="catalog__l-img"></div>
+                  <div class="catalog__l-amount">254</div>
+                </div>
               </div>
             </div>
           </div>
@@ -130,10 +133,10 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__contacts">
-          <a class="page-footer__link-sedona" href="#">VisitSedona</a>
+          <a class="page-footer__link-sedona" href="#">#VisitSedona</a>
         </div>
-        <div class="page-footer__social">
-          <ul class="social-list">
+        <div class="page-footer__social social-list">
+          <ul class="social-list__block">
             <li class="social-list__item">
               <a class="social-list__twitter social-list__twitter--twitter" href="#"></a>
             </li>
@@ -145,7 +148,7 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
+        <div class="page-footer__copyright">
           <a class="page-footer__link-html" href="https://htmlacademy.ru/">Разработано</a>
         </div>
       </div>

@@ -12,4 +12,70 @@
   &__l-amount {
     @include main-text(14px, 24px, bold);
   }
+
+  &__wrapper {
+    margin: 0 auto;
+    padding: 22px 20px;
+  }
+
+  &__likes {
+    display: flex;
+  }
+
+  &__l-img {
+    margin-right: 14px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .catalog__wrapper {
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  .catalog__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 22px 20px 15px 20px;
+  }
+
+  .catalog__m-block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    width: 50%;
+  }
+
+  .catalog__item--view {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog__wrapper {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .catalog__item {
+    width: 33.33%;
+  }
+
+  .catalog__item--view {
+    width: 100%;
+  }
+
+  .catalog__footer {
+    background-color: #000000;
+    opacity: 0.3;
+    color: #ffffff;
+  }
+
+  .catalog__n-autor {
+    color: #ffffff;
+  }
 }

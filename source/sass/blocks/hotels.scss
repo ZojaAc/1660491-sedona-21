@@ -1,50 +1,58 @@
 .hotels {
-  height: 250px;
-
   &__title,
   &__btn {
     @include main-text(21px, 26px, bold);
     text-transform: uppercase;
+    text-align: center;
   }
 
   &__action {
     @include main-text(14px, 24px, normal);
     color: #333333;
     text-transform: uppercase;
+    text-align: center;
   }
 
   &__btn {
     color: #ffffff;
     background-color: $base-block-color;
-  }
+    display: block;
+    width: 280px;
+    height: 58px;
+    padding: 14.5px 32px 17.5px 32px;
+    text-decoration: none;
+    margin: 0 auto;
 
-  &__btn:link {
-    @include link($a-link);
-  }
-
-  &__btn:visited {
-    @include link($a-visited);
-  }
-
-  &__btn:hover {
-    @include link($a-hover);
-  }
-
-  &__btn:active {
-    @include link($a-active);
-    opacity: 0.3;
+    @include link;
   }
 
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    min-width: 90%;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .hotels__title {
+    @include main-text(30px, 26px, bold);
+  }
+
+  .hotels__btn {
+    width: 458px;
+    height: 58px;
+    padding: 14.5px 121px 17.5px 121px;
+  }
+
+  .hotels__wrapper {
+    padding-left: 155px;
+    padding-right: 155px;
   }
 }
 
 @media (min-width: $desktop) {
-  .hotels {
-    max-height: 350px;
+  .hotels__wrapper {
+    padding-left: 371px;
+    padding-right: 371px;
   }
 }
