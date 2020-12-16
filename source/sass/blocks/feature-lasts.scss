@@ -8,10 +8,18 @@
   }
 
   &__description {
-    @include main-text(14px, 21px, bold);
+    @include main-text(14px, 21px, normal);
     color: #333333;
     text-transform: uppercase;
     text-align: center;
+  }
+
+  &__block {
+    margin-bottom: 50px;
+  }
+
+  &__block:last-child {
+    margin-bottom: 0;
   }
 
   &__wrapper {
@@ -30,10 +38,16 @@
     @include main-text(21px, 26px, bold);
   }
 
+  .feature-lasts__block {
+    margin: 0;
+    margin-right: 80px;
+  }
+
+  .feature-lasts__block:last-child {
+    margin-right: 0;
+  }
+
   .feature-lasts__wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: auto;
     padding: 42px 33px;
   }
 }

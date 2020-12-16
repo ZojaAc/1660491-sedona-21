@@ -1,10 +1,15 @@
 .intro {
+  background-color: #ffffff;
+  background-image: url("/source/img/backmobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
   &__slogan {
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
     text-align: center;
-    padding-left: 17px;
-    padding-right: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   &__text {
@@ -12,8 +17,8 @@
     color: #333333;
     text-transform: uppercase;
     text-align: center;
-    padding-left: 17px;
-    padding-right: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   &__triangle-vector {
@@ -36,24 +41,29 @@
 
   .intro__slogan {
     @include main-text(21px, 26px, bold);
-    padding-left: 124px;
-    padding-right: 124px;
+    padding-left: 115px;
+    padding-right: 115px;
   }
 
   .intro__text {
-    padding-left: 124px;
-    padding-right: 124px;
+    padding-left: 115px;
+    padding-right: 115px;
+    margin-bottom: 52.5px;
   }
 }
 
 @media (min-width: $desktop) {
   .intro__slogan {
-    padding-left: 358px;
-    padding-right: 358px;
+    padding-left: 350px;
+    padding-right: 350px;
+    margin: 0 auto;
+    margin-top: 55px;
   }
 
   .intro__text {
-    padding-left: 358px;
-    padding-right: 358px;
+    padding-left: 330px;
+    padding-right: 330px;
+    margin: 0 auto;
+    margin-bottom: 41px;
   }
 }

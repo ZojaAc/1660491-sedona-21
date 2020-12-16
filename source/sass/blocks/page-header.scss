@@ -3,7 +3,17 @@
   flex-direction: column;
 
   &__logo {
+    width: 101.7px;
     height: 84px;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (min-width: $tablet) {
+  .page-header__logo {
+    margin-top: -56px;
+    z-index: 3;
   }
 }
 

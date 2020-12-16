@@ -5,7 +5,7 @@
   }
 
   &__description {
-    @include main-text(14px, 21px, bold);
+    @include main-text(14px, 21px, normal);
     color: #333333;
     text-transform: uppercase;
   }
@@ -17,18 +17,41 @@
   }
 }
 
+.advices__wrapper ul {
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: $tablet) {
   .advices__list {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 33.33% 33.34% 33.33%;
+    margin: auto;
+  }
+
+  .advices__item--apartment {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  .advices__item--gifts {
+    grid-column-start: 3;
+    grid-row-start: 1;
+  }
+
+  .advices__item--meal {
+    grid-column-start: 2;
+    grid-row-start: 1;
   }
 
   .advices__wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
     margin: auto;
-    padding-left: 36px;
-    padding-right: 31px;
+    padding: 60px 0;
+  }
+
+  .advices__item {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .advices__title {
@@ -38,5 +61,16 @@
 
   .advices__description {
     text-align: center;
+  }
+}
+
+@media (min-width: $desktop) {
+  .advices__wrapper {
+    margin: auto;
+    padding: 60px 20px 80px 20px;
+  }
+
+  .advices__item {
+    padding: 0 50px;
   }
 }

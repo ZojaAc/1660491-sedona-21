@@ -8,11 +8,11 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="nav">
+      <nav class="nav nav--closed nav--opened nav--nojs">
         <div class="nav__wrapper">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="index.html">Главная</a>
+              <a class="nav__link nav__link--active" href="index.html">Главная</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="catalog.html">Фото и видео</a>
@@ -27,9 +27,14 @@
         </div>
       </nav>
       <a class="page-header__logo logo">
-        <img class="logo" src="img/logotype-mobile.svg" width="101.7" height="84" alt="Sedona">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotypedesktop.svg">
+            <img class="logo" src="img/logotypemobile.svg" width="101.7" height="84" alt="Sedona">
+        </picture>
       </a>
-      <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="nav__toggle" type="submit" style="border: 0; background: transparent">
+        <img class="nav__toggle-img" src="img/iconmenu.svg" width="22.9" height="22">
+      </button>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Скрытый заголовок основного блока</h1>
@@ -38,7 +43,7 @@
           <h2 class="visually-hidden">Скрытый заголовок вводного раздела</h2>
           <svg class="intro__tagline" width="282" height="214"></svg>
           <svg class="intro__triangle-vector"></svg>
-          <p class="intro__slogan">СЕДОНА - небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="intro__slogan">СЕДОНА - небольшой городок в Аризоне,<br>заслуживающий большего!</p>
           <p class="intro__text">Расмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           <svg class="intro__white-vector"></svg>
         </div>
@@ -54,7 +59,11 @@
                   <div class="feature__description">-№1-<br>Седона не аттракцион для туристов, там течет своя жизнь</div>
                 </div>
                 <div class="feature__block2">
-                  <img class="feature__image" src="img/photo-city.svg" alt="city view">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/photocitytablet.jpg" height="256">
+                      <source media="(min-width: 1200px)" srcset="img/photocitydesktop.jpg" height="256">
+                        <img class="feature__image" src="img/photocitymobile.jpg" width="100%" height="260" alt="city view">
+                  </picture>
                 </div>
               </div>
             </div>
@@ -78,7 +87,7 @@
             <li class="advices__item advices__item--meal">
               <img class="advices__img" src="icon.burger.svg" alt="burger">
               <h3 class="advices__title title-text-style">Еда</h3>
-              <p class="advices__description description-text-style">Всегда заказывайте местный бургер, вы не разочаруетесь!</p>
+              <p class="advices__description description-text-style">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
           </ul>
         </div>
@@ -88,13 +97,17 @@
           <div class="feature__wrapper-priority">
             <h2 class="visually-hidden">Скрытый заголовок раздела преимуществ</h2>
             <div class="feature__list">
-              <div class="feature__items">
-                <div class="feature__block1">
+              <div class="feature__items feature__items--order">
+                <div class="feature__block1 feature__block1--text">
                   <div class="feature__point">Там есть мост дьявола</div>
                   <div class="feature__description">-№2-<br>Да, по нему можно пройти! Если вы осмелитесь, конечно</div>
                 </div>
-                <div class="feature__block2">
-                  <img class="feature__image" src="img/photo-bridge.svg" alt="bridge">
+                <div class="feature__block2 feature__block2--img">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/photobridgetablet.jpg" height="256">
+                      <source media="(min-width: 1200px)" srcset="img/photobridgedesktop.jpg" height="256">
+                        <img class="feature__image" src="img/photobridgemobile.jpg" width="100%" height="260" alt="bridge">
+                  </picture>
                 </div>
               </div>
             </div>
@@ -126,7 +139,7 @@
           <h2 class="visually-hidden">Скрытый заголовок раздела гостиницы</h2>
           <div class="hotels__click">
             <h3 class="hotels__title">Заинтересовались?</h3>
-            <p class="hotels__action">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p class="hotels__action">Укажите предполагаемые даты поездки,<br class="hotels__br-not-mobile"> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <a class="hotels__btn" href="#">Найти гостиницу</a>
           </div>
         </div>
@@ -135,7 +148,12 @@
         <div class="map__wrapper">
           <h2 class="visually-hidden">Скрытый заголовок раздела карта</h2>
           <div class="map__view">
-            <img class="map__picture" src="img/map-mobil.jpg" alt="map-section">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/maptablet.jpg" height="350">
+                <source media="(min-width: 1200px)" srcset="img/mapdesktop.jpg" height="350">
+                  <img class="map__picture" src="img/mapmobile.jpg" width="100%" height="350" alt="map-section">
+            </picture>
+            <img class="map__marker" src="img/mapmarker.jpg" width="27" height="27" alt="map-marker">
           </div>
         </div>
       </section>
@@ -163,5 +181,21 @@
         </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.nav');
+      var navToggle = document.querySelector('.nav__toggle');
+
+      navMain.classList.remove('nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('nav--closed')) {
+          navMain.classList.remove('nav--closed');
+          navMain.classList.add('nav--opened');
+        } else {
+          navMain.classList.add('nav--closed');
+          navMain.classList.remove('nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

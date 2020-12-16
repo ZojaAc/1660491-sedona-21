@@ -26,10 +26,21 @@
     @include link;
   }
 
+  &__click {
+    margin-top: 33px;
+    margin-bottom: 49px;
+  }
+
   &__wrapper {
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .hotels__br-not-mobile {
+    display: none;
   }
 }
 
@@ -44,15 +55,22 @@
     padding: 14.5px 121px 17.5px 121px;
   }
 
+  .hotels__click {
+    margin: 0 auto;
+  }
+
   .hotels__wrapper {
-    padding-left: 155px;
-    padding-right: 155px;
+    padding: 58px 140px;
   }
 }
 
 @media (min-width: $desktop) {
   .hotels__wrapper {
-    padding-left: 371px;
-    padding-right: 371px;
+    padding-left: 270px;
+    padding-right: 270px;
+  }
+
+  .hotels__btn {
+    margin-top: 40px;
   }
 }
