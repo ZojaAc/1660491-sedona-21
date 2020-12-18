@@ -1,25 +1,27 @@
 .feature {
-  &__items {
-    background-color: $base-block-color;
-  }
-
   &__point,
-  &__description {
+  &__description,
+  &__number {
     color: #ffffff;
     text-transform: uppercase;
   }
 
   &__point {
-    text-transform: uppercase;
-
     @include main-text(18px, 26px, bold);
+    margin-bottom: 18px;
   }
 
-  &__description {
+  &__number {
+    margin-bottom: 18px;
+  }
+
+  &__description,
+  &__number {
     @include main-text(14px, 21px, normal);
   }
 
   &__block1 {
+    background-color: $base-block-color;
     padding: 34px 12px 39px 12px;
     text-align: center;
   }
@@ -28,8 +30,12 @@
     background-color: #ffffff;
   }
 
-  &__wrapper,
-  &__wrapper-priority {
+  &__image {
+    display: block;
+    object-fit: cover;
+  }
+
+  &__wrapper {
     margin: 0 auto;
   }
 }
@@ -38,7 +44,7 @@
   .feature__items {
     display: grid;
     grid-template-columns: 33.33% 66.67%;
-    margin: auto;
+    margin: 0 auto;
   }
 
   .feature__items--order {
@@ -62,13 +68,16 @@
 
   .feature__block1 {
     padding: 40px 32px 44px 32px;
-    text-align: center;
   }
 }
 
 @media (min-width: $desktop) {
   .feature__block1 {
     padding: 47px 52px 57px 53px;
-    text-align: center;
+  }
+
+  .feature__point {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }

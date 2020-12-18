@@ -15,7 +15,7 @@
               <a class="nav__link" href="index.html">Главная</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="catalog.html">Фото и видео</a>
+              <a class="nav__link nav__link--active" href="catalog.html">Фото и видео</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="form.html">Форма отзыва</a>
@@ -26,8 +26,12 @@
           </ul>
         </div>
       </nav>
-      <a class="page-header__logo logo">
-        <img class="logo__img" src="img/logotype-mobile.svg" width="101.7" height="84" alt="Sedona">
+      <a class="page-header__logo logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotypedesktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotypetablet.svg">
+              <img class="logo-img" src="img/logotypemobile.svg" alt="Sedona">
+        </picture>
       </a>
       <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </header>
@@ -36,7 +40,7 @@
       <section class="intro-c">
         <div class="intro-c__wrapper">
           <h2 class="visually-hidden">Скрытый заголовок вводного раздела</h2>
-          <svg class="intro-c__tagline" width="229" height="39"></svg>
+          <svg class="intro-c__tagline"></svg>
           <svg class="intro-c__triangle-vector"></svg>
           <h2 class="intro-c__title title">Фото и видео</h2>
           <p class="intro-c__description description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
@@ -47,7 +51,7 @@
           <div class="catalog__m-block">
             <div class="catalog__item catalog__item--view">
               <div class="catalog__photo img">
-                <img class="img__photo1" src="img/photo1.jpg" alt="photo1" width="280" height="280">
+                <img class="img__photo1" src="img/photo1.jpg" alt="photo1">
               </div>
               <div class="catalog__footer">
                 <div class="catalog__notes">
@@ -62,7 +66,7 @@
             </div>
             <div class="catalog__item">
               <div class="catalog__photo img">
-                <img class="img__photo2" src="img/photo2.jpg" alt="photo2" width="280" height="280">
+                <img class="img__photo2" src="img/photo2.jpg" alt="photo2">
               </div>
               <div class="catalog__footer">
                 <div class="catalog__notes">
@@ -77,7 +81,7 @@
             </div>
             <div class="catalog__item">
               <div class="catalog__photo img">
-                <img class="img__photo3" src="img/photo3.jpg" alt="photo3" width="280" height="280">
+                <img class="img__photo3" src="img/photo3.jpg" alt="photo3">
               </div>
               <div class="catalog__footer">
                 <div class="catalog__notes">
@@ -92,7 +96,7 @@
             </div>
             <div class="catalog__item">
               <div class="catalog__photo img">
-                <img class="img__photo4" src="img/photo4.jpg" alt="photo4" width="280" height="280">
+                <img class="img__photo4" src="img/photo4.jpg" alt="photo4">
               </div>
               <div class="catalog__footer">
                 <div class="catalog__notes">
@@ -117,7 +121,7 @@
             </div>
             <div class="catalog-v__video">
               <div class="catalog-v__img img">
-                <img class="img__photo5" src="img/photo5.jpg" alt="photo5" width="280" height="280">
+                <img class="img__photo5" src="img/photo5.jpg" alt="photo5">
                 <div class="img__volume-line"></div>
               </div>
               <div class="catalog-v__footer">

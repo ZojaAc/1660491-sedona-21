@@ -19,23 +19,61 @@
     border-bottom: 2px solid #678fa8;
   }
 
+  &__item:first-child {
+    border-top: none;
+  }
+
+  &__item:last-child {
+    border-bottom: none;
+  }
+
+  &__item:last-child::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 7px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  }
+
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
+    position: relative;
   }
 
-  &__toggle {
+  &__toggle-cross,
+  &__toggle-burger {
     display: block;
-    width: 22.9px;
+    width: 23px;
     height: 22px;
     position: absolute;
-    top: 17px;
-    right: 20.1px;
     cursor: pointer;
     border: none;
     z-index: 2;
   }
+
+  .nav--closed .nav__toggle .nav__toggle-img {
+    top: 240px;
+    right: 20px;
+    height: 4px;
+    background-color: $base-block-color;
+    width: 100%;
+    margin-bottom: 4px;
+  }
+
+  .nav--opened .nav__toggle .nav__toggle-img {
+    top: 17px;
+    right: 20px;
+    height: 4px;
+    width: 100%;
+    background-color: #ffffff;
+
+
+  }
+
 
   &__toggle:hover {
     opacity: 0.6;
@@ -50,14 +88,6 @@
   }
 }
 
-.nav--opened .nav__toggle {
-  width: 23px;
-  height: 22px;
-  top: 17px;
-  right: 19.8px;
-  background-color: $base-block-color;
-  background-image: url("/source/img/iconcross.svg");
-}
 
 .nav--nojs .nav__toggle {
   display: none;
@@ -72,11 +102,12 @@
   display: block;
 }
 
-@media (max-width: $mobile-width-only) {
-  .nav--closed .nav__item {
-    display: none;
-  }
-}
+
+@media (max-width: $mobile-width-only) {}
+
+
+
+
 
 @media (min-width: $tablet) {
   .nav__list {
@@ -103,11 +134,15 @@
     @include link-full;
   }
 
-  .nav__link--active {
+  .nav__link.nav__link--active {
     color: #766357;
   }
 
   .nav__toggle {
+    display: none;
+  }
+
+  .nav__item:last-child::after {
     display: none;
   }
 }

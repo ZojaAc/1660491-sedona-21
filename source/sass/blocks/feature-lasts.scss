@@ -5,26 +5,46 @@
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 14px;
   }
 
-  &__description {
+  &__description,
+  &__number {
     @include main-text(14px, 21px, normal);
     color: #333333;
     text-transform: uppercase;
     text-align: center;
   }
 
-  &__block {
-    margin-bottom: 50px;
+  &__number {
+    margin-bottom: 14px;
   }
 
-  &__block:last-child {
-    margin-bottom: 0;
+  &__block {
+    padding-top: 25px;
+    padding-bottom: 24px;
   }
 
   &__wrapper {
     margin: 0 auto;
-    padding: 26px 22px 24px 22px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .feature-lasts__block {
+    position: relative;
+  }
+
+  .feature-lasts__block:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #d6d6d6;
   }
 }
 
@@ -36,24 +56,46 @@
 
   .feature-lasts__point {
     @include main-text(21px, 26px, bold);
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .feature-lasts__block {
     margin: 0;
-    margin-right: 80px;
+    margin-right: 70px;
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 
   .feature-lasts__block:last-child {
     margin-right: 0;
   }
 
+  .feature-lasts__desc {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+
   .feature-lasts__wrapper {
-    padding: 42px 33px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 @media (min-width: $desktop) {
   .feature-lasts__wrapper {
-    padding: 42px 42px 62px 42px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .feature-lasts__block {
+    margin-right: 100px;
+    padding-top: 45px;
+    padding-bottom: 70px;
+  }
+
+  .feature-lasts__point {
+    padding-left: 75px;
+    padding-right: 75px;
   }
 }

@@ -11,6 +11,7 @@
     color: #333333;
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 27px;
   }
 
   &__btn {
@@ -19,7 +20,7 @@
     display: block;
     width: 280px;
     height: 58px;
-    padding: 14.5px 32px 17.5px 32px;
+    padding: 15px 32px;
     text-decoration: none;
     margin: 0 auto;
 
@@ -52,15 +53,22 @@
   .hotels__btn {
     width: 458px;
     height: 58px;
-    padding: 14.5px 121px 17.5px 121px;
+    padding: 15px 121px;
   }
 
   .hotels__click {
     margin: 0 auto;
+    margin-top: 58px;
+    margin-bottom: 58px;
+  }
+
+  .hotels__action {
+    margin-bottom: 37px;
   }
 
   .hotels__wrapper {
-    padding: 58px 140px;
+    padding-left: 140px;
+    padding-right: 140px;
   }
 }
 
@@ -70,7 +78,15 @@
     padding-right: 270px;
   }
 
+  .hotels__action {
+    margin-bottom: 42px;
+  }
+
+  .hotels__click {
+    margin-bottom: 66px;
+  }
+
   .hotels__btn {
-    margin-top: 40px;
+    padding: 15px 121px;
   }
 }

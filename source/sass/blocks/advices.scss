@@ -10,23 +10,47 @@
     text-transform: uppercase;
   }
 
+  &__item {
+    display: flex;
+    flex-shrink: 0;
+    align-items: flex-start;
+  }
+
+  &__text {
+    margin-left: 10px;
+  }
+
   &__wrapper {
     margin: 0 auto;
-    padding-left: 18px;
-    padding-right: 11px;
+    padding: 25px 20px 15px 20px;
   }
 }
 
-.advices__wrapper ul {
+.advices__wrapper ul,
+.advices__wrapper ul li {
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+.advices__text h3,
+.advices__text p {
+  margin: 5px;
+  padding: 7px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .advices__img {
+    display: block;
+    width: 40px;
+  }
 }
 
 @media (min-width: $tablet) {
   .advices__list {
     display: grid;
     grid-template-columns: 33.33% 33.34% 33.33%;
-    margin: auto;
+    margin: 0 auto;
   }
 
   .advices__item--apartment {
@@ -44,33 +68,22 @@
     grid-row-start: 1;
   }
 
-  .advices__wrapper {
-    margin: auto;
-    padding: 60px 0;
-  }
-
   .advices__item {
-    padding-left: 30px;
-    padding-right: 30px;
+    display: block;
+    text-align: center;
   }
 
   .advices__title {
     @include main-text(21px, 26px, bold);
-    text-align: center;
   }
 
-  .advices__description {
-    text-align: center;
+  .advices__wrapper {
+    padding: 60px 30px;
   }
 }
 
 @media (min-width: $desktop) {
   .advices__wrapper {
-    margin: auto;
-    padding: 60px 20px 80px 20px;
-  }
-
-  .advices__item {
-    padding: 0 50px;
+    padding: 60px 80px 80px 60px;
   }
 }

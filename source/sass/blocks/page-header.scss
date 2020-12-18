@@ -3,23 +3,26 @@
   flex-direction: column;
 
   &__logo {
-    width: 101.7px;
-    height: 84px;
+    position: absolute;
     display: block;
-    margin: auto;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-header__logo-block {
+    height: 56px;
+    width: 100%;
+    background-color: #ffffff;
   }
 }
 
 @media (min-width: $tablet) {
-  .page-header__logo {
-    margin-top: -56px;
-    z-index: 3;
-  }
-}
-
-@media (min-width: $desktop) {
-  .page-header__logo {
-    width: 186.6px;
-    height: 96.43px;
+  .page-header__logo .logo-img {
+    position: absolute;
+    top: -56px;
+    transform: translateX(-50%);
   }
 }

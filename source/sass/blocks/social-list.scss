@@ -5,10 +5,18 @@
 
   &__item {
     background-color: $base-block-color;
-    display: block;
+
+    display: flex;
     width: 46px;
     height: 48px;
     list-style: none;
     margin-right: 6px;
+  }
+
+  &__youtube,
+  &__facebook,
+  &__twitter {
+    display: block;
+    margin: auto;
   }
 }
