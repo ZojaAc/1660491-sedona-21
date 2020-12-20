@@ -7,14 +7,16 @@
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 9px;
+    padding-bottom: 4px;
 
     @include link;
     display: block;
   }
 
   &__item {
+    margin: 0;
+    padding: 0;
     border-top: 2px solid #9ac2db;
     border-bottom: 2px solid #678fa8;
   }
@@ -44,8 +46,7 @@
     position: relative;
   }
 
-  &__toggle-cross,
-  &__toggle-burger {
+  &__toggle {
     display: block;
     width: 23px;
     height: 22px;
@@ -53,27 +54,48 @@
     cursor: pointer;
     border: none;
     z-index: 2;
+    padding: 0;
   }
 
-  .nav--closed .nav__toggle .nav__toggle-img {
-    top: 240px;
-    right: 20px;
-    height: 4px;
-    background-color: $base-block-color;
-    width: 100%;
-    margin-bottom: 4px;
-  }
-
-  .nav--opened .nav__toggle .nav__toggle-img {
+  &__toggle-cross {
     top: 17px;
     right: 20px;
-    height: 4px;
-    width: 100%;
-    background-color: #ffffff;
-
-
+    background-color: $base-block-color;
   }
 
+  &__toggle-burger {
+    top: 242px;
+    right: 20px;
+    background-color: #ffffff;
+  }
+
+  &__toggle-cross-pic {
+    display: block;
+    height: 4px;
+    background-color: #ffffff;
+    width: 26px;
+  }
+
+  &__toggle-cross-pic:first-child {
+    transform: rotate(45deg);
+    margin-bottom: -4px;
+  }
+
+  &__toggle-cross-pic:last-child {
+    transform: rotate(-45deg);
+  }
+
+  &__toggle-burger-pic {
+    display: block;
+    height: 4px;
+    width: 23px;
+    background-color: $base-block-color;
+    margin-bottom: 5px;
+  }
+
+  &__toggle-burger-pic:last-child {
+    margin-bottom: 0;
+  }
 
   &__toggle:hover {
     opacity: 0.6;
@@ -88,41 +110,20 @@
   }
 }
 
-
-.nav--nojs .nav__toggle {
-  display: none;
-}
-
-.nav--nojs .nav__wrapper {
-  position: static;
-  min-height: 0;
-}
-
-.nav--nojs .nav__item {
-  display: block;
-}
-
-
-@media (max-width: $mobile-width-only) {}
-
-
-
-
-
 @media (min-width: $tablet) {
   .nav__list {
     display: flex;
   }
 
   .nav__item {
-    width: 25%;
+    width: 20%;
     height: 56px;
     background-color: #ffffff;
     border: none;
   }
 
-  .nav__item:nth-child(2) {
-    margin-right: 20%;
+  .nav__item:nth-child(3) {
+    margin-left: 20%;
   }
 
   .nav__link {
@@ -136,6 +137,10 @@
 
   .nav__link.nav__link--active {
     color: #766357;
+  }
+
+  .nav__link.nav__link--active:active {
+    color: rgba(#766357, 0.3);
   }
 
   .nav__toggle {

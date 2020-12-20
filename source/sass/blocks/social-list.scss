@@ -1,6 +1,8 @@
 .social-list {
-  &__block {
+  &__roll {
     display: flex;
+    margin: 0;
+    padding: 0;
   }
 
   &__item {
@@ -11,6 +13,12 @@
     height: 48px;
     list-style: none;
     margin-right: 6px;
+
+    @include link;
+  }
+
+  &__item:nth-child(2) {
+    width: 47px;
   }
 
   &__youtube,
@@ -18,5 +26,11 @@
   &__twitter {
     display: block;
     margin: auto;
+  }
+
+  &__twitter-img:active,
+  &__facebook-img:active,
+  &__youtube:active {
+    opacity: 0.3;
   }
 }

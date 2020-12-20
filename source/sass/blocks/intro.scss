@@ -9,29 +9,38 @@
 
   &__text-index {
     width: 282px;
-    display: block;
     margin: 0 auto;
-  }
-
-  &__decorate-triangle-1 {
     position: absolute;
-    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-  &__triangle-1 {
+  &__dec-triangle-top {
+    background: url("../img/introtriangledesktop.svg") no-repeat center center;
+    position: absolute;
     height: 57px;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
-  &__decorate-triangle-2 {
+  &__triangle-bottom-wrapper {
+    position: relative;
     background-color: $base-block-color;
+    min-height: 37px;
   }
 
-  &__triangle-2 {
+  &__dec-triangle-bottom {
+    background: $base-block-color url("../img/whitecopy.svg") no-repeat center center;
+    position: absolute;
     height: 37px;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
   &__welcome {
-    padding: 15px 17px 11px 18px;
+    padding: 14px 18px 0 17px;
   }
 
   &__slogan {
@@ -39,6 +48,7 @@
     text-transform: uppercase;
     text-align: center;
     padding: 0 10px;
+    margin-bottom: 30px;
   }
 
   &__text {
@@ -54,12 +64,12 @@
 }
 
 @media (min-width: $tablet) {
-  .intro__decorate-triangle-2 {
+  .intro__triangle-bottom-wrapper {
     display: none;
   }
 
   .intro__welcome {
-    padding: 30px 115px 40px 115px;
+    padding: 24px 100px 40px 100px;
   }
 
   .intro__slogan {
@@ -72,16 +82,16 @@
   }
 
   .intro__text-index {
-    min-width: 350px;
+    min-width: 465px;
   }
 }
 
 @media (min-width: $desktop) {
   .intro__welcome {
-    padding: 25px 300px;
+    padding: 35px 300px 28px 300px;
   }
 
   .intro__slogan {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 }

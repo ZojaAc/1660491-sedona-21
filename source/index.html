@@ -8,8 +8,8 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <nav class="nav nav--closed nav--opened nav--nojs">
-        <button class="nav__toggle-cross" type="button">
+      <nav class="nav">
+        <button class="nav__toggle-cross nav__toggle" type="button">
           <span class="nav__toggle-cross-pic"></span>
           <span class="nav__toggle-cross-pic"></span>
         </button>
@@ -30,7 +30,7 @@
           </ul>
         </div>
       </nav>
-      <div class="page-header__logo-block">
+      <div class="page-header__logo-box">
         <a class="page-header__logo logo">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logotypedesktop.svg">
@@ -39,7 +39,7 @@
           </picture>
         </a>
       </div>
-      <button class="nav__toggle-burger" type="button">
+      <button class="nav__toggle-burger nav__toggle" type="button">
         <span class="nav__toggle-burger-pic"></span>
         <span class="nav__toggle-burger-pic"></span>
         <span class="nav__toggle-burger-pic"></span>
@@ -51,21 +51,21 @@
         <div class="intro__wrapper">
           <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
           <div class="intro__view">
-            <img class="intro__text-index" src="img/textindex.svg" alt="text-index">
-            <div class="intro__decorate-triangle-1">
+            <div class="intro__text-index">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/introtriangledesktop.svg">
-                  <source media="(min-width: 768px)" srcset="img/introtriangletablet.svg">
-                    <img class="intro__triangle-1" src="img/introtrianglemobile.svg" alt="triangle">
+                <source media="(min-width: 1200px)" srcset="img/textindextablet.svg">
+                  <source media="(min-width: 768px)" srcset="img/textindextablet.svg">
+                    <img class="intro__text-index-img" src="img/textindexmobile.svg" alt="text-index">
               </picture>
             </div>
+            <div class="intro__dec-triangle-top"></div>
           </div>
           <div class="intro__welcome">
-            <p class="intro__slogan">СЕДОНА - небольшой городок в Аризоне,<br>заслуживающий большего!</p>
-            <p class="intro__text">Расмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+            <p class="intro__slogan">СЕДОНА — небольшой городок в Аризоне,<br>заслуживающий большего!</p>
+            <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </div>
-          <div class="intro__decorate-triangle-2">
-            <img class="intro__triangle-2" src="img/whitecopy.svg" alt="white-triangle">
+          <div class="intro__triangle-bottom-wrapper">
+            <div class="intro__dec-triangle-bottom"></div>
           </div>
         </div>
       </section>
@@ -74,16 +74,16 @@
           <h2 class="visually-hidden">Достопримечательности Седоны</h2>
           <div class="feature__list">
             <div class="feature__items">
-              <div class="feature__block1">
+              <div class="feature__text">
                 <div class="feature__point">Настоящий городок</div>
-                <div class="feature__number">-№1-</div>
+                <div class="feature__number">— №1 —</div>
                 <div class="feature__description">Седона не аттракцион для туристов, там течет своя жизнь</div>
               </div>
-              <div class="feature__block2">
+              <div class="feature__image">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/photocitydesktop.jpg">
                     <source media="(min-width: 768px)" srcset="img/photocitytablet.jpg">
-                      <img class="feature__image" src="img/photocitymobile.jpg" alt="city view">
+                      <img class="feature__img" src="img/photocitymobile.jpg" alt="city view">
                 </picture>
               </div>
             </div>
@@ -105,14 +105,14 @@
               <img class="advices__img" src="img/icongift.svg" alt="gift">
               <div class="advices__text">
                 <h3 class="advices__title">Сувениры</h3>
-                <p class="advices__description">Не только китайского, но и местного производства!</p>
+                <p class="advices__description">Не только китайского,<br class="advices__br-only-desktop"> но и местного производства!</p>
               </div>
               </li>
             <li class="advices__item advices__item--meal">
               <img class="advices__img" src="img/iconburger.svg" alt="burger">
               <div class="advices__text">
                 <h3 class="advices__title">Еда</h3>
-                <p class="advices__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="advices__description">Всегда заказывайте фирменный бургер,<br class="advices__br-not-mobile"> вы не разочаруетесь!</p>
               </div>
               </li>
           </ul>
@@ -123,16 +123,16 @@
           <h2 class="visually-hidden">Достопримечательности Седоны</h2>
           <div class="feature__list">
             <div class="feature__items feature__items--order">
-              <div class="feature__block1 feature__block1--text">
-                <div class="feature__point">Там есть мост дьявола</div>
-                <div class="feature__number">-№2-</div>
-                <div class="feature__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</div>
+              <div class="feature__text feature__text-another-size feature__text--place">
+                <div class="feature__point">Там есть<br class="feature__br-not-mobile"> мост дьявола</div>
+                <div class="feature__number">— №2 —</div>
+                <div class="feature__description feature__description-another-size">Да, по нему можно пройти! Если вы осмелитесь, конечно</div>
               </div>
-              <div class="feature__block2 feature__block2--img">
+              <div class="feature__image feature__image--place">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/photobridgedesktop.jpg">
                     <source media="(min-width: 768px)" srcset="img/photobridgetablet.jpg">
-                      <img class="feature__image" src="img/photobridgemobile.jpg" alt="bridge">
+                      <img class="feature__img" src="img/photobridgemobile.jpg" alt="bridge">
                 </picture>
               </div>
             </div>
@@ -143,19 +143,19 @@
         <div class="feature-lasts__wrapper">
           <h2 class="visually-hidden">Достопримечательности Седоны</h2>
           <div class="feature-lasts__items">
-            <div class="feature-lasts__block">
-              <div class="feature-lasts__point">Небольшая площадь</div>
-              <div class="feature-lasts__number">-№3-</div>
+            <div class="feature-lasts__item">
+              <div class="feature-lasts__point">Небольшая<br class="feature-lasts__br-not-mobile"> площадь</div>
+              <div class="feature-lasts__number">— №3 —</div>
               <div class="feature-lasts__description">Все интересные места находятся очень близко</div>
             </div>
-            <div class="feature-lasts__block">
-              <div class="feature-lasts__point">Красивая дорога</div>
-              <div class="feature-lasts__number">-№4-</div>
-              <div class="feature-lasts__description feature-lasts__desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</div>
+            <div class="feature-lasts__item">
+              <div class="feature-lasts__point">Красивая<br class="feature-lasts__br-not-mobile"> дорога</div>
+              <div class="feature-lasts__number">— №4 —</div>
+              <div class="feature-lasts__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</div>
             </div>
-            <div class="feature-lasts__block">
-              <div class="feature-lasts__point">Мало туристов</div>
-              <div class="feature-lasts__number">-№5-</div>
+            <div class="feature-lasts__item">
+              <div class="feature-lasts__point">Мало<br class="feature-lasts__br-not-mobile"> туристов</div>
+              <div class="feature-lasts__number">— №5 —</div>
               <div class="feature-lasts__description">Большинство едет в Гранд Каньон и толпится там</div>
             </div>
           </div>
@@ -167,7 +167,9 @@
           <div class="hotels__click">
             <h3 class="hotels__title">Заинтересовались?</h3>
             <p class="hotels__action">Укажите предполагаемые даты поездки,<br class="hotels__br-not-mobile"> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <a class="hotels__btn" href="#">Найти гостиницу</a>
+            <div class="hotels__button-box">
+              <a class="hotels__button button" href="#">Найти гостиницу</a>
+            </div>
           </div>
         </div>
       </section>
@@ -175,7 +177,11 @@
         <div class="map__wrapper">
           <h2 class="visually-hidden">Седона на карте</h2>
           <div class="map__view">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.135657646024!2d-111.8301579502104!3d34.85444381543453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1608243307906!5m2!1sru!2sru" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div style="position:relative;overflow:hidden;">
+              <a href="https://yandex.ru/maps/110669/sedona/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Седона</a>
+              <a href="https://yandex.ru/maps/profile?ll=-111.756269%2C34.871952&utm_medium=mapframe&utm_source=maps&z=14.68" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a>
+              <iframe src="https://yandex.ru/map-widget/v1/-/CCUErKDVlD" width="100%" height="350" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+            </div>
           </div>
         </div>
       </section>
@@ -186,48 +192,32 @@
           <a class="page-footer__link-sedona" href="#">#VisitSedona</a>
         </div>
         <div class="page-footer__social social-list">
-          <ul class="social-list__block">
+          <ul class="social-list__roll">
             <li class="social-list__item">
-              <a class="social-list__twitter social-list__twitter--twitter" href="#">
-                <img class="social-list__twitter-img" src="img/icontwitter.svg">
+              <a class="social-list__twitter" href="#">
+                <img class="social-list__twitter-img" src="img/icontwitter.svg" alt="twitter-link">
               </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__facebook social-list__facebook--facebook" href="#">
-                <img class="social-list__facebook-img" src="img/iconfacebook.svg">
+              <a class="social-list__facebook" href="#">
+                <img class="social-list__facebook-img" src="img/iconfacebook.svg" alt="facebook-link">
               </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__youtube social-list__youtube--youtube" href="#">
-                <img class="social-list__youtube-img" src="img/iconyoutube.svg">
+              <a class="social-list__youtube" href="#">
+                <img class="social-list__youtube-img" src="img/iconyoutube.svg" alt="youtube-link">
               </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright">
           <a class="page-footer__link-html" href="https://htmlacademy.ru/intensive/adaptive">
-            <div class="page-footer__block">Разработано
+            <div class="page-footer__box">Разработано
               <img class="page-footer__logo-academy" src="img/htmlacademy.svg" alt="logo-academy">
             </div>
           </a>
         </div>
       </div>
     </footer>
-    <script>
-      var navMain = document.querySelector('.nav');
-      var navToggle = document.querySelector('.nav__toggle');
-
-      navMain.classList.remove('nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('nav--closed')) {
-          navMain.classList.remove('nav--closed');
-          navMain.classList.add('nav--opened');
-        } else {
-          navMain.classList.add('nav--closed');
-          navMain.classList.remove('nav--opened');
-        }
-      });
-    </script>
   </body>
 </html>

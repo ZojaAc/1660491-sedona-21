@@ -1,6 +1,5 @@
 .hotels {
-  &__title,
-  &__btn {
+  &__title {
     @include main-text(21px, 26px, bold);
     text-transform: uppercase;
     text-align: center;
@@ -14,28 +13,29 @@
     margin-bottom: 27px;
   }
 
-  &__btn {
-    color: #ffffff;
-    background-color: $base-block-color;
-    display: block;
-    width: 280px;
-    height: 58px;
-    padding: 15px 32px;
-    text-decoration: none;
+  &__button-box {
+    position: absolute;
     margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    width: 280px;
 
     @include link;
   }
 
   &__click {
+    margin: 0 auto;
     margin-top: 33px;
-    margin-bottom: 49px;
+    margin-bottom: 55px;
   }
 
   &__wrapper {
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px 80px 20px;
   }
 }
 
@@ -48,25 +48,25 @@
 @media (min-width: $tablet) {
   .hotels__title {
     @include main-text(30px, 26px, bold);
+    margin-bottom: 33px;
   }
 
-  .hotels__btn {
+  .hotels__button {
     width: 458px;
-    height: 58px;
-    padding: 15px 121px;
   }
 
   .hotels__click {
     margin: 0 auto;
     margin-top: 58px;
-    margin-bottom: 58px;
+    margin-bottom: 73px;
   }
 
   .hotels__action {
-    margin-bottom: 37px;
+    margin-bottom: 40px;
   }
 
   .hotels__wrapper {
+    margin: 0 auto;
     padding-left: 140px;
     padding-right: 140px;
   }
@@ -83,10 +83,6 @@
   }
 
   .hotels__click {
-    margin-bottom: 66px;
-  }
-
-  .hotels__btn {
-    padding: 15px 121px;
+    margin-bottom: 85px;
   }
 }

@@ -2,47 +2,57 @@
   &__title {
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
+    margin: 0;
+    padding: 10px 0;
   }
 
   &__description {
     @include main-text(14px, 21px, normal);
     color: #333333;
     text-transform: uppercase;
+    margin: 0;
+    padding: 6px 0;
   }
 
   &__item {
     display: flex;
     flex-shrink: 0;
     align-items: flex-start;
+    margin: 0;
+    padding: 0;
   }
 
   &__text {
-    margin-left: 10px;
+    margin-left: 6px;
+    padding: 0 4px;
+    margin-bottom: 12px;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   &__wrapper {
     margin: 0 auto;
-    padding: 25px 20px 15px 20px;
+    padding: 24px 20px 14px 20px;
   }
-}
-
-.advices__wrapper ul,
-.advices__wrapper ul li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.advices__text h3,
-.advices__text p {
-  margin: 5px;
-  padding: 7px;
 }
 
 @media (max-width: $mobile-width-only) {
   .advices__img {
     display: block;
     width: 40px;
+    height: 36px;
+  }
+
+  .advices__br-not-mobile {
+    display: none;
+  }
+
+  .advices__br-only-desktop {
+    display: none;
   }
 }
 
@@ -75,15 +85,67 @@
 
   .advices__title {
     @include main-text(21px, 26px, bold);
+    margin-bottom: 8px;
+  }
+
+  .advices__description {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .advices__text {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .advices__img:first-child {
+    width: 75px;
+    height: 72px;
+  }
+
+  .advices__img:nth-child(2) {
+    width: 76px;
+    height: 68px;
+  }
+
+  .advices__img:nth-child(3) {
+    width: 64px;
+    height: 75px;
+  }
+
+  .advices__br-only-desktop {
+    display: none;
   }
 
   .advices__wrapper {
-    padding: 60px 30px;
+    padding: 60px 0 55px 0;
   }
 }
 
 @media (min-width: $desktop) {
   .advices__wrapper {
-    padding: 60px 80px 80px 60px;
+    padding: 60px 0 75px 0;
+  }
+
+  .advices__title {
+    @include main-text(21px, 26px, bold);
+    margin-bottom: 8px;
+  }
+
+  .advices__text {
+    margin: 0;
+    margin-top: 12px;
+    padding: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .advices__description {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .advices__br-only-desktop {
+    display: inline;
   }
 }

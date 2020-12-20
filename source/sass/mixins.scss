@@ -31,11 +31,9 @@
 
   &:active {
     background-color: $a-active;
-    color: #ffffff;
-    opacity: 0.3;
+    color: rgba(#ffffff, 0.3);
   }
 }
-
 
 @mixin link-full(
   $a-link: $a-link,
@@ -59,8 +57,7 @@
   }
 
   &:active {
-    color: #000000;
-    opacity: 0.3;
+    color: rgba(#000000, 0.3);
     background-color: #ffffff;
   }
 }
