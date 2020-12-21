@@ -1,15 +1,36 @@
 .social-list {
+  &__roll {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
   &__item {
     background-color: $base-block-color;
-    display: block;
+
+    display: flex;
     width: 46px;
     height: 48px;
     list-style: none;
     margin-right: 6px;
+
+    @include link;
   }
 
-  &__block {
-    display: flex;
-    justify-content: center;
+  &__item:nth-child(2) {
+    width: 47px;
+  }
+
+  &__youtube,
+  &__facebook,
+  &__twitter {
+    display: block;
+    margin: auto;
+  }
+
+  &__twitter-img:active,
+  &__facebook-img:active,
+  &__youtube:active {
+    opacity: 0.3;
   }
 }

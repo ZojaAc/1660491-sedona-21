@@ -1,10 +1,54 @@
 .intro {
+  &__view {
+    background: #ffffff url("../img/backdesktop.jpg") no-repeat center/cover;
+    min-height: 389px;
+    margin: 0 auto;
+    padding-top: 90px;
+    position: relative;
+  }
+
+  &__text-index {
+    width: 282px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__dec-triangle-top {
+    background: url("../img/introtriangledesktop.svg") no-repeat center center;
+    position: absolute;
+    height: 57px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__triangle-bottom-wrapper {
+    position: relative;
+    background-color: $base-block-color;
+    min-height: 37px;
+  }
+
+  &__dec-triangle-bottom {
+    background: $base-block-color url("../img/whitecopy.svg") no-repeat center center;
+    position: absolute;
+    height: 37px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__welcome {
+    padding: 14px 18px 0 17px;
+  }
+
   &__slogan {
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
     text-align: center;
-    padding-left: 17px;
-    padding-right: 18px;
+    padding: 0 10px;
+    margin-bottom: 30px;
   }
 
   &__text {
@@ -12,16 +56,6 @@
     color: #333333;
     text-transform: uppercase;
     text-align: center;
-    padding-left: 17px;
-    padding-right: 18px;
-  }
-
-  &__triangle-vector {
-    height: 57px;
-  }
-
-  &__white-vector {
-    height: 37px;
   }
 
   &__wrapper {
@@ -30,30 +64,34 @@
 }
 
 @media (min-width: $tablet) {
-  .intro__white-vector {
+  .intro__triangle-bottom-wrapper {
     display: none;
+  }
+
+  .intro__welcome {
+    padding: 24px 100px 40px 100px;
   }
 
   .intro__slogan {
     @include main-text(21px, 26px, bold);
-    padding-left: 124px;
-    padding-right: 124px;
   }
 
-  .intro__text {
-    padding-left: 124px;
-    padding-right: 124px;
+  .intro__view {
+    min-height: 518px;
+    padding-top: 77px;
+  }
+
+  .intro__text-index {
+    min-width: 465px;
   }
 }
 
 @media (min-width: $desktop) {
-  .intro__slogan {
-    padding-left: 358px;
-    padding-right: 358px;
+  .intro__welcome {
+    padding: 35px 300px 28px 300px;
   }
 
-  .intro__text {
-    padding-left: 358px;
-    padding-right: 358px;
+  .intro__slogan {
+    margin-bottom: 30px;
   }
 }

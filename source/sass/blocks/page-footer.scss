@@ -4,7 +4,6 @@
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
-    text-align: center;
   }
 
   &__link-html {
@@ -12,28 +11,71 @@
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
-    text-align: center;
+  }
+
+  &__contacts {
+    margin-top: 34px;
+  }
+
+  &__social {
+    margin-top: 32px;
+    margin-bottom: 36px;
+  }
+
+  &__copyright {
+    margin-top: 5px;
+    margin-bottom: 22px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo-academy {
+    margin-left: 15px;
+
+    @include link-full;
   }
 
   &__wrapper {
     margin: 0 auto;
-    padding: 28.5px 85px 22.9px 84px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 @media (min-width: $tablet) {
   .page-footer__wrapper {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 45px;
-    padding-right: 60px;
+    padding: 36px 5px;
+    margin: auto;
+  }
+
+  .page-footer__social,
+  .page-footer__copyright,
+  .page-footer__contacts {
+    margin: auto;
   }
 }
 
 @media (min-width: $desktop) {
   .page-footer__wrapper {
-    padding-left: 104px;
-    padding-right: 120px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .page-footer__contacts {
+    padding: 0;
+  }
+
+  .page-footer__social {
+    margin-left: 150px;
+    margin-right: 150px;
   }
 }

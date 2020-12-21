@@ -18,4 +18,15 @@
 @import "./blocks/catalog.scss";
 @import "./blocks/catalog-v.scss";
 @import "./blocks/page-header.scss";
-@import "./blocks/page-main.scss"
+@import "./blocks/page-main.scss";
+@import "./blocks/button.scss";
+
+@font-face {
+  font-family: "PT Sans";
+  src: local("PT Sans"), url("../fonts/ptsans.woff") format("woff"), url("../fonts/ptsans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans Bold";
+  src: local("PT Sans Bold"), url("../fonts/ptsansbold.woff") format("woff"), url("../fonts/ptsansbold.woff2") format("woff2");
+}

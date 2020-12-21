@@ -2,41 +2,150 @@
   &__title {
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
+    margin: 0;
+    padding: 10px 0;
   }
 
   &__description {
-    @include main-text(14px, 21px, bold);
+    @include main-text(14px, 21px, normal);
     color: #333333;
     text-transform: uppercase;
+    margin: 0;
+    padding: 6px 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-shrink: 0;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__text {
+    margin-left: 6px;
+    padding: 0 4px;
+    margin-bottom: 12px;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   &__wrapper {
     margin: 0 auto;
-    padding-left: 18px;
-    padding-right: 11px;
+    padding: 24px 20px 14px 20px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .advices__img {
+    display: block;
+    width: 40px;
+    height: 36px;
+  }
+
+  .advices__br-not-mobile {
+    display: none;
+  }
+
+  .advices__br-only-desktop {
+    display: none;
   }
 }
 
 @media (min-width: $tablet) {
   .advices__list {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 33.33% 33.34% 33.33%;
+    margin: 0 auto;
   }
 
-  .advices__wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: auto;
-    padding-left: 36px;
-    padding-right: 31px;
+  .advices__item--apartment {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+
+  .advices__item--gifts {
+    grid-column-start: 3;
+    grid-row-start: 1;
+  }
+
+  .advices__item--meal {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+
+  .advices__item {
+    display: block;
+    text-align: center;
   }
 
   .advices__title {
     @include main-text(21px, 26px, bold);
-    text-align: center;
+    margin-bottom: 8px;
   }
 
   .advices__description {
-    text-align: center;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .advices__text {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .advices__img:first-child {
+    width: 75px;
+    height: 72px;
+  }
+
+  .advices__img:nth-child(2) {
+    width: 76px;
+    height: 68px;
+  }
+
+  .advices__img:nth-child(3) {
+    width: 64px;
+    height: 75px;
+  }
+
+  .advices__br-only-desktop {
+    display: none;
+  }
+
+  .advices__wrapper {
+    padding: 60px 0 55px 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .advices__wrapper {
+    padding: 60px 0 75px 0;
+  }
+
+  .advices__title {
+    @include main-text(21px, 26px, bold);
+    margin-bottom: 8px;
+  }
+
+  .advices__text {
+    margin: 0;
+    margin-top: 12px;
+    padding: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .advices__description {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .advices__br-only-desktop {
+    display: inline;
   }
 }
