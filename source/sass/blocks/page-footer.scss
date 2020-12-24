@@ -52,7 +52,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 36px 5px;
+    padding: 36px 0;
     margin: auto;
   }
 
@@ -60,6 +60,14 @@
   .page-footer__copyright,
   .page-footer__contacts {
     margin: auto;
+  }
+
+  .page-footer__contacts {
+    padding-left: 2px;
+  }
+
+  .page-footer__social {
+    padding-right: 5px;
   }
 }
 

@@ -8,7 +8,7 @@
     color: #ffffff;
     text-decoration: none;
     padding-top: 9px;
-    padding-bottom: 4px;
+    padding-bottom: 5px;
 
     @include link;
     display: block;
@@ -17,8 +17,8 @@
   &__item {
     margin: 0;
     padding: 0;
-    border-top: 2px solid #9ac2db;
-    border-bottom: 2px solid #678fa8;
+    border-top: 1px solid #9ac2db;
+    border-bottom: 1px solid #678fa8;
   }
 
   &__item:first-child {
