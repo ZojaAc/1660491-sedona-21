@@ -1,55 +1,69 @@
 .modal {
   &__not,
   &__yes {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    width: 100%;
+  }
+
+  &__not {
+    top: 10%;
+  }
+
+  &__not-wrapper,
+  &__yes-wrapper {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
+    align-items: center;
   }
 
   &__text-not {
     text-align: center;
-    padding: 40px 20px 22px 20px;
+    padding: 40px 42px 22px 42px;
   }
 
-  &__text-yes {
-    text-align: center;
-    padding: 38px 18px 29px 18px;
+  &__button-not {
+    width: 180px;
+    margin-bottom: 35px;
   }
 
   &__title {
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 0;
   }
 
   &__answer {
     @include main-text(14px, 24px, normal);
     color: #333333;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
-  &__button-not {
-    position: absolute;
-    margin: 0 auto;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 35px;
+  &__text-yes {
+    text-align: center;
+    padding: 38px 38px 29px 38px;
   }
 
-  &__button-yes {
-    position: absolute;
-    margin: 0 auto;
+  &__button-box {
+    width: 100%;
     padding: 20px;
-    left: 50%;
-    transform: translateX(-50%);
     background-color: #f2f2f2;
   }
 
-  &__new-step-not {
-    font-size: 18px;
-    width: 180px;
+  &__button-yes {
+    width: 280px;
   }
 
+  &__new-step-not,
   &__new-step-yes {
     font-size: 18px;
-    width: 280px;
   }
 }
 
@@ -58,13 +72,43 @@
     @include main-text(30px, 26px, bold);
   }
 
+  .modal__new-step-not,
   .modal__new-step-yes {
-    width: 458px;
-    height: 58px;
+    @include main-text(21px, 26px, bold);
   }
 
-  .modal__new-step-not {
-    width: 272px;
-    height: 58px;
+  .modal__yes {
+    width: 640px;
+  }
+
+  .modal__text-yes {
+    padding: 54px 98px 31px 98px;
+  }
+
+  .modal__button-box {
+    padding: 44px 91px;
+  }
+
+  .modal__button-yes {
+    width: 458px;
+  }
+
+  .modal__not {
+    width: 400px;
+  }
+
+  .modal__text-not {
+    text-align: center;
+    padding: 52px 46px 47px 46px;
+  }
+
+  .modal__button-not {
+    width: 280px;
+    margin-bottom: 35px;
+  }
+
+  .modal__not .modal__title {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }

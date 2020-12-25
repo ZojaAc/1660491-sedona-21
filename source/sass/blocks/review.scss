@@ -16,9 +16,7 @@
   &__cell,
   &__text {
     background-color: $form-color;
-    border: none;
-    color: #000000;
-    padding-left: 22px;
+    border: 2px solid $form-color;
     outline: none;
 
     @include main-text(18px, 26px, bold);
@@ -34,6 +32,7 @@
   &__cell:hover,
   &__text:hover {
     background-color: $form-hover;
+    border: 2px solid $form-hover;
   }
 
   &__cell:focus,
@@ -55,15 +54,19 @@
   &__cell {
     height: 58px;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 18px;
+    padding-bottom: 14px;
+    padding-left: 22px;
   }
 
   &__img-phone {
     background: $form-color url("../img/photophone.jpg") no-repeat right center/58px 58px;
+    padding-right: 58px;
   }
 
   &__img-mail {
     background: $form-color url("../img/photomail.jpg") no-repeat right center/58px 58px;
+    padding-right: 58px;
   }
 
   &__img-block {
@@ -73,7 +76,7 @@
 
   &__personal {
     padding-top: 20px;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
   }
 
   &__personal-box {
@@ -89,7 +92,7 @@
   }
 
   &__contact &__title {
-    padding-bottom: 10px;
+    padding-bottom: 12px;
   }
 
   &__contact &__target {
@@ -107,7 +110,7 @@
 
   &__comment-sights {
     padding-top: 15px;
-    padding-bottom: 26px;
+    padding-bottom: 24px;
   }
 
   &__emotion {
@@ -125,8 +128,8 @@
   }
 
   &__text {
-    margin-bottom: 48px;
-    padding: 11px 23px 16px 21px;
+    margin-bottom: 44px;
+    padding: 11px 18px 16px 18px;
     width: 100%;
   }
 
@@ -206,7 +209,7 @@
   .review__text {
     margin-top: 38px;
     margin-bottom: 52px;
-    padding: 18px 21px 14px 21px;
+    padding: 18px 21px 10px 21px;
   }
 
   .review__personal,
@@ -255,7 +258,7 @@
 
   .review__emotion {
     order: 5;
-    padding-top: 13px;
+    padding-top: 15px;
     margin-bottom: 19px;
   }
 
@@ -283,8 +286,10 @@
 }
 
 @media (min-width: $desktop) {
-  .review__send {
+  .review__end .review__send {
     width: 480px;
+    padding-left: 133px;
+    padding-right: 132px;
   }
 
   .review__wrapper {
@@ -304,8 +309,13 @@
     flex-shrink: 0;
   }
 
+  .review__contact-box .review__target {
+    flex-shrink: 0;
+  }
+
   .review__img-block {
     width: 100%;
+    margin-bottom: 8px;
   }
 
   .review__contact-box:first-child {
@@ -335,7 +345,7 @@
   }
 
   .review__contact .review__title {
-    padding-bottom: 62px;
+    padding-bottom: 64px;
   }
 
   .review__title-border::before,
@@ -350,5 +360,15 @@
 
   .review__contact-block .review__target {
     padding-left: 0;
+  }
+
+  .review__comment-sights {
+    padding-top: 26px;
+    padding-bottom: 20px;
+  }
+
+  .review__comment-sights .review__title-border::before,
+  .review__comment-sights .review__title-border::after {
+    top: 25%;
   }
 }

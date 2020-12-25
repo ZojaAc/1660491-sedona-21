@@ -3,7 +3,6 @@
     background: #ffffff url("../img/backdesktopform.jpg") no-repeat center/cover;
     min-height: 158px;
     margin: 0 auto;
-    padding-top: 52px;
     position: relative;
   }
 
@@ -12,6 +11,7 @@
     margin: 0 auto;
     position: absolute;
     left: 50%;
+    top: 53px;
     transform: translateX(-50%);
   }
 
@@ -25,14 +25,14 @@
   }
 
   &__welcome {
-    padding: 36px 6px 16px 8px;
+    padding: 37px 6px 18px 8px;
   }
 
   &__offer {
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     text-align: center;
   }
 
@@ -82,6 +82,7 @@
     margin: 0 auto;
     position: absolute;
     left: 50%;
+    top: 95px;
     transform: translateX(-50%);
   }
 
@@ -93,10 +94,13 @@
 @media (min-width: $desktop) {
   .intro-form__view {
     background: #ffffff url("../img/backdesktopformdesktop.jpg") no-repeat center/cover;
-    min-height: 301px;
+    min-height: 300px;
     margin: 0 auto;
-    padding-top: 101px;
     position: relative;
+  }
+
+  .intro-form__text-index {
+    top: 101px;
   }
 
   .intro-form__welcome {

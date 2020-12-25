@@ -22,16 +22,14 @@
     border: 5px solid $form-down;
   }
 
-  &__radio:checked {
-    width: 18px;
-    height: 18px;
+  &__choice:checked ~ &__radio {
     border-radius: 50%;
     background-color: #333333;
     border: 15px solid $form-color;
   }
 
-  &__checkbox:checked {
-    background: $form-color url("../img/tick.jpg") no-repeat center center;
+  &__c-choice:checked ~ &__checkbox {
+    background: $form-color url("../img/tick.svg") no-repeat center center;
   }
 
   &__checkbox {
@@ -95,6 +93,20 @@
     flex-wrap: nowrap;
     padding-left: 0;
     padding-right: 0;
+    justify-content: space-between;
+  }
+
+  .comment__question {
+    width: 25%;
+  }
+
+  .comment__question:nth-child(2) {
+    padding-left: 20px;
+  }
+
+  .comment__question:nth-child(3),
+  .comment__question:nth-child(4) {
+    padding-left: 35px;
   }
 
   .comment__block {
