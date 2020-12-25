@@ -73,31 +73,31 @@
             <div class="review__personal">
               <legend class="review__title">Представьтесь:</legend>
               <div class="review__personal-box">
-                <label class="review__target">Имя<sup>*</sup>:</label>
-                <input class="review__cell" type="text" name="name" required autofocus placeholder="Петр">
+                <label class="review__target" for="rev-name">Имя<sup>*</sup>:</label>
+                <input class="review__cell" id="rev-name" type="text" name="name" required autofocus placeholder="Петр">
               </div>
               <div class="review__personal-box">
-                <label class="review__target">Фамилия<sup>*</sup>:</label>
-                <input class="review__cell" type="text" name="surname" required placeholder="Иванов">
+                <label class="review__target" for="rev-surname">Фамилия<sup>*</sup>:</label>
+                <input class="review__cell" id="rev-surname" type="text" name="surname" required placeholder="Иванов">
               </div>
               <div class="review__personal-box">
-                <label class="review__target">Отчество:</label>
-                <input class="review__cell" type="text" name="patronymic" placeholder="Александрович">
+                <label class="review__target" for="rev-patronymic">Отчество:</label>
+                <input class="review__cell" id="rev-patronymic" type="text" name="patronymic" placeholder="Александрович">
               </div>
             </div>
             <div class="review__contact">
               <legend class="review__title review__title-border">Контактная информация:</legend>
               <div class="review__contact-block">
                 <div class="review__contact-box">
-                  <label class="review__target"><span class="review__target-desktop">Контактный </span>телефон<sup>*</sup>:</label>
+                  <label class="review__target" for="rev-phone"><span class="review__target-desktop">Контактный </span>телефон<sup>*</sup>:</label>
                   <div class="review__img-block">
-                    <input class="review__cell review__img-phone" type="tel" name="phonenumber" placeholder="Введите телефон" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                    <input class="review__cell review__img-phone" id="rev-phone" type="tel" name="phonenumber" placeholder="Введите телефон" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
                   </div>
                 </div>
                 <div class="review__contact-box">
-                  <label class="review__target">Электронная почта<sup>*</sup>:</label>
+                  <label class="review__target" for="rev-email">Электронная почта<sup>*</sup>:</label>
                   <div class="review__img-block">
-                    <input class="review__cell review__img-mail" type="email" name="email" placeholder="Введите e-mail" required>
+                    <input class="review__cell review__img-mail" id="rev-email" type="email" name="email" placeholder="Введите e-mail" required>
                   </div>
                 </div>
               </div>
