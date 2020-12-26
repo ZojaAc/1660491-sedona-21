@@ -16,13 +16,13 @@
         <div class="nav__wrapper">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link nav__link--active" href="index.html">Главная</a>
+              <a class="nav__link" href="index.html">Главная</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="form.html">Форма отзыва</a>
+              <a class="nav__link nav__link--active" href="form.html">Форма отзыва</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
@@ -91,13 +91,13 @@
                 <div class="review__contact-box">
                   <label class="review__target" for="rev-phone"><span class="review__target-desktop">Контактный </span>телефон<sup>*</sup>:</label>
                   <div class="review__img-block">
-                    <input class="review__cell review__img-phone" id="rev-phone" type="tel" name="phonenumber" placeholder="Введите телефон" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                    <input class="review__cell review__cell--img-phone" id="rev-phone" type="tel" name="phonenumber" placeholder="Введите телефон" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
                   </div>
                 </div>
                 <div class="review__contact-box">
                   <label class="review__target" for="rev-email">Электронная почта<sup>*</sup>:</label>
                   <div class="review__img-block">
-                    <input class="review__cell review__img-mail" id="rev-email" type="email" name="email" placeholder="Введите e-mail" required>
+                    <input class="review__cell review__cell--img-mail" id="rev-email" type="email" name="email" placeholder="Введите e-mail" required>
                   </div>
                 </div>
               </div>
@@ -106,7 +106,7 @@
               <legend class="review__title comment">Ваше общее впечатление:</legend>
               <div class="comment__block">
                 <label class="comment__point">
-                  <input class="comment__choice visually-hidden" type="radio" checked name="choice" value="positive">
+                  <input class="comment__choice visually-hidden" disabled type="radio" checked name="choice" value="positive">
                   <span class="comment__radio"></span>
                   <span class="comment__answer">Скорее положительное</span>
                 </label>
@@ -126,7 +126,7 @@
               <legend class="review__title comment review__title-border">Посещенные<br>достопримечательности:</legend>
               <div class="comment__box">
                 <label class="comment__question">
-                  <input class="comment__c-choice visually-hidden" type="checkbox" checked name="question4" value="">
+                  <input class="comment__c-choice visually-hidden" disabled type="checkbox" checked name="question4" value="">
                   <span class="comment__checkbox"></span>
                   <span class="comment__answer">Мост Дьявола</span>
                 </label>

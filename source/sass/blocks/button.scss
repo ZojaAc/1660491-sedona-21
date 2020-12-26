@@ -34,3 +34,27 @@
     color: rgba(#ffffff, 0.3);
   }
 }
+
+.button__disabled {
+  background-color: #e5e5e5;
+
+  &:link {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
+
+  &:visited {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
+}

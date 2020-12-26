@@ -29,15 +29,57 @@
     border: 15px solid $form-color;
   }
 
-  &__c-choice:checked ~ &__checkbox {
-    background: $form-color url("../img/tick.svg") no-repeat center center;
+  &__choice:checked ~ &__radio:hover {
+    border-radius: 50%;
+    background-color: #333333;
+    border: 15px solid $form-hover;
+  }
+
+  &__choice:checked ~ &__radio:active {
+    border-radius: 50%;
+    background-color: rgba (#333333, 0.3);
+    border: 15px solid $form-down;
   }
 
   &__checkbox {
-    display: block;
+    display: flex;
     width: 55px;
     height: 55px;
+    justify-content: center;
+    align-items: center;
     margin-right: 25px;
+
+    &__::after {
+      content: "";
+      background-image: url("../img/tick.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      opacity: 0;
+    }
+  }
+
+  &__c-choice:checked ~ &__checkbox {
+    background: $form-color;
+
+    ~ &__checkbox::after {
+      opacity: 1;
+    }
+  }
+
+  &__c-choice:checked ~ &__checkbox:hover {
+    background: $form-hover;
+
+    ~ &__checkbox::after {
+      opacity: 1;
+    }
+  }
+
+  &__c-choice:checked ~ &__checkbox:active {
+    background: $form-down;
+
+    ~ &__checkbox::after {
+      opacity: 0.3;
+    }
   }
 
   &__radio {
