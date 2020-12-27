@@ -11,49 +11,42 @@
     text-transform: uppercase;
     color: #000000;
     text-decoration: none;
-  }
-
-  &__contacts {
-    margin-top: 34px;
-  }
-
-  &__social {
-    margin-top: 34px;
-    margin-bottom: 34px;
-  }
-
-  &__copyright {
-    margin-top: 5px;
-    margin-bottom: 22px;
-  }
-
-  &__box {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  &__logo-academy {
-    margin-left: 15px;
-
-    @include link-full;
+  &__social {
+    margin-top: 34px;
+    margin-bottom: 39px;
   }
 
-  &__wrapper {
-    margin: 0 auto;
+  &__logo-academy {
+    margin-left: 15px;
+  }
+
+  &__block {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
+  &__wrapper {
+    margin: 0 auto;
+    padding: 34px 75px 22px 75px;
+  }
 }
 
 @media (min-width: $tablet) {
-  .page-footer__wrapper {
+  .page-footer__block {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 36px 0;
-    margin: auto;
+  }
+
+  .page-footer__wrapper {
+    padding: 36px 60px 36px 50px;
   }
 
   .page-footer__social,
@@ -61,30 +54,10 @@
   .page-footer__contacts {
     margin: auto;
   }
-
-  .page-footer__contacts {
-    padding-left: 2px;
-  }
-
-  .page-footer__social {
-    padding-right: 5px;
-  }
 }
 
 @media (min-width: $desktop) {
   .page-footer__wrapper {
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 40px;
-  }
-
-  .page-footer__contacts {
-    padding: 0;
-  }
-
-  .page-footer__social {
-    margin-left: 150px;
-    margin-right: 150px;
+    padding: 36px 120px 36px 110px;
   }
 }

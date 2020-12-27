@@ -39,11 +39,13 @@
           </picture>
         </a>
       </div>
-      <button class="nav__toggle-burger nav__toggle" type="button">
-        <span class="nav__toggle-burger-pic"></span>
-        <span class="nav__toggle-burger-pic"></span>
-        <span class="nav__toggle-burger-pic"></span>
-      </button>
+      <div class="nav-burger">
+        <button class="nav-burger__toggle-burger nav__toggle" type="button">
+          <span class="nav-burger__toggle-burger-pic"></span>
+          <span class="nav-burger__toggle-burger-pic"></span>
+          <span class="nav-burger__toggle-burger-pic"></span>
+        </button>
+      </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Ваш отзыв о Седоне</h1>
@@ -102,11 +104,11 @@
                 </div>
               </div>
             </div>
-            <div class="review__comment-all">
-              <legend class="review__title comment">Ваше общее впечатление:</legend>
+            <div class="review__comment-all comment">
+              <legend class="review__title">Ваше общее впечатление:</legend>
               <div class="comment__block">
                 <label class="comment__point">
-                  <input class="comment__choice visually-hidden" disabled type="radio" checked name="choice" value="positive">
+                  <input class="comment__choice visually-hidden" type="radio" name="choice" value="positive">
                   <span class="comment__radio"></span>
                   <span class="comment__answer">Скорее положительное</span>
                 </label>
@@ -122,21 +124,21 @@
                 </label>
               </div>
             </div>
-            <div class="review__comment-sights">
+            <div class="review__comment-sights comment">
               <legend class="review__title comment review__title-border">Посещенные<br>достопримечательности:</legend>
               <div class="comment__box">
                 <label class="comment__question">
-                  <input class="comment__c-choice visually-hidden" disabled type="checkbox" checked name="question4" value="">
+                  <input class="comment__c-choice visually-hidden" type="checkbox" name="question4" value="">
                   <span class="comment__checkbox"></span>
                   <span class="comment__answer">Мост Дьявола</span>
                 </label>
                 <label class="comment__question">
-                  <input class="comment__c-choice visually-hidden" type="checkbox" checked name="question5" value="">
+                  <input class="comment__c-choice visually-hidden" type="checkbox" name="question5" value="">
                   <span class="comment__checkbox"></span>
                   <span class="comment__answer">Гора-Колокол</span>
                 </label>
                 <label class="comment__question">
-                  <input class="comment__c-choice visually-hidden" type="checkbox" checked name="question6" value="">
+                  <input class="comment__c-choice visually-hidden" type="checkbox" name="question6" value="">
                   <span class="comment__checkbox"></span>
                   <span class="comment__answer">Слайд-парк</span>
                 </label>
@@ -161,59 +163,55 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__contacts">
-          <a class="page-footer__link-sedona" href="#">#VisitSedona</a>
-        </div>
-        <div class="page-footer__social social-list">
-          <ul class="social-list__roll">
-            <li class="social-list__item">
-              <a class="social-list__twitter" href="#">
-                <img class="social-list__twitter-img" src="img/icontwitter.svg" alt="twitter-link">
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__facebook" href="#">
-                <img class="social-list__facebook-img" src="img/iconfacebook.svg" alt="facebook-link">
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__youtube" href="#">
-                <img class="social-list__youtube-img" src="img/iconyoutube.svg" alt="youtube-link">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright">
-          <a class="page-footer__link-html" href="https://htmlacademy.ru/intensive/adaptive">
-            <div class="page-footer__box">Разработано
+        <div class="page-footer__block">
+          <div class="page-footer__contacts">
+            <a class="page-footer__link-sedona" href="#">#VisitSedona</a>
+          </div>
+          <div class="page-footer__social social">
+            <ul class="social__roll">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="img/icontwitter.svg" alt="twitter-link">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="img/iconfacebook.svg" alt="facebook-link">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="img/iconyoutube.svg" alt="youtube-link">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright">
+            <a class="page-footer__link-html" href="https://htmlacademy.ru/intensive/adaptive">Разработано
               <img class="page-footer__logo-academy" src="img/htmlacademy.svg" alt="logo-academy">
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
     <div class="modal">
-      <div class="modal__not modal__not--display visually-hidden">
-        <div class="modal__not-wrapper">
-          <div class="modal__text-not">
+      <div class="modal__wrapper">
+        <div class="modal__box modal__box--fail">
+          <div class="modal__text">
             <p class="modal__title">Что-то пошло не так!</p>
             <p class="modal__answer">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           </div>
-          <div class="modal__button-not">
-            <a class="modal__new-step-not button" href="#">ОК</a>
+          <div class="modal__button">
+            <a class="modal__button-link button" href="#">ОК</a>
           </div>
         </div>
-      </div>
-      <div class="modal__yes modal__yes--display visually-hidden">
-        <div class="modal__yes-wrapper">
-          <div class="modal__text-yes">
+        <div class="modal__box modal__box--success">
+          <div class="modal__text">
             <p class="modal__title">Ваш отзыв отправлен!</p>
             <p class="modal__answer">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br>В ближайшее время мы опубликуем его на сайте.</p>
           </div>
           <div class="modal__button-box">
-            <div class="modal__button-yes">
-              <a class="modal__new-step-yes button" href="#">Закрыть окно</a>
-            </div>
+            <a class="modal__button-link button" href="#">Закрыть окно</a>
           </div>
         </div>
       </div>

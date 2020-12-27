@@ -17,8 +17,6 @@
   &__text {
     background-color: $form-color;
     border: none;
-    outline: 4px solid $form-color;
-    outline-offset: -4px;
 
     @include main-text(18px, 26px, bold);
   }

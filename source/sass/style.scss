@@ -3,6 +3,7 @@
 @import "./mixins.scss";
 @import "./blocks/page.scss";
 @import "./blocks/nav.scss";
+@import "./blocks/nav-burger.scss";
 @import "./blocks/intro.scss";
 @import "./blocks/feature.scss";
 @import "./blocks/advices.scss";
@@ -19,14 +20,4 @@
 @import "./blocks/page-header.scss";
 @import "./blocks/page-main.scss";
 @import "./blocks/button.scss";
-@import "./blocks/modal.scss";
-
-@font-face {
-  font-family: "PT Sans";
-  src: local("PT Sans"), url("../fonts/ptsans.woff") format("woff"), url("../fonts/ptsans.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "PT Sans Bold";
-  src: local("PT Sans Bold"), url("../fonts/ptsansbold.woff") format("woff"), url("../fonts/ptsansbold.woff2") format("woff2");
-}
+@import "./blocks/modal.scss"

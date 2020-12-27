@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
+    <img class="test" src="img/Index Mobile.png">
     <header class="page-header">
       <nav class="nav">
         <button class="nav__toggle-cross nav__toggle" type="button">
@@ -39,11 +40,13 @@
           </picture>
         </a>
       </div>
-      <button class="nav__toggle-burger nav__toggle" type="button">
-        <span class="nav__toggle-burger-pic"></span>
-        <span class="nav__toggle-burger-pic"></span>
-        <span class="nav__toggle-burger-pic"></span>
-      </button>
+      <div class="nav-burger">
+        <button class="nav-burger__toggle-burger nav__toggle" type="button">
+          <span class="nav-burger__toggle-burger-pic"></span>
+          <span class="nav-burger__toggle-burger-pic"></span>
+          <span class="nav-burger__toggle-burger-pic"></span>
+        </button>
+      </div>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Седона небольшой городок в Аризоне</h1>
@@ -188,34 +191,34 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__contacts">
-          <a class="page-footer__link-sedona" href="#">#VisitSedona</a>
-        </div>
-        <div class="page-footer__social social-list">
-          <ul class="social-list__roll">
-            <li class="social-list__item">
-              <a class="social-list__twitter" href="#">
-                <img class="social-list__twitter-img" src="img/icontwitter.svg" alt="twitter-link">
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__facebook" href="#">
-                <img class="social-list__facebook-img" src="img/iconfacebook.svg" alt="facebook-link">
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a class="social-list__youtube" href="#">
-                <img class="social-list__youtube-img" src="img/iconyoutube.svg" alt="youtube-link">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright">
-          <a class="page-footer__link-html" href="https://htmlacademy.ru/intensive/adaptive">
-            <div class="page-footer__box">Разработано
+        <div class="page-footer__block">
+          <div class="page-footer__contacts">
+            <a class="page-footer__link-sedona" href="#">#VisitSedona</a>
+          </div>
+          <div class="page-footer__social social">
+            <ul class="social__roll">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="img/icontwitter.svg" alt="twitter-link">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="img/iconfacebook.svg" alt="facebook-link">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="img/iconyoutube.svg" alt="youtube-link">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright">
+            <a class="page-footer__link-html" href="https://htmlacademy.ru/intensive/adaptive">Разработано
               <img class="page-footer__logo-academy" src="img/htmlacademy.svg" alt="logo-academy">
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

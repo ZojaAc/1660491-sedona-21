@@ -59,7 +59,7 @@
 @media (min-width: $tablet) {
   .advices__list {
     display: grid;
-    grid-template-columns: 33.33% 33.34% 33.33%;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
   }
 

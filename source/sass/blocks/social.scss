@@ -1,4 +1,4 @@
-.social-list {
+.social {
   &__roll {
     display: flex;
     margin: 0;
@@ -7,7 +7,6 @@
 
   &__item {
     background-color: $base-block-color;
-
     display: flex;
     width: 46px;
     height: 48px;
@@ -25,20 +24,15 @@
     margin-right: 0;
   }
 
-  &__youtube,
-  &__facebook,
-  &__twitter {
-    display: block;
-    margin: auto;
+  &__link {
+    display: flex;
     width: 100%;
     height: 100%;
-    text-align: center;
-    line-height: 48px;
+    justify-content: center;
+    align-items: center;
   }
 
-  &__twitter-img:active,
-  &__facebook-img:active,
-  &__youtube:active {
+  &__img:active {
     opacity: 0.3;
   }
 }
