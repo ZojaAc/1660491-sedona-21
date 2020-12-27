@@ -28,19 +28,21 @@
     position: relative;
     background-color: $base-block-color;
     min-height: 37px;
+    width: 100%;
   }
 
   &__dec-triangle-bottom {
-    background: $base-block-color url("../img/whitecopy.svg") no-repeat center center;
     position: absolute;
     height: 37px;
+    width: 100%;
+    object-fit: cover;
     bottom: 0;
     left: 0;
     right: 0;
   }
 
   &__welcome {
-    padding: 14px 18px 0 17px;
+    padding: 16px 18px 0 17px;
   }
 
   &__slogan {
@@ -48,7 +50,7 @@
     text-transform: uppercase;
     text-align: center;
     padding: 0 10px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
 
   &__text {

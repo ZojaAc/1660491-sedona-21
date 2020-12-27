@@ -1,4 +1,4 @@
-.social-list {
+.social {
   &__roll {
     display: flex;
     margin: 0;
@@ -7,7 +7,6 @@
 
   &__item {
     background-color: $base-block-color;
-
     display: flex;
     width: 46px;
     height: 48px;
@@ -21,16 +20,25 @@
     width: 47px;
   }
 
-  &__youtube,
-  &__facebook,
-  &__twitter {
-    display: block;
-    margin: auto;
+  &__item:last-child {
+    margin-right: 0;
   }
 
-  &__twitter-img:active,
-  &__facebook-img:active,
-  &__youtube:active {
+  &__link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet) {
+  .social__item:last-child {
+    margin-right: 6px;
   }
 }

@@ -1,0 +1,121 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+
+  &__title {
+    @include main-text(18px, 26px, bold);
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+
+  &__answer {
+    @include main-text(14px, 24px, normal);
+    color: #333333;
+    text-transform: uppercase;
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    outline: 1px solid #333333;
+  }
+
+  &__box--fail {
+    height: 280px;
+    width: 320px;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__box--fail &__text {
+    padding: 40px 42px 22px 42px;
+  }
+
+  &__box--success {
+    height: 323px;
+    width: 320px;
+  }
+
+  &__box--success &__text {
+    padding: 38px 38px 36px 38px;
+  }
+
+  &__box--fail &__button {
+    width: 180px;
+  }
+
+  &__box--success &__button {
+    width: 280px;
+  }
+
+  &__button-box {
+    width: 100%;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+
+  &__button-link {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .modal__title {
+    @include main-text(30px, 26px, bold);
+  }
+
+  .modal__link {
+    @include main-text(21px, 26px, bold);
+  }
+
+  .modal__box--success {
+    width: 640px;
+    height: 347px;
+
+    .modal__text {
+      padding: 54px 98px 46px 98px;
+    }
+
+    .modal__button {
+      width: 458px;
+    }
+  }
+
+  .modal__button-box {
+    padding: 44px 91px;
+  }
+
+  .modal__box--fail {
+    width: 400px;
+    height: 347px;
+
+    .modal__text {
+      text-align: center;
+      padding: 52px 46px 47px 46px;
+    }
+
+    .modal__button {
+      width: 280px;
+      margin-bottom: 35px;
+    }
+
+    .modal__title {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}

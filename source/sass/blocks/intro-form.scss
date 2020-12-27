@@ -1,9 +1,38 @@
 .intro-form {
+  &__view {
+    background: #ffffff url("../img/backdesktopform.jpg") no-repeat center/cover;
+    min-height: 158px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__text-index {
+    width: 229px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 53px;
+    transform: translateX(-50%);
+  }
+
+  &__dec-triangle {
+    background: url("../img/introtriangledesktop.svg") no-repeat center center;
+    position: absolute;
+    height: 57px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__welcome {
+    padding: 37px 6px 18px 8px;
+  }
+
   &__offer {
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 28px;
     text-align: center;
   }
 
@@ -13,30 +42,68 @@
     color: #333333;
     margin: 0 auto;
     text-align: center;
-    padding-left: 22px;
-    padding-right: 22px;
   }
 
   &__wrapper {
     margin: 0 auto;
-    padding-bottom: 60px;
+    position: relative;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .intro-form__wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #e5e5e5;
   }
 }
 
 @media (min-width: $tablet) {
   .intro-form__offer {
     @include main-text(30px, 26px, bold);
+
+    margin-bottom: 34px;
   }
 
-  .intro-form__text {
-    padding-left: 166px;
-    padding-right: 168px;
+  .intro-form__view {
+    background: #ffffff url("../img/backdesktopformtablet.jpg") no-repeat center/cover;
+    min-height: 290px;
+    margin: 0 auto;
+    padding-top: 95px;
+    position: relative;
+  }
+
+  .intro-form__text-index {
+    width: 457px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 95px;
+    transform: translateX(-50%);
+  }
+
+  .intro-form__welcome {
+    padding: 62px 166px 86px 166px;
   }
 }
 
 @media (min-width: $desktop) {
-  .intro-form__text {
-    padding-left: 382px;
-    padding-right: 384px;
+  .intro-form__view {
+    background: #ffffff url("../img/backdesktopformdesktop.jpg") no-repeat center/cover;
+    min-height: 300px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .intro-form__text-index {
+    top: 101px;
+  }
+
+  .intro-form__welcome {
+    padding: 113px 380px 57px 380px;
   }
 }

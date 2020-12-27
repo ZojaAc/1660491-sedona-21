@@ -2,8 +2,7 @@
   display: block;
   border: none;
   text-decoration: none;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding: 15px 30px 17px 30px;
   height: 58px;
   background-color: $base-block-color;
   color: #ffffff;
@@ -12,4 +11,50 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+  cursor: pointer;
+
+  &:link {
+    background-color: $a-link;
+    color: #ffffff;
+  }
+
+  &:visited {
+    background-color: $a-link;
+    color: #ffffff;
+  }
+
+  &:hover {
+    background-color: $a-hover;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: $a-active;
+    color: rgba(#ffffff, 0.3);
+  }
+}
+
+.button--disabled {
+  background-color: #e5e5e5;
+
+  &:link {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
+
+  &:visited {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
 }

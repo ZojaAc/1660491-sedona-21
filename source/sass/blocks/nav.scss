@@ -8,7 +8,7 @@
     color: #ffffff;
     text-decoration: none;
     padding-top: 9px;
-    padding-bottom: 4px;
+    padding-bottom: 5px;
 
     @include link;
     display: block;
@@ -17,8 +17,8 @@
   &__item {
     margin: 0;
     padding: 0;
-    border-top: 2px solid #9ac2db;
-    border-bottom: 2px solid #678fa8;
+    border-top: 1px solid #9ac2db;
+    border-bottom: 1px solid #678fa8;
   }
 
   &__item:first-child {
@@ -63,12 +63,6 @@
     background-color: $base-block-color;
   }
 
-  &__toggle-burger {
-    top: 242px;
-    right: 20px;
-    background-color: #ffffff;
-  }
-
   &__toggle-cross-pic {
     display: block;
     height: 4px;
@@ -83,18 +77,6 @@
 
   &__toggle-cross-pic:last-child {
     transform: rotate(-45deg);
-  }
-
-  &__toggle-burger-pic {
-    display: block;
-    height: 4px;
-    width: 23px;
-    background-color: $base-block-color;
-    margin-bottom: 5px;
-  }
-
-  &__toggle-burger-pic:last-child {
-    margin-bottom: 0;
   }
 
   &__toggle:hover {

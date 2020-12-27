@@ -1,0 +1,19 @@
+.nav-burger {
+  &__toggle-burger {
+    top: 242px;
+    right: 20px;
+    background-color: #ffffff;
+  }
+
+  &__toggle-burger-pic {
+    display: block;
+    height: 4px;
+    width: 23px;
+    background-color: $base-block-color;
+    margin-bottom: 5px;
+  }
+
+  &__toggle-burger-pic:last-child {
+    margin-bottom: 0;
+  }
+}

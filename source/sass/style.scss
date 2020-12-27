@@ -1,32 +1,24 @@
 @import "./variables.scss";
 @import "./global.scss";
 @import "./mixins.scss";
-@import "./blocks/page.scss";
-@import "./blocks/nav.scss";
-@import "./blocks/intro.scss";
-@import "./blocks/feature.scss";
 @import "./blocks/advices.scss";
-@import "./blocks/feature-lasts.scss";
-@import "./blocks/hotels.scss";
-@import "./blocks/page-footer.scss";
-@import "./blocks/social-list.scss";
-@import "./blocks/intro-form.scss";
-@import "./blocks/review.scss";
-@import "./blocks/comment.scss";
-@import "./blocks/result.scss";
-@import "./blocks/intro-c.scss";
-@import "./blocks/catalog.scss";
+@import "./blocks/button.scss";
 @import "./blocks/catalog-v.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/comment.scss";
+@import "./blocks/feature-lasts.scss";
+@import "./blocks/feature.scss";
+@import "./blocks/hotels.scss";
+@import "./blocks/intro-c.scss";
+@import "./blocks/intro-form.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/map.scss";
+@import "./blocks/modal.scss";
+@import "./blocks/nav-burger.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/page-footer.scss";
 @import "./blocks/page-header.scss";
 @import "./blocks/page-main.scss";
-@import "./blocks/button.scss";
-
-@font-face {
-  font-family: "PT Sans";
-  src: local("PT Sans"), url("../fonts/ptsans.woff") format("woff"), url("../fonts/ptsans.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "PT Sans Bold";
-  src: local("PT Sans Bold"), url("../fonts/ptsansbold.woff") format("woff"), url("../fonts/ptsansbold.woff2") format("woff2");
-}
+@import "./blocks/page.scss";
+@import "./blocks/review.scss";
+@import "./blocks/social.scss"

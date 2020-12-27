@@ -5,7 +5,7 @@
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 11px;
   }
 
   &__description,
@@ -17,12 +17,16 @@
   }
 
   &__number {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
 
   &__item {
     padding-top: 26px;
     padding-bottom: 26px;
+  }
+
+  &__item:last-child {
+    padding-bottom: 24px;
   }
 
   &__wrapper {
@@ -62,6 +66,8 @@
 
   .feature-lasts__point {
     @include main-text(21px, 26px, bold);
+
+    margin-bottom: 13px;
   }
 
   .feature-lasts__number {
@@ -71,14 +77,14 @@
   .feature-lasts__item:nth-child(1) {
     margin: 0;
     padding: 0;
-    margin-right: 95px;
+    margin-right: 92px;
     width: 189px;
   }
 
   .feature-lasts__item:nth-child(2) {
     margin: 0;
     padding: 0;
-    margin-right: 112px;
+    margin-right: 116px;
     width: 135px;
   }
 
