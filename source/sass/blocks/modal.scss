@@ -1,7 +1,14 @@
 .modal {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+
   &__title {
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
+    margin: 0 auto;
   }
 
   &__answer {
@@ -12,6 +19,9 @@
 
   &__wrapper {
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__box {
@@ -19,10 +29,16 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    outline: 1px solid #333333;
   }
 
   &__box--fail {
     height: 280px;
+    width: 320px;
+  }
+
+  &__text {
+    text-align: center;
   }
 
   &__box--fail &__text {
@@ -31,10 +47,11 @@
 
   &__box--success {
     height: 323px;
+    width: 320px;
   }
 
   &__box--success &__text {
-    padding: 38px 38px 29px 38px;
+    padding: 38px 38px 36px 38px;
   }
 
   &__box--fail &__button {
@@ -67,9 +84,10 @@
 
   .modal__box--success {
     width: 640px;
+    height: 347px;
 
     .modal__text {
-      padding: 54px 98px 31px 98px;
+      padding: 54px 98px 46px 98px;
     }
 
     .modal__button {
@@ -83,6 +101,7 @@
 
   .modal__box--fail {
     width: 400px;
+    height: 347px;
 
     .modal__text {
       text-align: center;

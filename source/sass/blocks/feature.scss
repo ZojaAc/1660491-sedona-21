@@ -8,7 +8,7 @@
 
   &__point {
     @include main-text(18px, 26px, bold);
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   &__number {
@@ -22,8 +22,12 @@
 
   &__text {
     background-color: $base-block-color;
-    padding: 32px 12px 38px 12px;
+    padding: 34px 12px 38px 12px;
     text-align: center;
+  }
+
+  &__text-another-size {
+    padding: 40px 12px 36px 12px;
   }
 
   &__image {
@@ -72,6 +76,7 @@
 
   .feature__point {
     @include main-text(21px, 26px, bold);
+    margin-bottom: 12px;
   }
 
   .feature__img {
@@ -83,7 +88,7 @@
   }
 
   .feature__number {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 
   .feature__text-another-size {
@@ -101,7 +106,6 @@
   }
 
   .feature__description-another-size {
-    padding-top: 4px;
     padding-left: 30px;
     padding-right: 30px;
   }

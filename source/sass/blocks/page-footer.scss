@@ -45,19 +45,21 @@
     align-items: center;
   }
 
-  .page-footer__wrapper {
-    padding: 36px 60px 36px 50px;
+  .page-footer__social {
+    margin: 0 auto;
   }
 
-  .page-footer__social,
-  .page-footer__copyright,
-  .page-footer__contacts {
-    margin: auto;
+  .page-footer__logo-academy {
+    margin-left: 12px;
+  }
+
+  .page-footer__wrapper {
+    padding: 35px 60px;
   }
 }
 
 @media (min-width: $desktop) {
   .page-footer__wrapper {
-    padding: 36px 120px 36px 110px;
+    padding: 32px 120px 36px 120px;
   }
 }
