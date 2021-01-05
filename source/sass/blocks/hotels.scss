@@ -14,11 +14,10 @@
   }
 
   &__button-box {
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 20px;
   }
 
   &__button {

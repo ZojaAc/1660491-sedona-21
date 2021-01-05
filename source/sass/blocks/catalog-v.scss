@@ -1,8 +1,11 @@
 .catalog-v {
+  padding-bottom: 44px;
+
   &__title {
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
     text-align: center;
+    padding-bottom: 14px;
   }
 
   &__description {
@@ -11,18 +14,92 @@
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
-    padding: 0;
-    padding-left: 28px;
-    padding-right: 28px;
   }
 
   &__slogan {
-    margin-top: 32px;
-    margin-bottom: 33px;
+    padding: 18px 27px 33px 27px;
+  }
+
+  &__img {
+    min-height: 201px;
+    background: #ffffff url("../img/videomobile.jpg") no-repeat center/cover;
+    position: relative;
+  }
+
+  &__play {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 45px;
+    background: rgba(#000000, 0.6);
+    padding: 22px 22px 20px 22px;
   }
 
   &__footer {
     background-color: #f2f2f2;
+    height: 66px;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    padding: 23px 23px 23px 25px;
+  }
+
+  &__replay,
+  &__subtitles,
+  &__fullscreen {
+    fill: #5c6870;
+
+    &:hover {
+      fill: #333333;
+    }
+
+    &:active {
+      fill: hsla(#333333, 0.3);
+    }
+  }
+
+  &__replay-box {
+    margin-right: auto;
+  }
+
+  &__last-box {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__fullscreen-box {
+    margin-left: 31px;
+  }
+
+  &__line {
+    display: flex;
+    align-items: center;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 3px;
+      background-color: rgba(#ffffff, 0.2);
+      flex-grow: 1;
+    }
+
+    &::before {
+      width: 10%;
+    }
+
+    &::after {
+      width: 90%;
+    }
+  }
+
+  &__ball {
+    width: 9px;
+    height: 9px;
+    background-color: #ffffff;
+    border-radius: 50%;
   }
 
   &__wrapper {
@@ -30,34 +107,111 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .catalog-v__not-mobile {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet) {
   .catalog-v__title {
     @include main-text(30px, 26px, bold);
+    padding-bottom: 8px;
   }
 
-  .catalog-v__description {
-    padding-left: 100px;
-    padding-right: 100px;
+  .catalog-v__slogan {
+    padding: 32px 100px 80px 100px;
+  }
+
+  .catalog-v__img {
+    min-height: 500px;
+    background: #ffffff url("../img/videotablet.jpg") no-repeat center/cover;
+  }
+
+  .catalog-v__footer {
+    display: none;
+  }
+
+  .catalog-v__replay,
+  .catalog-v__subtitles,
+  .catalog__fullscreen {
+    fill: #ffffff;
+  }
+
+  .catalog-v__replay:hover,
+  .catalog-v__subtitles:hover,
+  .catalog__fullscreen:hover {
+    fill: hsla(#ffffff, 0.6);
+  }
+
+  .catalog-v__replay:active,
+  .catalog-v__subtitles:active,
+  .catalog__fullscreen:active {
+    fill: hsla(#ffffff, 0.3);
+  }
+
+  .catalog-v__play {
+    left: 0;
+    right: 0;
+    height: 93px;
+    padding: 35px 40px 35px 35px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    background: rgba(#666666, 0.6);
+  }
+
+  .catalog-v__line {
+    width: 70%;
+
+    &::before {
+      width: 30%;
+    }
+
+    &::after {
+      width: 70%;
+    }
   }
 
   .catalog-v__wrapper {
     padding-left: 60px;
     padding-right: 60px;
+    padding-bottom: 0;
+  }
+
+  .catalog-v {
+    padding-bottom: 40px;
   }
 }
 
 @media (min-width: $desktop) {
-  .catalog-v__title {
-    margin-top: 63px;
-  }
-
   .catalog-v__wrapper {
     padding-left: 200px;
     padding-right: 200px;
+    padding-bottom: 50px;
   }
 
-  .catalog-v__description {
-    padding-left: 177px;
-    padding-right: 177px;
+  .catalog-v__slogan {
+    padding: 36px 175px 78px 175px;
+  }
+
+  .catalog-v__img {
+    background: #ffffff url("../img/videodesktop.jpg") no-repeat center/cover;
+  }
+
+  .catalog-v__play {
+    padding-right: 44px;
+  }
+
+  .catalog-v__line {
+    width: 75%;
+
+    &::before {
+      width: 22%;
+    }
+
+    &::after {
+      width: 78%;
+    }
   }
 }
