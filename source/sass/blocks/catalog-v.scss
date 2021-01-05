@@ -56,7 +56,7 @@
     }
 
     &:active {
-      fill: hsla(#333333, 0.3);
+      fill: rgba(#333333, 0.3);
     }
   }
 
@@ -134,20 +134,20 @@
 
   .catalog-v__replay,
   .catalog-v__subtitles,
-  .catalog__fullscreen {
+  .catalog-v__fullscreen {
     fill: #ffffff;
   }
 
   .catalog-v__replay:hover,
   .catalog-v__subtitles:hover,
-  .catalog__fullscreen:hover {
-    fill: hsla(#ffffff, 0.6);
+  .catalog-v__fullscreen:hover {
+    fill: rgba(#ffffff, 0.6);
   }
 
   .catalog-v__replay:active,
   .catalog-v__subtitles:active,
-  .catalog__fullscreen:active {
-    fill: hsla(#ffffff, 0.3);
+  .catalog-v__fullscreen:active {
+    fill: rgba(#ffffff, 0.3);
   }
 
   .catalog-v__play {
