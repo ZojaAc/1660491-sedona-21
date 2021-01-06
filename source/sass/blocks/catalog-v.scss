@@ -27,47 +27,41 @@
   }
 
   &__play {
-    position: absolute;
-    bottom: 0;
-    left: 20px;
-    right: 20px;
-    height: 45px;
-    background: rgba(#000000, 0.6);
-    padding: 22px 22px 20px 22px;
-  }
-
-  &__replay-box,
-  &__subtitles-box,
-  &__fullscreen-box {
-    background-color: #f2f2f2;
+    position: relative;
+    bottom: -201px;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
     height: 66px;
-    text-align: center;
-    padding-top: 23px;
-    padding-bottom: 23px;
+    background: #f2f2f2;
+    padding: 22px 22px 20px 25px;
+  }
+
+  &__scale {
+    background: rgba(#000000, 0.6);
     position: absolute;
-    bottom: -66px;
-  }
-
-  &__replay-box {
+    flex-grow: 1;
     left: 0;
-    padding-left: 25px;
-    width: 57%;
-    text-align: left;
-  }
-
-  &__fullscreen-box {
     right: 0;
-    width: 23%;
+    bottom: 100%;
+    padding: 22px;
+    height: 45px;
   }
 
-  &__subtitles-box {
-    right: 23%;
-    width: 20%;
+  &__icon-box {
+    display: flex;
+    flex-shrink: 0;
   }
 
-  &__replay,
-  &__subtitles,
-  &__fullscreen {
+  &__icon-box:first-child {
+    flex-grow: 2;
+  }
+
+  &__icon-box:last-child {
+    margin-left: 31px;
+  }
+
+  &__icon {
     fill: #5c6870;
 
     &:hover {
@@ -116,65 +110,38 @@
     background: #ffffff url("../img/videotablet.jpg") no-repeat center/cover;
   }
 
-  .catalog-v__replay,
-  .catalog-v__subtitles,
-  .catalog-v__fullscreen {
+  .catalog-v__play {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(#666666, 0.6);
+    margin: 0;
+    padding: 36px 41px 35px 35px;
+    height: 93px;
+  }
+
+  .catalog-v__scale {
+    position: static;
+    background: rgba(#666666, 0);
+    width: 100%;
+    margin: 0 20px;
+  }
+
+  .catalog-v__icon {
     fill: #ffffff;
   }
 
-  .catalog-v__replay:hover,
-  .catalog-v__subtitles:hover,
-  .catalog-v__fullscreen:hover {
+  .catalog-v__icon:hover {
     fill: rgba(#ffffff, 0.6);
   }
 
-  .catalog-v__replay:active,
-  .catalog-v__subtitles:active,
-  .catalog-v__fullscreen:active {
+  .catalog-v__icon:active {
     fill: rgba(#ffffff, 0.3);
   }
 
-  .catalog-v__play {
-    left: 0;
-    right: 0;
-    height: 93px;
-    padding-top: 45px;
-    background: rgba(#666666, 0.6);
-  }
-
-  .catalog-v__line {
-    width: 65%;
-    left: 12%;
-  }
-
   .catalog-v__ball {
-    left: 28%;
-  }
-
-  .catalog-v__replay-box,
-  .catalog-v__subtitles-box,
-  .catalog-v__fullscreen-box {
-    background: rgba(#666666, 0);
-    height: 93px;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    position: absolute;
-    bottom: 0;
-    width: 10%;
-  }
-
-  .catalog-v__replay-box {
-    left: 0;
-    padding-left: 35px;
-  }
-
-  .catalog-v__fullscreen-box {
-    padding-right: 41px;
-  }
-
-  .catalog-v__subtitles-box {
-    right: 10%;
-    padding-right: 25px;
+    left: 29%;
   }
 
   .catalog-v__wrapper {
@@ -207,23 +174,7 @@
     padding-bottom: 40px;
   }
 
-  .catalog-v__line {
-    width: 70%;
-    left: 10%;
-  }
-
   .catalog-v__ball {
     left: 20%;
-  }
-
-  .catalog-v__fullscreen-box {
-    padding-right: 41px;
-    width: 8%;
-  }
-
-  .catalog-v__subtitles-box {
-    width: 8%;
-    right: 8%;
-    padding-right: 26px;
   }
 }
