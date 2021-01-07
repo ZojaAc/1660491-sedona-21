@@ -3,6 +3,7 @@
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
     text-align: center;
+    padding-bottom: 14px;
   }
 
   &__description {
@@ -10,30 +11,91 @@
     text-transform: uppercase;
     color: #333333;
     text-align: center;
-    padding-left: 12px;
-    padding-right: 9px;
+  }
+
+  &__view {
+    background: #ffffff url("../img/backdesktopform.jpg") no-repeat center/cover;
+    min-height: 158px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__text-index {
+    width: 229px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 53px;
+    transform: translateX(-50%);
+  }
+
+  &__dec-triangle {
+    background: url("../img/introtriangledesktop.svg") no-repeat center center;
+    position: absolute;
+    height: 57px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__text {
+    padding: 18px 16px 18px 16px;
   }
 
   &__wrapper {
     margin: 0 auto;
+    position: relative;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .intro-c__wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #e5e5e5;
   }
 }
 
 @media (min-width: $tablet) {
-  .intro-c__description {
-    padding-left: 155px;
-    padding-right: 155px;
-    margin-bottom: 59px;
-  }
-
   .intro-c__title {
     @include main-text(30px, 26px, bold);
+    padding-bottom: 8px;
+  }
+
+  .intro-c__view {
+    background: #ffffff url("../img/backdesktopformtablet.jpg") no-repeat center/cover;
+    min-height: 290px;
+  }
+
+  .intro-c__text-index {
+    width: 457px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 95px;
+    transform: translateX(-50%);
+  }
+
+  .intro-c__text {
+    padding: 38px 165px 64px 165px;
   }
 }
 
 @media (min-width: $desktop) {
-  .intro-c__description {
-    padding-left: 360px;
-    padding-right: 360px;
+  .intro-c__view {
+    background: #ffffff url("../img/backdesktopformdesktop.jpg") no-repeat center/cover;
+    min-height: 301px;
+  }
+
+  .intro-c__text-index {
+    top: 101px;
+  }
+
+  .intro-c__text {
+    padding: 74px 381px 67px 381px;
   }
 }

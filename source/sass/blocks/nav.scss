@@ -46,7 +46,7 @@
     position: relative;
   }
 
-  &__toggle {
+  &__cross {
     display: block;
     width: 23px;
     height: 22px;
@@ -55,35 +55,32 @@
     border: none;
     z-index: 2;
     padding: 0;
-  }
-
-  &__toggle-cross {
     top: 17px;
     right: 20px;
     background-color: $base-block-color;
   }
 
-  &__toggle-cross-pic {
+  &__cross-pic {
     display: block;
     height: 4px;
     background-color: #ffffff;
     width: 26px;
   }
 
-  &__toggle-cross-pic:first-child {
+  &__cross-pic:first-child {
     transform: rotate(45deg);
     margin-bottom: -4px;
   }
 
-  &__toggle-cross-pic:last-child {
+  &__cross-pic:last-child {
     transform: rotate(-45deg);
   }
 
-  &__toggle:hover {
+  &__cross:hover {
     opacity: 0.6;
   }
 
-  &__toggle:active {
+  &__cross:active {
     opacity: 0.3;
   }
 
@@ -125,7 +122,7 @@
     color: rgba(#766357, 0.3);
   }
 
-  .nav__toggle {
+  .nav__cross {
     display: none;
   }
 

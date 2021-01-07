@@ -11,19 +11,66 @@
 
   &__l-amount {
     @include main-text(14px, 24px, bold);
+
+    padding-top: 3px;
+  }
+
+  &__photo-img {
+    padding-top: 22px;
+    padding-bottom: 10px;
+  }
+
+  &__img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 280px;
+  }
+
+  &__footer {
+    padding-bottom: 15px;
   }
 
   &__wrapper {
     margin: 0 auto;
-    padding: 22px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__notes {
+    margin-bottom: 10px;
   }
 
   &__likes {
     display: flex;
   }
 
-  &__l-img {
+  &__likes-box {
     margin-right: 14px;
+  }
+
+  &__item {
+    padding-bottom: 2px;
+  }
+
+  &__item:nth-child(3) {
+    padding-top: 2px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .catalog__item {
+    position: relative;
+  }
+
+  .catalog__item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    right: -20px;
+    height: 1px;
+    background-color: #e5e5e5;
   }
 }
 
@@ -33,12 +80,36 @@
     padding: 0 60px;
   }
 
+  .catalog__photo-img {
+    padding: 0;
+  }
+
   .catalog__footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f2f2f2;
-    padding: 22px 20px 15px 20px;
+    padding: 16px 20px 16px 20px;
+  }
+
+  .catalog__footer--size {
+    padding-right: 30px;
+  }
+
+  .catalog__footer--padd {
+    padding-right: 36px;
+  }
+
+  .catalog__img {
+    height: 267px;
+  }
+
+  .catalog__item--view .catalog__img {
+    height: 400px;
+  }
+
+  .catalog__notes {
+    margin: 0;
   }
 
   .catalog__m-block {
@@ -48,10 +119,28 @@
 
   .catalog__item {
     width: 50%;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  .catalog__item:nth-child(3) {
+    padding-top: 0;
   }
 
   .catalog__item--view {
     width: 100%;
+  }
+
+  .catalog__likes {
+    padding-top: 4px;
+  }
+
+  .catalog__likes-box {
+    margin-right: 10px;
+  }
+
+  .catalog__l-amount {
+    padding-top: 0;
   }
 }
 
@@ -63,6 +152,7 @@
 
   .catalog__item {
     width: 33.33%;
+    position: relative;
   }
 
   .catalog__item--view {
@@ -70,9 +160,12 @@
   }
 
   .catalog__footer {
-    background-color: #000000;
-    opacity: 0.3;
+    background-color: rgba(#000000, 0.3);
     color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 
   .catalog__n-autor {

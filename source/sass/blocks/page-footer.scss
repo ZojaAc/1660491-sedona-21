@@ -23,6 +23,15 @@
 
   &__logo-academy {
     margin-left: 15px;
+    fill: #000000;
+
+    &:hover {
+      fill: $base-block-color;
+    }
+
+    &:active {
+      fill: rgba(#000000, 0.3);
+    }
   }
 
   &__block {

@@ -42,9 +42,9 @@
   }
 
   &__choice:disabled ~ &__radio {
-    border-radius: 50%;
     background-color: rgba(#333333, 0.3);
     border: 15px solid $form-down;
+    pointer-events: none;
   }
 
   &__checkbox {
