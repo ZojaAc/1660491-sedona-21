@@ -5,6 +5,10 @@
     margin: 0 auto;
     padding-top: 90px;
     position: relative;
+
+    @media (min-resolution: 2dppx) {
+      background: #ffffff url("../img/backdesktop2x.jpg") no-repeat center/cover;
+    }
   }
 
   &__text-index {
