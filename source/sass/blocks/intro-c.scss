@@ -14,10 +14,14 @@
   }
 
   &__view {
-    background: #ffffff url("../img/backdesktopform.jpg") no-repeat center/cover;
+    background: #ffffff url("../img/backmobileForm.jpg") no-repeat center/cover;
     min-height: 158px;
     margin: 0 auto;
     position: relative;
+
+    @media (min-resolution: 2dppx) {
+      background: #ffffff url("../img/backmobileForm2x.jpg") no-repeat center/cover;
+    }
   }
 
   &__text-index {
@@ -27,6 +31,11 @@
     left: 50%;
     top: 53px;
     transform: translateX(-50%);
+  }
+
+  &__text-index-img {
+    width: 229px;
+    height: 39px;
   }
 
   &__dec-triangle {
@@ -67,8 +76,12 @@
   }
 
   .intro-c__view {
-    background: #ffffff url("../img/backdesktopformtablet.jpg") no-repeat center/cover;
+    background: #ffffff url("../img/backtabletForm.jpg") no-repeat center/cover;
     min-height: 290px;
+
+    @media (min-resolution: 2dppx) {
+      background: #ffffff url("../img/backtabletForm2x.jpg") no-repeat center/cover;
+    }
   }
 
   .intro-c__text-index {
@@ -80,6 +93,11 @@
     transform: translateX(-50%);
   }
 
+  .intro-c__text-index-img {
+    width: 457px;
+    height: 78px;
+  }
+
   .intro-c__text {
     padding: 38px 165px 64px 165px;
   }
@@ -87,8 +105,12 @@
 
 @media (min-width: $desktop) {
   .intro-c__view {
-    background: #ffffff url("../img/backdesktopformdesktop.jpg") no-repeat center/cover;
+    background: #ffffff url("../img/backdesktopForm.jpg") no-repeat center/cover;
     min-height: 301px;
+
+    @media (min-resolution: 2dppx) {
+      background: #ffffff url("../img/backdesktopForm2x.jpg") no-repeat center/cover;
+    }
   }
 
   .intro-c__text-index {

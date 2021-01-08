@@ -19,6 +19,11 @@
     transform: translateX(-50%);
   }
 
+  &__text-index-img {
+    width: 229px;
+    height: 39px;
+  }
+
   &__dec-triangle {
     background: url("../img/introtriangledesktop.svg") no-repeat center center;
     position: absolute;
@@ -92,6 +97,11 @@
     left: 50%;
     top: 95px;
     transform: translateX(-50%);
+  }
+
+  .intro-form__text-index-img {
+    width: 457px;
+    height: 78px;
   }
 
   .intro-form__welcome {
