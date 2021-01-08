@@ -53,6 +53,10 @@
     flex-shrink: 0;
   }
 
+  &__button {
+    border: none;
+  }
+
   &__icon-box:first-child {
     flex-grow: 2;
   }
@@ -126,6 +130,10 @@
     background: rgba(#666666, 0);
     width: 100%;
     margin: 0 20px;
+  }
+
+  .catalog-v__button {
+    background: rgba(#666666, 0);
   }
 
   .catalog-v__icon {

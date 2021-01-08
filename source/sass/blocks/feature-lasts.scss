@@ -61,7 +61,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 42px;
-    margin-bottom: 40px;
+    margin-bottom: 17px;
   }
 
   .feature-lasts__point {
@@ -74,29 +74,30 @@
     margin-bottom: 23px;
   }
 
-  .feature-lasts__item:nth-child(1) {
+  .feature-lasts__item {
     margin: 0;
     padding: 0;
-    margin-right: 92px;
-    width: 189px;
+  }
+
+  .feature-lasts__item:nth-child(1) {
+    margin-right: 72px;
+    width: 40%;
   }
 
   .feature-lasts__item:nth-child(2) {
-    margin: 0;
-    padding: 0;
-    margin-right: 116px;
-    width: 135px;
+    margin-right: 89px;
+    width: 26%;
   }
 
+
   .feature-lasts__item:nth-child(3) {
-    margin: 0;
-    padding: 0;
-    width: 150px;
+    margin-right: 0;
+    width: 32%;
   }
 
   .feature-lasts__wrapper {
-    padding-left: 33px;
-    padding-right: 20px;
+    padding-left: 16px;
+    padding-right: 40px;
   }
 }
 
