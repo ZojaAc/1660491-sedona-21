@@ -19,6 +19,11 @@
     transform: translateX(-50%);
   }
 
+  &__text-index-img {
+    width: 282px;
+    height: 214px;
+  }
+
   &__dec-triangle-top {
     background: url("../img/introtriangledesktop.svg") no-repeat center center;
     position: absolute;
@@ -85,6 +90,11 @@
   .intro__view {
     min-height: 518px;
     padding-top: 77px;
+  }
+
+  .intro__text-index-img {
+    width: 461px;
+    height: 350px;
   }
 
   .intro__text-index {
