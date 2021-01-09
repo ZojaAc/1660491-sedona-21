@@ -3,7 +3,7 @@
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
     margin: 0;
-    padding: 10px 0;
+    padding: 25px 0 10px 0;
   }
 
   &__description {
@@ -11,7 +11,7 @@
     color: #333333;
     text-transform: uppercase;
     margin: 0;
-    padding: 6px 0;
+    padding-top: 6px;
   }
 
   &__item {
@@ -25,7 +25,7 @@
   &__text {
     margin-left: 6px;
     padding: 0 4px;
-    margin-bottom: 11px;
+    margin-bottom: 0;
   }
 
   &__list {
@@ -34,19 +34,17 @@
     padding: 0;
   }
 
+  &__img {
+    fill: $base-block-color;
+  }
+
   &__wrapper {
     margin: 0 auto;
-    padding: 24px 20px 16px 20px;
+    padding: 10px 20px 36px 20px;
   }
 }
 
 @media (max-width: $mobile-width-only) {
-  .advices__img {
-    display: block;
-    width: 40px;
-    height: 36px;
-  }
-
   .advices__br-not-mobile {
     display: none;
   }
@@ -86,6 +84,7 @@
   .advices__title {
     @include main-text(21px, 26px, bold);
     margin-bottom: 8px;
+    padding-top: 12px;
   }
 
   .advices__description {
@@ -98,33 +97,18 @@
     margin-top: 10px;
   }
 
-  .advices__img:first-child {
-    width: 75px;
-    height: 72px;
-  }
-
-  .advices__img:nth-child(2) {
-    width: 76px;
-    height: 68px;
-  }
-
-  .advices__img:nth-child(3) {
-    width: 64px;
-    height: 75px;
-  }
-
   .advices__br-only-desktop {
     display: none;
   }
 
   .advices__wrapper {
-    padding: 60px 0 55px 0;
+    padding: 60px 0 60px 0;
   }
 }
 
 @media (min-width: $desktop) {
   .advices__wrapper {
-    padding: 60px 0 75px 0;
+    padding: 60px 0 78px 0;
   }
 
   .advices__title {
