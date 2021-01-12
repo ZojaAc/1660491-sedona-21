@@ -2,7 +2,6 @@
   &__view {
     background: #ffffff url("../img/backmobileForm.jpg") no-repeat center/cover;
     min-height: 158px;
-    margin: 0 auto;
     position: relative;
 
     @media (min-resolution: 2dppx) {
@@ -81,9 +80,7 @@
   .intro-form__view {
     background: #ffffff url("../img/backtabletForm.jpg") no-repeat center/cover;
     min-height: 290px;
-    margin: 0 auto;
     padding-top: 95px;
-    position: relative;
 
     @media (min-resolution: 2dppx) {
       background: #ffffff url("../img/backtabletForm2x.jpg") no-repeat center/cover;
@@ -113,8 +110,6 @@
   .intro-form__view {
     background: #ffffff url("../img/backdesktopform.jpg") no-repeat center/cover;
     min-height: 300px;
-    margin: 0 auto;
-    position: relative;
 
     @media (min-resolution: 2dppx) {
       background: #ffffff url("../img/backdesktopForm2x.jpg") no-repeat center/cover;
