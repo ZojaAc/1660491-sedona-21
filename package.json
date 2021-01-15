@@ -19,12 +19,12 @@
     "node-sass": "^5.0.0",
     "postcss": "8.1.10",
     "postcss-csso": "5.0.0",
-    "stylelint": "13.8.0",
-    "stylelint-config-htmlacademy": "0.1.4"
+    "stylelint": "^13.8.0",
+    "stylelint-config-htmlacademy": "^0.1.4"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax sass",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp"
