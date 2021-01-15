@@ -70,13 +70,13 @@ exports.images = images;
 
 // WebP
 
-// const createWebp = () => {
-//   return gulp.src("source/img/**/*.{jpg,png}")
-//     .pipe(webp({quality: 90}))
-//     .pipe(gulp.dest("build/img"))
-// }
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{jpg,png}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("build/img"))
+}
 
-// exports.createWebp = createWebp;
+exports.createWebp = createWebp;
 
 // Sprite
 
@@ -153,7 +153,7 @@ const build = gulp.series(
     sprite,
     copy,
     images,
-    //createWebp
+    createWebp
   ));
 
 exports.build = build;
@@ -168,7 +168,7 @@ exports.default = gulp.series(
     // scripts,
     sprite,
     copy,
-    //createWebp
+    createWebp
   ),
   gulp.series(
     server,
