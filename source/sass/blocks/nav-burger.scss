@@ -13,6 +13,14 @@
     background-color: #ffffff;
   }
 
+  &__toggle:hover &__toggle-pic {
+    background-color: rgba($base-block-color, 0.6);
+  }
+
+  &__toggle:active &__toggle-pic {
+    background-color: rgba($base-block-color, 0.3);
+  }
+
   &__toggle-pic {
     display: block;
     height: 4px;

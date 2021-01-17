@@ -108,6 +108,7 @@
 
   .catalog__footer--padd {
     padding-right: 36px;
+    background-color: #eaeaea;
   }
 
   .catalog__img {
@@ -153,6 +154,10 @@
     background: #f2f2f2;
   }
 
+  .catalog__footer--padd .catalog__likes-button {
+    background: #eaeaea;
+  }
+
   .catalog__l-amount {
     padding-top: 0;
   }
@@ -183,6 +188,10 @@
   }
 
   .catalog__likes-button {
+    background: rgba(#000000, 0);
+  }
+
+  .catalog__footer--padd .catalog__likes-button {
     background: rgba(#000000, 0);
   }
 
