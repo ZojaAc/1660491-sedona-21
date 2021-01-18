@@ -1,10 +1,11 @@
 .modal {
-  display: none;
+
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: 4;
+  background-color: #ffffff;
 
   &__title {
     @include main-text(18px, 26px, bold);
@@ -31,7 +32,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    outline: 1px solid #333333;
+    box-shadow: 0 0 2px #333333;
   }
 
   &__box--fail {
@@ -81,7 +82,7 @@
 
 @media (min-width: $tablet) {
   .modal__title {
-    @include main-text(30px, 26px, bold);
+    @include main-text(30px, 40px, bold);
   }
 
   .modal__link {

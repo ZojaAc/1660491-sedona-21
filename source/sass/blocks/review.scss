@@ -55,9 +55,7 @@
   &__cell {
     height: 58px;
     width: 100%;
-    padding-top: 14px;
-    padding-bottom: 10px;
-    padding-left: 22px;
+    padding: 14px 22px 10px 22px;
   }
 
   &__cell--img-phone {
@@ -90,6 +88,15 @@
   &__contact {
     padding-top: 20px;
     padding-bottom: 18px;
+  }
+
+  &__personal,
+  &__contact,
+  &__comment-all,
+  &__comment-sights,
+  &__emotion {
+    border: 0;
+    margin: 0;
   }
 
   &__contact &__title {
