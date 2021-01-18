@@ -1,5 +1,5 @@
 .modal {
-
+  display: none;
   position: fixed;
   top: 0;
   left: 50%;
@@ -11,7 +11,7 @@
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 
   &__answer {
@@ -36,8 +36,8 @@
   }
 
   &__box--fail {
-    height: 280px;
     width: 320px;
+    padding: 40px 40px 35px 40px;
   }
 
   &__text {
@@ -45,11 +45,10 @@
   }
 
   &__box--fail &__text {
-    padding: 40px 42px 12px 42px;
+    padding-bottom: 12px;
   }
 
   &__box--success {
-    height: 323px;
     width: 320px;
   }
 
@@ -91,10 +90,9 @@
 
   .modal__box--success {
     width: 640px;
-    height: 347px;
 
     .modal__text {
-      padding: 54px 98px 46px 98px;
+      padding: 50px 98px 28px 98px;
     }
 
     .modal__button {
@@ -108,11 +106,12 @@
 
   .modal__box--fail {
     width: 400px;
-    height: 347px;
+    padding-top: 35px;
+    padding-bottom: 30px;
 
     .modal__text {
       text-align: center;
-      padding: 52px 46px 47px 46px;
+      padding-bottom: 20px;
     }
 
     .modal__button {
