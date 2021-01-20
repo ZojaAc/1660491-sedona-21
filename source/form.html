@@ -36,7 +36,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logotypedesktop.svg">
               <source media="(min-width: 768px)" srcset="img/logotypetablet.svg">
-                <img class="logo-img" src="img/logotypemobile.svg" alt="Sedona">
+                <img class="logo-img" src="img/logotypemobile.svg" alt="Седона">
           </picture>
         </a>
       </div>
@@ -55,7 +55,7 @@
           <h2 class="visually-hidden">Опишите свои впечатления о Седоне</h2>
           <div class="intro-form__view">
             <div class="intro-form__text-index">
-              <img class="intro-form__text-index-img" src="img/SEDONAmob.svg" alt="Sedona">
+              <img class="intro-form__text-index-img" src="img/SEDONAmob.svg" alt="Седона заголовок">
             </div>
             <div class="intro-form__dec-triangle"></div>
           </div>
@@ -69,7 +69,7 @@
         <div class="review__wrapper">
           <h2 class="visually-hidden">Зарегистрируйтесь и оставьте отзыв</h2>
           <form class="review__form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="review__personal">
+            <fieldset class="review__personal">
               <legend class="review__title">Представьтесь:</legend>
               <div class="review__personal-box">
                 <label class="review__target" for="rev-name">Имя<sup>*</sup>:</label>
@@ -83,9 +83,9 @@
                 <label class="review__target" for="rev-patronymic">Отчество:</label>
                 <input class="review__cell" id="rev-patronymic" type="text" name="patronymic" placeholder="Александрович">
               </div>
-            </div>
-            <div class="review__contact">
-              <legend class="review__title review__title-border">Контактная информация:</legend>
+            </fieldset>
+            <fieldset class="review__contact">
+              <legend class="review__title">Контактная информация:</legend>
               <div class="review__contact-block">
                 <div class="review__contact-box">
                   <label class="review__target" for="rev-phone"><span class="review__target-desktop">Контактный </span>телефон<sup>*</sup>:</label>
@@ -100,12 +100,12 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="review__comment-all comment">
+            </fieldset>
+            <fieldset class="review__comment-all comment">
               <legend class="review__title">Ваше общее впечатление:</legend>
               <div class="comment__block">
                 <label class="comment__point">
-                  <input class="comment__choice visually-hidden" type="radio" name="choice" value="positive">
+                  <input class="comment__choice visually-hidden" type="radio" checked name="choice" value="positive">
                   <span class="comment__radio"></span>
                   <span class="comment__answer">Скорее положительное</span>
                 </label>
@@ -120,9 +120,9 @@
                   <span class="comment__answer">Затрудняюсь ответить</span>
                 </label>
               </div>
-            </div>
-            <div class="review__comment-sights comment">
-              <legend class="review__title comment review__title-border">Посещенные<br>достопримечательности:</legend>
+            </fieldset>
+            <fieldset class="review__comment-sights comment">
+              <legend class="review__title comment">Посещенные<br>достопримечательности:</legend>
               <div class="comment__box">
                 <label class="comment__question">
                   <input class="comment__c-choice visually-hidden" type="checkbox" name="question4" value="">
@@ -145,15 +145,15 @@
                   <span class="comment__answer">Красные скалы</span>
                 </label>
               </div>
-            </div>
-            <div class="review__emotion">
-              <legend class="review__title text review__title-border">Опишите свои эмоции:</legend>
+            </fieldset>
+            <fieldset class="review__emotion">
+              <legend class="review__title text">Опишите свои эмоции:</legend>
               <textarea class="review__text" name="comment" rows="5" cols="25" placeholder="Опишите подробно все свои восторги"></textarea><br>
               <div class="review__end">
                 <input class="review__send button" type="submit" value="отправить отзыв">
                 <p class="review__notice">* — Обязательные поля</p>
               </div>
-            </div>
+            </fieldset>
           </form>
         </div>
       </section>

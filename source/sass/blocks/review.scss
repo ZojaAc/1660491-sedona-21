@@ -3,7 +3,6 @@
     @include main-text(18px, 26px, bold);
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 19px;
   }
 
   &__target,
@@ -42,6 +41,16 @@
     outline-offset: -4px;
   }
 
+  &__personal,
+  &__contact,
+  &__comment-all,
+  &__comment-sights,
+  &__emotion {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
   &__emotion &__send {
     width: 100%;
     padding-top: 18px;
@@ -55,9 +64,7 @@
   &__cell {
     height: 58px;
     width: 100%;
-    padding-top: 14px;
-    padding-bottom: 10px;
-    padding-left: 22px;
+    padding: 14px 22px 10px 22px;
   }
 
   &__cell--img-phone {
@@ -75,9 +82,13 @@
     margin-bottom: 9px;
   }
 
-  &__personal {
+  &__personal &__title {
     padding-top: 20px;
-    padding-bottom: 6px;
+    padding-bottom: 20px;
+  }
+
+  &__personal {
+    padding-bottom: 5px;
   }
 
   &__personal-box {
@@ -87,40 +98,44 @@
     flex-shrink: 0;
   }
 
-  &__contact {
+  &__contact &__title {
     padding-top: 20px;
-    padding-bottom: 18px;
+    padding-bottom: 12px;
   }
 
-  &__contact &__title {
-    padding-bottom: 12px;
+  &__contact {
+    padding-bottom: 18px;
   }
 
   &__contact &__target {
     padding-left: 22px;
   }
 
-  &__comment-all {
-    padding-top: 20px;
-    padding-bottom: 12px;
-  }
-
   &__comment-all &__title {
+    padding-top: 20px;
     padding-bottom: 22px;
   }
 
-  &__comment-sights {
-    padding-top: 15px;
-    padding-bottom: 24px;
+  &__comment-all {
+    padding-bottom: 12px;
   }
 
-  &__emotion {
-    padding-top: 20px;
-    padding-bottom: 43px;
+  &__comment-sights &__title {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+
+  &__comment-sights {
+    padding-bottom: 26px;
   }
 
   &__emotion &__title {
+    padding-top: 20px;
     padding-bottom: 16px;
+  }
+
+  &__emotion {
+    padding-bottom: 43px;
   }
 
   &__wrapper {
@@ -163,28 +178,6 @@
 }
 
 @media (min-width: $tablet) {
-  .review__title-border {
-    position: relative;
-  }
-
-  .review__title-border::before,
-  .review__title-border::after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 20%;
-    background-color: #dbdbdb;
-    top: 30%;
-  }
-
-  .review__title-border::before {
-    left: 0;
-  }
-
-  .review__title-border::after {
-    right: 0;
-  }
-
   .review__personal-box:last-child {
     margin-bottom: 0;
   }
@@ -209,7 +202,7 @@
   }
 
   .review__text {
-    margin-top: 38px;
+    margin-top: 40px;
     margin-bottom: 54px;
     padding: 18px 21px 12px 21px;
   }
@@ -241,49 +234,63 @@
     padding: 0;
   }
 
+  .review__comment-all .review__title {
+    text-align: start;
+    padding-bottom: 57px;
+    padding-top: 0;
+  }
+
   .review__personal {
-    border-left: #dbdbdb 1px solid;
+    border-left: 1px solid #dbdbdb;
     order: 2;
     padding: 0;
     padding-left: 58px;
   }
 
+  .review__personal .review__title {
+    text-align: start;
+    padding-bottom: 54px;
+    padding-top: 0;
+  }
+
   .review__contact {
     order: 3;
-    padding-top: 49px;
+    padding-top: 15px;
+    border-top: 1px solid #dbdbdb;
+    margin-top: 30px;
+  }
+
+  .review__contact .review__title {
+    padding: 18px 50px 2px 50px;
   }
 
   .review__comment-sights {
     order: 4;
     padding-top: 16px;
+    border-top: 1px solid #dbdbdb;
+  }
+
+  .review__comment-sights .review__title {
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .review__emotion {
     order: 5;
-    padding-top: 15px;
+    padding-top: 0;
     margin-bottom: 19px;
+    border-top: 1px solid #dbdbdb;
   }
 
-  .review__comment-all .review__title {
-    text-align: start;
-    padding-bottom: 57px;
-  }
-
-  .review__personal .review__title {
-    text-align: start;
-    padding-bottom: 54px;
-  }
-
-  .review__contact .review__title {
-    padding-bottom: 15px;
+  .review__emotion .review__title {
+    padding-top: 12px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .review__img-block {
     margin-bottom: 18px;
-  }
-
-  .review__comment-sights .review__title {
-    padding-bottom: 45px;
   }
 }
 
@@ -355,17 +362,7 @@
   }
 
   .review__contact .review__title {
-    padding-bottom: 64px;
-  }
-
-  .review__contact .review__title-border::before,
-  .review__contact .review__title-border::after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 30%;
-    background-color: #dbdbdb;
-    top: 12%;
+    padding-bottom: 14px;
   }
 
   .review__contact-block .review__target {
@@ -377,25 +374,24 @@
     padding-bottom: 20px;
   }
 
-  .review__comment-sights .review__title-border::before,
-  .review__comment-sights .review__title-border::after {
-    top: 25%;
-    width: 30%;
-  }
-
-  .review__emotion .review__title-border::after,
-  .review__emotion .review__title-border::before {
-    top: 25%;
-    width: 30%;
+  .review__comment-sights .review__title {
+    padding-top: 26px;
+    padding-bottom: 18px;
   }
 
   .review__emotion .review__text {
     padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 12px;
+    margin-top: 32px;
   }
 
   .review__emotion {
     margin-bottom: 25px;
+  }
+
+  .review__emotion .review__title {
+    padding-top: 18px;
+    padding-bottom: 20px;
   }
 }
