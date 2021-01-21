@@ -6,6 +6,7 @@
   transform: translateX(-50%);
   z-index: 4;
   background-color: #ffffff;
+  box-shadow: 0 0 2px #333333;
 
   &__title {
     @include main-text(18px, 26px, bold);
@@ -25,17 +26,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  &__box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
-    box-shadow: 0 0 2px #333333;
   }
 
-  &__box--fail {
+  &--fail {
     width: 320px;
     padding: 40px 40px 35px 40px;
   }
@@ -44,27 +38,28 @@
     text-align: center;
   }
 
-  &__box--fail &__text {
+  &--fail &__text {
     padding-bottom: 12px;
   }
 
-  &__box--success {
+  &--success {
     width: 320px;
+    top: 50%;
   }
 
-  &__box--success &__text {
+  &--success &__text {
     padding: 38px 38px 26px 38px;
   }
 
-  &__box--success &__title {
+  &--success &__title {
     margin-bottom: 24px;
   }
 
-  &__box--fail &__button {
+  &--fail &__button {
     width: 180px;
   }
 
-  &__box--success &__button {
+  &--success &__button {
     width: 280px;
   }
 
@@ -88,7 +83,7 @@
     @include main-text(21px, 26px, bold);
   }
 
-  .modal__box--success {
+  .modal--success {
     width: 640px;
 
     .modal__text {
@@ -104,7 +99,7 @@
     padding: 44px 91px;
   }
 
-  .modal__box--fail {
+  .modal--fail {
     width: 400px;
     padding-top: 35px;
     padding-bottom: 30px;

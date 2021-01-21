@@ -16,11 +16,6 @@
     align-items: center;
   }
 
-  &__social {
-    margin-top: 34px;
-    margin-bottom: 39px;
-  }
-
   &__logo-academy {
     margin-left: 15px;
     fill: #000000;
@@ -54,21 +49,17 @@
     align-items: center;
   }
 
-  .page-footer__social {
-    margin: 0 auto;
-  }
-
   .page-footer__logo-academy {
     margin-left: 12px;
   }
 
   .page-footer__wrapper {
-    padding: 34px 60px 36px 60px;
+    padding: 32px 60px 36px 60px;
   }
 }
 
 @media (min-width: $desktop) {
   .page-footer__wrapper {
-    padding: 32px 120px 36px 120px;
+    padding: 34px 120px 36px 120px;
   }
 }
