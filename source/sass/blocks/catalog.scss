@@ -1,70 +1,68 @@
-.catalog {
-  &__n-title {
-    @include main-text(14px, 24px, bold);
-    text-transform: uppercase;
-  }
+.catalog__n-title {
+  @include main-text(14px, 24px, bold);
+  text-transform: uppercase;
+}
 
-  &__n-autor {
-    @include main-text(14px, 24px, normal);
-    color: #333333;
-  }
+.catalog__n-autor {
+  @include main-text(14px, 24px, normal);
+  color: #333333;
+}
 
-  &__l-amount {
-    @include main-text(14px, 24px, bold);
+.catalog__l-amount {
+  @include main-text(14px, 24px, bold);
 
-    padding-top: 3px;
-  }
+  padding-top: 3px;
+}
 
-  &__photo-img {
-    padding-top: 22px;
-    padding-bottom: 10px;
-  }
+.catalog__photo-img {
+  padding-top: 22px;
+  padding-bottom: 10px;
+}
 
-  &__img {
-    display: block;
-    object-fit: cover;
-    width: 100%;
-    height: 280px;
-  }
+.catalog__img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 280px;
+}
 
-  &__footer {
-    padding-bottom: 15px;
-  }
+.catalog__footer {
+  padding-bottom: 15px;
+}
 
-  &__wrapper {
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+.catalog__wrapper {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-  &__notes {
-    margin-bottom: 10px;
-  }
+.catalog__notes {
+  margin-bottom: 10px;
+}
 
-  &__likes {
-    display: flex;
-  }
+.catalog__likes {
+  display: flex;
+}
 
-  &__likes-box {
-    margin-right: 14px;
-  }
+.catalog__likes-box {
+  margin-right: 14px;
+}
 
-  &__likes-button {
-    border: none;
-    background: #ffffff;
-    padding: 0;
-    cursor: pointer;
-  }
+.catalog__likes-button {
+  border: none;
+  background: #ffffff;
+  padding: 0;
+  cursor: pointer;
+}
 
-  &__icon {
-    fill: rgba(#000000, 0.3);
-  }
+.catalog__icon {
+  fill: rgba(#000000, 0.3);
+}
 
-  &__item {
-    padding-bottom: 2px;
-  }
+.catalog__item {
+  padding-bottom: 2px;
 
-  &__item:nth-child(3) {
+  &:nth-child(3) {
     padding-top: 2px;
   }
 }
@@ -72,16 +70,16 @@
 @media (max-width: $mobile-width-only) {
   .catalog__item {
     position: relative;
-  }
 
-  .catalog__item::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -20px;
-    right: -20px;
-    height: 1px;
-    background-color: #e5e5e5;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+      right: -20px;
+      height: 1px;
+      background-color: #e5e5e5;
+    }
   }
 }
 

@@ -1,75 +1,74 @@
-.intro {
-  &__view {
-    background: #ffffff url("../img/backdesktop.jpg") no-repeat center/cover;
-    min-height: 389px;
-    margin: 0 auto;
-    padding-top: 90px;
-    position: relative;
+.intro__view {
+  background: #e7e5e5 url("../img/backdesktop.jpg") no-repeat center/cover;
+  min-height: 389px;
+  margin: 0 auto;
+  padding-top: 90px;
+  position: relative;
 
-    @media (min-resolution: 2dppx) {
-      background: #ffffff url("../img/backdesktop2x.jpg") no-repeat center/cover;
-    }
+  @media (min-resolution: 2dppx) {
+    background: #e7e5e5 url("../img/backdesktop2x.jpg") no-repeat center/cover;
   }
+}
 
-  &__text-index {
-    width: 282px;
-    margin: 0 auto;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+.intro__text-index {
+  width: 282px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-  &__text-index-img {
-    width: 282px;
-    height: 214px;
-  }
+.intro__text-index-img {
+  width: 282px;
+  height: 214px;
+}
 
-  &__dec-triangle-top {
-    background: url("../img/introtriangledesktop.svg") no-repeat center center;
-    position: absolute;
-    height: 57px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
+.intro__dec-triangle-top {
+  background: url("../img/introtriangledesktop.svg") no-repeat center center;
+  position: absolute;
+  height: 57px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 
-  &__triangle-bottom-wrapper {
-    position: relative;
-    background-color: $base-block-color;
-    min-height: 37px;
-    width: 100%;
-  }
+.intro__triangle-bottom-wrapper {
+  position: relative;
+  background-color: $base-block-color;
+  min-height: 37px;
+  width: 100%;
+}
 
-  &__dec-triangle-bottom {
-    position: absolute;
-    object-fit: cover;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
+.intro__dec-triangle-bottom {
+  position: absolute;
+  object-fit: cover;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
 
-  &__welcome {
-    padding: 16px 18px 0 17px;
-  }
+.intro__welcome {
+  padding: 16px 18px 0 17px;
+}
 
-  &__slogan {
-    @include main-text(18px, 26px, bold);
-    text-transform: uppercase;
-    text-align: center;
-    padding: 0 10px;
-    margin-bottom: 29px;
-  }
+.intro__slogan {
+  @include main-text(18px, 26px, bold);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 10px;
+  margin-bottom: 29px;
+}
 
-  &__text {
-    @include main-text(14px, 26px, normal);
-    color: #333333;
-    text-transform: uppercase;
-    text-align: center;
-  }
+.intro__text {
+  @include main-text(14px, 26px, normal);
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+}
 
-  &__wrapper {
-    margin: 0 auto;
-  }
+.intro__wrapper {
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet) {

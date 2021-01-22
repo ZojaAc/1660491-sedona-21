@@ -1,35 +1,33 @@
-.nav-burger {
-  &__toggle {
-    display: block;
-    width: 23px;
-    height: 22px;
-    position: absolute;
-    cursor: pointer;
-    border: none;
-    z-index: 2;
-    padding: 0;
-    top: 242px;
-    right: 20px;
-    background-color: #ffffff;
-  }
+.nav-burger__toggle {
+  display: block;
+  width: 23px;
+  height: 22px;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  z-index: 2;
+  padding: 0;
+  top: 242px;
+  right: 20px;
+  background-color: #ffffff;
+}
 
-  &__toggle:hover &__toggle-pic {
-    background-color: rgba($base-block-color, 0.6);
-  }
+.nav-burger__toggle:hover .nav-burger__toggle-pic {
+  background-color: rgba($base-block-color, 0.6);
+}
 
-  &__toggle:active &__toggle-pic {
-    background-color: rgba($base-block-color, 0.3);
-  }
+.nav-burger__toggle:active .nav-burger__toggle-pic {
+  background-color: rgba($base-block-color, 0.3);
+}
 
-  &__toggle-pic {
-    display: block;
-    height: 4px;
-    width: 23px;
-    background-color: $base-block-color;
-    margin-bottom: 5px;
-  }
+.nav-burger__toggle-pic {
+  display: block;
+  height: 4px;
+  width: 23px;
+  background-color: $base-block-color;
+  margin-bottom: 5px;
 
-  &__toggle-pic:last-child {
+  &:last-child {
     margin-bottom: 0;
   }
 }

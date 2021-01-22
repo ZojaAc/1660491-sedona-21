@@ -1,39 +1,37 @@
-.hotels {
-  &__title {
-    @include main-text(21px, 26px, bold);
-    text-transform: uppercase;
-    text-align: center;
-  }
+.hotels__title {
+  @include main-text(21px, 26px, bold);
+  text-transform: uppercase;
+  text-align: center;
+}
 
-  &__action {
-    @include main-text(14px, 24px, normal);
-    color: #333333;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 27px;
-  }
+.hotels__action {
+  @include main-text(14px, 24px, normal);
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 27px;
+}
 
-  &__button-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-  }
+.hotels__button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
 
-  &__button {
-    width: 280px;
-  }
+.hotels__button {
+  width: 280px;
+}
 
-  &__click {
-    margin: 0 auto;
-    margin-top: 33px;
-    margin-bottom: 30px;
-  }
+.hotels__click {
+  margin: 0 auto;
+  margin-top: 33px;
+  margin-bottom: 30px;
+}
 
-  &__wrapper {
-    margin: 0 auto;
-    padding: 0 20px 20px 20px;
-  }
+.hotels__wrapper {
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
 }
 
 @media (max-width: $mobile-width-only) {

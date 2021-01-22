@@ -1,35 +1,35 @@
 .nav {
   position: relative;
+}
 
-  &__link {
-    @include main-text(18px, 40px, bold);
-    text-align: center;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-decoration: none;
-    padding-top: 9px;
-    padding-bottom: 5px;
+.nav__link {
+  @include main-text(18px, 40px, bold);
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  padding-top: 9px;
+  padding-bottom: 5px;
 
-    @include link;
-    display: block;
-  }
+  @include link;
+  display: block;
+}
 
-  &__item {
-    margin: 0;
-    padding: 0;
-    border-top: 1px solid #9ac2db;
-    border-bottom: 1px solid #678fa8;
-  }
+.nav__item {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #9ac2db;
+  border-bottom: 1px solid #678fa8;
 
-  &__item:first-child {
+  &:first-child {
     border-top: none;
   }
 
-  &__item:last-child {
+  &:last-child {
     border-bottom: none;
   }
 
-  &__item:last-child::after {
+  &:last-child::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -38,55 +38,55 @@
     height: 7px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
   }
+}
 
-  &__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: relative;
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.nav__cross {
+  display: block;
+  width: 23px;
+  height: 22px;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  z-index: 2;
+  padding: 0;
+  top: 17px;
+  right: 20px;
+  background-color: $base-block-color;
+
+  &:hover {
+    opacity: 0.6;
   }
 
-  &__cross {
-    display: block;
-    width: 23px;
-    height: 22px;
-    position: absolute;
-    cursor: pointer;
-    border: none;
-    z-index: 2;
-    padding: 0;
-    top: 17px;
-    right: 20px;
-    background-color: $base-block-color;
+  &:active {
+    opacity: 0.3;
   }
+}
 
-  &__cross-pic {
-    display: block;
-    height: 4px;
-    background-color: #ffffff;
-    width: 26px;
-  }
+.nav__cross-pic {
+  display: block;
+  height: 4px;
+  background-color: #ffffff;
+  width: 26px;
 
-  &__cross-pic:first-child {
+  &:first-child {
     transform: rotate(45deg);
     margin-bottom: -4px;
   }
 
-  &__cross-pic:last-child {
+  &:last-child {
     transform: rotate(-45deg);
   }
+}
 
-  &__cross:hover {
-    opacity: 0.6;
-  }
-
-  &__cross:active {
-    opacity: 0.3;
-  }
-
-  &__wrapper {
-    margin: 0 auto;
-  }
+.nav__wrapper {
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet) {

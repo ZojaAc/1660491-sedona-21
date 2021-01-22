@@ -1,49 +1,42 @@
-.page-footer {
-  &__link-sedona {
-    @include main-text(21px, 26px, bold);
-    text-transform: uppercase;
-    color: #000000;
-    text-decoration: none;
+.page-footer__link-sedona {
+  @include main-text(21px, 26px, bold);
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.page-footer__link-html {
+  @include main-text(14px, 26px, normal);
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer__logo-academy {
+  margin-left: 15px;
+  fill: #000000;
+
+  &:hover {
+    fill: $base-block-color;
   }
 
-  &__link-html {
-    @include main-text(14px, 26px, normal);
-    text-transform: uppercase;
-    color: #000000;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  &:active {
+    fill: rgba(#000000, 0.3);
   }
+}
 
-  &__social {
-    margin-top: 34px;
-    margin-bottom: 39px;
-  }
+.page-footer__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  &__logo-academy {
-    margin-left: 15px;
-    fill: #000000;
-
-    &:hover {
-      fill: $base-block-color;
-    }
-
-    &:active {
-      fill: rgba(#000000, 0.3);
-    }
-  }
-
-  &__block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  &__wrapper {
-    margin: 0 auto;
-    padding: 34px 75px 22px 75px;
-  }
+.page-footer__wrapper {
+  margin: 0 auto;
+  padding: 34px 75px 22px 75px;
 }
 
 @media (min-width: $tablet) {
@@ -54,21 +47,17 @@
     align-items: center;
   }
 
-  .page-footer__social {
-    margin: 0 auto;
-  }
-
   .page-footer__logo-academy {
     margin-left: 12px;
   }
 
   .page-footer__wrapper {
-    padding: 34px 60px 36px 60px;
+    padding: 32px 60px 36px 60px;
   }
 }
 
 @media (min-width: $desktop) {
   .page-footer__wrapper {
-    padding: 32px 120px 36px 120px;
+    padding: 34px 120px 36px 120px;
   }
 }

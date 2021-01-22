@@ -6,77 +6,71 @@
   transform: translateX(-50%);
   z-index: 4;
   background-color: #ffffff;
+  box-shadow: 0 0 2px #333333;
+  width: 320px;
 
-  &__title {
-    @include main-text(18px, 26px, bold);
-    text-transform: uppercase;
-    margin: 0 auto;
-    margin-bottom: 26px;
+  &--success {
+    top: 50%;
   }
 
-  &__answer {
-    @include main-text(14px, 24px, normal);
-    color: #333333;
-    text-transform: uppercase;
-  }
-
-  &__wrapper {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  &__box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    box-shadow: 0 0 2px #333333;
-  }
-
-  &__box--fail {
-    width: 320px;
+  &--fail {
     padding: 40px 40px 35px 40px;
   }
+}
 
-  &__text {
-    text-align: center;
-  }
+.modal__title {
+  @include main-text(18px, 26px, bold);
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 26px;
+}
 
-  &__box--fail &__text {
-    padding-bottom: 12px;
-  }
+.modal__answer {
+  @include main-text(14px, 24px, normal);
+  color: #333333;
+  text-transform: uppercase;
+}
 
-  &__box--success {
-    width: 320px;
-  }
+.modal__wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 
-  &__box--success &__text {
-    padding: 38px 38px 26px 38px;
-  }
+.modal__text {
+  text-align: center;
+}
 
-  &__box--success &__title {
-    margin-bottom: 24px;
-  }
+.modal--fail .modal__text {
+  padding-bottom: 12px;
+}
 
-  &__box--fail &__button {
-    width: 180px;
-  }
+.modal--success .modal__text {
+  padding: 38px 38px 26px 38px;
+}
 
-  &__box--success &__button {
-    width: 280px;
-  }
+.modal--success .modal__title {
+  margin-bottom: 24px;
+}
 
-  &__button-box {
-    width: 100%;
-    padding: 20px;
-    background-color: #f2f2f2;
-  }
+.modal--fail .modal__button {
+  width: 180px;
+}
 
-  &__button-link {
-    font-size: 18px;
-  }
+.modal--success .modal__button {
+  width: 280px;
+}
+
+.modal__button-box {
+  width: 100%;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.modal__button-link {
+  font-size: 18px;
 }
 
 @media (min-width: $tablet) {
@@ -88,7 +82,7 @@
     @include main-text(21px, 26px, bold);
   }
 
-  .modal__box--success {
+  .modal--success {
     width: 640px;
 
     .modal__text {
@@ -104,7 +98,7 @@
     padding: 44px 91px;
   }
 
-  .modal__box--fail {
+  .modal--fail {
     width: 400px;
     padding-top: 35px;
     padding-bottom: 30px;
