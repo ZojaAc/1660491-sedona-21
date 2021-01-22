@@ -13,12 +13,12 @@
 }
 
 .intro-c__view {
-  background: #ffffff url("../img/backmobileForm.jpg") no-repeat center/cover;
+  background: #5f89b9 url("../img/backmobileForm.jpg") no-repeat center/cover;
   min-height: 158px;
   position: relative;
 
   @media (min-resolution: 2dppx) {
-    background: #ffffff url("../img/backmobileForm2x.jpg") no-repeat center/cover;
+    background: #5f89b9 url("../img/backmobileForm2x.jpg") no-repeat center/cover;
   }
 }
 
@@ -73,11 +73,11 @@
   }
 
   .intro-c__view {
-    background: #ffffff url("../img/backtabletForm.jpg") no-repeat center/cover;
+    background: #5f89b9 url("../img/backtabletForm.jpg") no-repeat center/cover;
     min-height: 290px;
 
     @media (min-resolution: 2dppx) {
-      background: #ffffff url("../img/backtabletForm2x.jpg") no-repeat center/cover;
+      background: #5f89b9 url("../img/backtabletForm2x.jpg") no-repeat center/cover;
     }
   }
 
@@ -102,11 +102,11 @@
 
 @media (min-width: $desktop) {
   .intro-c__view {
-    background: #ffffff url("../img/backdesktopForm.jpg") no-repeat center/cover;
+    background: #5f89b9 url("../img/backdesktopForm.jpg") no-repeat center/cover;
     min-height: 301px;
 
     @media (min-resolution: 2dppx) {
-      background: #ffffff url("../img/backdesktopForm2x.jpg") no-repeat center/cover;
+      background: #5f89b9 url("../img/backdesktopForm2x.jpg") no-repeat center/cover;
     }
   }
 
