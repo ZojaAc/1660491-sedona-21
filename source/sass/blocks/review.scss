@@ -26,6 +26,13 @@
   opacity: 1;
 }
 
+.review__cell::-moz-placeholder,
+.review__text::-moz-placeholder {
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  opacity: 1;
+}
+
 .review__cell:hover,
 .review__text:hover {
   background-color: $form-hover;
