@@ -1,113 +1,113 @@
 .catalog-v {
   padding-bottom: 110px;
+}
 
-  &__title {
-    @include main-text(18px, 26px, bold);
-    text-transform: uppercase;
-    text-align: center;
-    padding-bottom: 14px;
+.catalog-v__title {
+  @include main-text(18px, 26px, bold);
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 14px;
+}
+
+.catalog-v__description {
+  @include main-text(14px, 24px, normal);
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.catalog-v__slogan {
+  padding: 18px 27px 33px 27px;
+}
+
+.catalog-v__img {
+  min-height: 201px;
+  background: #ffffff url("../img/videomobile.jpg") no-repeat center/cover;
+  position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background: #ffffff url("../img/videomobile2x.jpg") no-repeat center/cover;
+  }
+}
+
+.catalog-v__play {
+  position: relative;
+  bottom: -201px;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  height: 66px;
+  background: #f2f2f2;
+  padding: 22px 22px 20px 25px;
+}
+
+.catalog-v__scale {
+  background: rgba(#000000, 0.6);
+  position: absolute;
+  flex-grow: 1;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  padding-top: 21px;
+  padding-left: 22px;
+  padding-right: 22px;
+  height: 45px;
+}
+
+.catalog-v__icon-box {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.catalog-v__button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.catalog-v__icon-box:first-child {
+  flex-grow: 2;
+}
+
+.catalog-v__icon-box:last-child {
+  margin-left: 31px;
+}
+
+.catalog-v__icon {
+  fill: #5c6870;
+
+  &:hover {
+    fill: #333333;
   }
 
-  &__description {
-    @include main-text(14px, 24px, normal);
-    color: #333333;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0 auto;
+  &:active {
+    fill: rgba(#333333, 0.3);
   }
+}
 
-  &__slogan {
-    padding: 18px 27px 33px 27px;
-  }
+.catalog-v__line {
+  height: 3px;
+  background-color: rgba(#ffffff, 0.2);
+  position: relative;
+}
 
-  &__img {
-    min-height: 201px;
-    background: #ffffff url("../img/videomobile.jpg") no-repeat center/cover;
-    position: relative;
+.catalog-v__ball {
+  width: 9px;
+  height: 9px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  margin-top: -4.5px;
+}
 
-    @media (min-resolution: 2dppx) {
-      background: #ffffff url("../img/videomobile2x.jpg") no-repeat center/cover;
-    }
-  }
-
-  &__play {
-    position: relative;
-    bottom: -201px;
-    display: flex;
-    align-items: center;
-    margin: 0 20px;
-    height: 66px;
-    background: #f2f2f2;
-    padding: 22px 22px 20px 25px;
-  }
-
-  &__scale {
-    background: rgba(#000000, 0.6);
-    position: absolute;
-    flex-grow: 1;
-    left: 0;
-    right: 0;
-    bottom: 100%;
-    padding-top: 21px;
-    padding-left: 22px;
-    padding-right: 22px;
-    height: 45px;
-  }
-
-  &__icon-box {
-    display: flex;
-    flex-shrink: 0;
-  }
-
-  &__button {
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    cursor: pointer;
-  }
-
-  &__icon-box:first-child {
-    flex-grow: 2;
-  }
-
-  &__icon-box:last-child {
-    margin-left: 31px;
-  }
-
-  &__icon {
-    fill: #5c6870;
-
-    &:hover {
-      fill: #333333;
-    }
-
-    &:active {
-      fill: rgba(#333333, 0.3);
-    }
-  }
-
-  &__line {
-    height: 3px;
-    background-color: rgba(#ffffff, 0.2);
-    position: relative;
-  }
-
-  &__ball {
-    width: 9px;
-    height: 9px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    position: absolute;
-    left: 15%;
-    top: 50%;
-    margin-top: -4.5px;
-  }
-
-  &__wrapper {
-    margin: 0 auto;
-  }
+.catalog-v__wrapper {
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet) {

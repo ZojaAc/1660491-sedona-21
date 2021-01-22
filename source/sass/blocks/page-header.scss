@@ -1,15 +1,15 @@
 .page-header {
   display: flex;
   flex-direction: column;
+}
 
-  &__logo {
-    position: absolute;
-    display: block;
-    margin: 0 auto;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-  }
+.page-header__logo {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 @media (max-width: $mobile-width-only) {

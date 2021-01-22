@@ -1,39 +1,39 @@
 .feature-lasts {
   background-color: #eeeeee;
+}
 
-  &__point {
-    @include main-text(18px, 26px, bold);
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 11px;
-  }
+.feature-lasts__point {
+  @include main-text(18px, 26px, bold);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 11px;
+}
 
-  &__description,
-  &__number {
-    @include main-text(14px, 21px, normal);
-    color: #333333;
-    text-transform: uppercase;
-    text-align: center;
-  }
+.feature-lasts__description,
+.feature-lasts__number {
+  @include main-text(14px, 21px, normal);
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+}
 
-  &__number {
-    margin-bottom: 16px;
-  }
+.feature-lasts__number {
+  margin-bottom: 16px;
+}
 
-  &__item {
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }
+.feature-lasts__item {
+  padding-top: 26px;
+  padding-bottom: 26px;
 
-  &__item:last-child {
+  &:last-child {
     padding-bottom: 24px;
   }
+}
 
-  &__wrapper {
-    margin: 0 auto;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
+.feature-lasts__wrapper {
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -45,8 +45,8 @@
     content: "";
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: -12px;
+    right: -12px;
     height: 1px;
     background-color: #d6d6d6;
   }

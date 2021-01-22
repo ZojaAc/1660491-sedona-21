@@ -1,59 +1,57 @@
-.intro-c {
-  &__title {
-    @include main-text(18px, 26px, bold);
-    text-transform: uppercase;
-    text-align: center;
-    padding-bottom: 14px;
-  }
+.intro-c__title {
+  @include main-text(18px, 26px, bold);
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 14px;
+}
 
-  &__description {
-    @include main-text(14px, 24px, normal);
-    text-transform: uppercase;
-    color: #333333;
-    text-align: center;
-  }
+.intro-c__description {
+  @include main-text(14px, 24px, normal);
+  text-transform: uppercase;
+  color: #333333;
+  text-align: center;
+}
 
-  &__view {
-    background: #ffffff url("../img/backmobileForm.jpg") no-repeat center/cover;
-    min-height: 158px;
-    position: relative;
+.intro-c__view {
+  background: #ffffff url("../img/backmobileForm.jpg") no-repeat center/cover;
+  min-height: 158px;
+  position: relative;
 
-    @media (min-resolution: 2dppx) {
-      background: #ffffff url("../img/backmobileForm2x.jpg") no-repeat center/cover;
-    }
+  @media (min-resolution: 2dppx) {
+    background: #ffffff url("../img/backmobileForm2x.jpg") no-repeat center/cover;
   }
+}
 
-  &__text-index {
-    width: 229px;
-    margin: 0 auto;
-    position: absolute;
-    left: 50%;
-    top: 53px;
-    transform: translateX(-50%);
-  }
+.intro-c__text-index {
+  width: 229px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 53px;
+  transform: translateX(-50%);
+}
 
-  &__text-index-img {
-    width: 229px;
-    height: 39px;
-  }
+.intro-c__text-index-img {
+  width: 229px;
+  height: 39px;
+}
 
-  &__dec-triangle {
-    background: url("../img/introtriangledesktop.svg") no-repeat center center;
-    position: absolute;
-    height: 57px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
+.intro-c__dec-triangle {
+  background: url("../img/introtriangledesktop.svg") no-repeat center center;
+  position: absolute;
+  height: 57px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 
-  &__text {
-    padding: 18px 16px 18px 16px;
-  }
+.intro-c__text {
+  padding: 18px 16px 18px 16px;
+}
 
-  &__wrapper {
-    margin: 0 auto;
-    position: relative;
-  }
+.intro-c__wrapper {
+  margin: 0 auto;
+  position: relative;
 }
 
 @media (max-width: $mobile-width-only) {

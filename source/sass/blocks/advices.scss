@@ -1,47 +1,45 @@
-.advices {
-  &__title {
-    @include main-text(18px, 26px, bold);
-    text-transform: uppercase;
-    margin: 0;
-    padding: 25px 0 10px 0;
-  }
+.advices__title {
+  @include main-text(18px, 26px, bold);
+  text-transform: uppercase;
+  margin: 0;
+  padding: 25px 0 10px 0;
+}
 
-  &__description {
-    @include main-text(14px, 21px, normal);
-    color: #333333;
-    text-transform: uppercase;
-    margin: 0;
-    padding-top: 6px;
-  }
+.advices__description {
+  @include main-text(14px, 21px, normal);
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 6px;
+}
 
-  &__item {
-    display: flex;
-    flex-shrink: 0;
-    align-items: flex-start;
-    margin: 0;
-    padding: 0;
-  }
+.advices__item {
+  display: flex;
+  flex-shrink: 0;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
 
-  &__text {
-    margin-left: 6px;
-    padding: 0 4px;
-    margin-bottom: 0;
-  }
+.advices__text {
+  margin-left: 6px;
+  padding: 0 4px;
+  margin-bottom: 0;
+}
 
-  &__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+.advices__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-  &__img {
-    fill: $base-block-color;
-  }
+.advices__img {
+  fill: $base-block-color;
+}
 
-  &__wrapper {
-    margin: 0 auto;
-    padding: 10px 20px 36px 20px;
-  }
+.advices__wrapper {
+  margin: 0 auto;
+  padding: 10px 20px 36px 20px;
 }
 
 @media (max-width: $mobile-width-only) {

@@ -1,158 +1,156 @@
-.review {
-  &__title {
-    @include main-text(18px, 26px, bold);
-    text-transform: uppercase;
-    text-align: center;
-  }
+.review__title {
+  @include main-text(18px, 26px, bold);
+  text-transform: uppercase;
+  text-align: center;
+}
 
-  &__target,
-  &__notice {
-    @include main-text(14px, 26px, normal);
-    color: #333333;
-    text-transform: uppercase;
-  }
+.review__target,
+.review__notice {
+  @include main-text(14px, 26px, normal);
+  color: #333333;
+  text-transform: uppercase;
+}
 
-  &__cell,
-  &__text {
-    background-color: $form-color;
-    border: none;
+.review__cell,
+.review__text {
+  background-color: $form-color;
+  border: none;
 
-    @include main-text(18px, 26px, bold);
-  }
+  @include main-text(18px, 26px, bold);
+}
 
-  &__cell::-webkit-input-placeholder,
-  &__text::-webkit-input-placeholder {
-    font-family: "PT Sans", sans-serif;
-    color: #000000;
-    opacity: 1;
-  }
+.review__cell::-webkit-input-placeholder,
+.review__text::-webkit-input-placeholder {
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  opacity: 1;
+}
 
-  &__cell:hover,
-  &__text:hover {
-    background-color: $form-hover;
-    outline: 4px solid $form-hover;
-    outline-offset: -4px;
-  }
+.review__cell:hover,
+.review__text:hover {
+  background-color: $form-hover;
+  outline: 4px solid $form-hover;
+  outline-offset: -4px;
+}
 
-  &__cell:focus,
-  &__text:focus {
-    background-color: #ffffff;
-    outline: 4px solid #e5e5e5;
-    outline-offset: -4px;
-  }
+.review__cell:focus,
+.review__text:focus {
+  background-color: #ffffff;
+  outline: 4px solid #e5e5e5;
+  outline-offset: -4px;
+}
 
-  &__personal,
-  &__contact,
-  &__comment-all,
-  &__comment-sights,
-  &__emotion {
-    border: 0;
-    margin: 0;
-    padding: 0;
-  }
+.review__personal,
+.review__contact,
+.review__comment-all,
+.review__comment-sights,
+.review__emotion {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
 
-  &__emotion &__send {
-    width: 100%;
-    padding-top: 18px;
-    padding-bottom: 14px;
-  }
+.review__emotion .review__send {
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 14px;
+}
 
-  &__notice {
-    display: none;
-  }
+.review__notice {
+  display: none;
+}
 
-  &__cell {
-    height: 58px;
-    width: 100%;
-    padding: 14px 22px 10px 22px;
-  }
+.review__cell {
+  height: 58px;
+  width: 100%;
+  padding: 14px 22px 10px 22px;
+}
 
-  &__cell--img-phone {
-    background: $form-color url("../img/photophone.jpg") no-repeat right center/58px 58px;
-    padding-right: 58px;
-  }
+.review__cell--img-phone {
+  background: $form-color url("../img/photophone.jpg") no-repeat right center/58px 58px;
+  padding-right: 58px;
+}
 
-  &__cell--img-mail {
-    background: $form-color url("../img/photomail.jpg") no-repeat right center/58px 58px;
-    padding-right: 58px;
-  }
+.review__cell--img-mail {
+  background: $form-color url("../img/photomail.jpg") no-repeat right center/58px 58px;
+  padding-right: 58px;
+}
 
-  &__img-block {
-    margin-top: 8px;
-    margin-bottom: 9px;
-  }
+.review__img-block {
+  margin-top: 8px;
+  margin-bottom: 9px;
+}
 
-  &__personal &__title {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+.review__personal .review__title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
-  &__personal {
-    padding-bottom: 5px;
-  }
+.review__personal {
+  padding-bottom: 5px;
+}
 
-  &__personal-box {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    flex-shrink: 0;
-  }
+.review__personal-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
 
-  &__contact &__title {
-    padding-top: 20px;
-    padding-bottom: 12px;
-  }
+.review__contact .review__title {
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
 
-  &__contact {
-    padding-bottom: 18px;
-  }
+.review__contact {
+  padding-bottom: 18px;
+}
 
-  &__contact &__target {
-    padding-left: 22px;
-  }
+.review__contact .review__target {
+  padding-left: 22px;
+}
 
-  &__comment-all &__title {
-    padding-top: 20px;
-    padding-bottom: 22px;
-  }
+.review__comment-all .review__title {
+  padding-top: 20px;
+  padding-bottom: 22px;
+}
 
-  &__comment-all {
-    padding-bottom: 12px;
-  }
+.review__comment-all {
+  padding-bottom: 12px;
+}
 
-  &__comment-sights &__title {
-    padding-top: 15px;
-    padding-bottom: 20px;
-  }
+.review__comment-sights .review__title {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
 
-  &__comment-sights {
-    padding-bottom: 26px;
-  }
+.review__comment-sights {
+  padding-bottom: 26px;
+}
 
-  &__emotion &__title {
-    padding-top: 20px;
-    padding-bottom: 16px;
-  }
+.review__emotion .review__title {
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
 
-  &__emotion {
-    padding-bottom: 43px;
-  }
+.review__emotion {
+  padding-bottom: 43px;
+}
 
-  &__wrapper {
-    margin: 0 auto;
-    padding: 0 20px;
-  }
+.review__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-  &__text {
-    margin-bottom: 48px;
-    padding: 11px 18px 16px 20px;
-    width: 100%;
-    resize: none;
-  }
+.review__text {
+  margin-bottom: 48px;
+  padding: 11px 18px 16px 20px;
+  width: 100%;
+  resize: none;
+}
 
-  &__target {
-    margin-right: 14px;
-  }
+.review__target {
+  margin-right: 14px;
 }
 
 @media (max-width: $mobile-width-only) {

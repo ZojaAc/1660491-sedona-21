@@ -1,61 +1,59 @@
-.intro-form {
-  &__view {
-    background: #ffffff url("../img/backmobileForm.jpg") no-repeat center/cover;
-    min-height: 158px;
-    position: relative;
+.intro-form__view {
+  background: #ffffff url("../img/backmobileForm.jpg") no-repeat center/cover;
+  min-height: 158px;
+  position: relative;
 
-    @media (min-resolution: 2dppx) {
-      background: #ffffff url("../img/backmobileForm2x.jpg") no-repeat center/cover;
-    }
+  @media (min-resolution: 2dppx) {
+    background: #ffffff url("../img/backmobileForm2x.jpg") no-repeat center/cover;
   }
+}
 
-  &__text-index {
-    width: 229px;
-    margin: 0 auto;
-    position: absolute;
-    left: 50%;
-    top: 53px;
-    transform: translateX(-50%);
-  }
+.intro-form__text-index {
+  width: 229px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 53px;
+  transform: translateX(-50%);
+}
 
-  &__text-index-img {
-    width: 229px;
-    height: 39px;
-  }
+.intro-form__text-index-img {
+  width: 229px;
+  height: 39px;
+}
 
-  &__dec-triangle {
-    background: url("../img/introtriangledesktop.svg") no-repeat center center;
-    position: absolute;
-    height: 57px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
+.intro-form__dec-triangle {
+  background: url("../img/introtriangledesktop.svg") no-repeat center center;
+  position: absolute;
+  height: 57px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 
-  &__welcome {
-    padding: 37px 6px 18px 8px;
-  }
+.intro-form__welcome {
+  padding: 37px 6px 18px 8px;
+}
 
-  &__offer {
-    @include main-text(18px, 26px, bold);
-    text-transform: uppercase;
-    margin: 0 auto;
-    margin-bottom: 28px;
-    text-align: center;
-  }
+.intro-form__offer {
+  @include main-text(18px, 26px, bold);
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  text-align: center;
+}
 
-  &__text {
-    @include main-text(14px, 24px, normal);
-    text-transform: uppercase;
-    color: #333333;
-    margin: 0 auto;
-    text-align: center;
-  }
+.intro-form__text {
+  @include main-text(14px, 24px, normal);
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0 auto;
+  text-align: center;
+}
 
-  &__wrapper {
-    margin: 0 auto;
-    position: relative;
-  }
+.intro-form__wrapper {
+  margin: 0 auto;
+  position: relative;
 }
 
 @media (max-width: $mobile-width-only) {
